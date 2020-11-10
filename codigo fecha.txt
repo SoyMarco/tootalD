@@ -1,0 +1,35 @@
+ For Renglones As Integer = 0 To AppointmentDataGridView.RowCount - 1
+
+
+
+            'PASAR DE UNA CELDA A OTRA TOMANDO ID DE LA PRIMERA
+            For i As Integer = 0 To PatientDataGridView.Rows.Count - 1
+                'Si el valor de la primera celda ubicada, por ejemplo, en la fila 1 es igual a 3
+     For Renglones As Integer = 0 To AppointmentDataGridView.RowCount - 1
+
+
+            'DOCTOR
+            'PASAR DE UNA CELDA A OTRA TOMANDO ID DE LA PRIMERA
+            For i As Integer = 0 To DoctorDataGridView.Rows.Count - 1
+                'Si el valor de la primera celda ubicada, por ejemplo, en la fila 1 es igual a 3
+
+                If DoctorDataGridView.Rows(i).Cells(0).Value = Me.AppointmentDataGridView.Item(5, Renglones).Value Then
+                    'Mueve el cursor a dicha fila
+                    DoctorDataGridView.CurrentCell = DoctorDataGridView.Item(0, i)
+                    'Pinta de color azul la fila para indicar al usuario que esa celda está seleccionada (Opcional)
+                    DoctorDataGridView.Rows(i).Selected = True
+
+
+                    Try
+                        Dim NomDr As String
+                        Dim rowCU As DataGridViewRow = AppointmentDataGridView.CurrentRow
+                        NomDr = (rowCU.Cells(6).Value) / 86400 + 25569
+                        Me.AppointmentDataGridView.Item(0, Renglones).Value = NomDr
+                    Catch ex As Exception
+                    End Try
+                    Exit For
+                End If
+            Next
+
+
+        Next

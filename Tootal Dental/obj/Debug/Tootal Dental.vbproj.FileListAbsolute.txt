@@ -1,0 +1,4 @@
+C:\Users\Marco\Documents\Tootal Dental\Tootal Dental\obj\Debug\Tootal_Dental.Form1.resources
+C:\Users\Marco\Documents\Tootal Dental\Tootal Dental\obj\Debug\Tootal_Dental.Resources.resources
+C:\Users\Marco\Documents\Tootal Dental\Tootal Dental\obj\Debug\Tootal Dental.vbproj.GenerateResource.cache
+C:\Users\Marco\Documents\Tootal Dental\Tootal Dental\obj\Debug\Tootal Dental.vbproj.CoreCompileInputs.cache

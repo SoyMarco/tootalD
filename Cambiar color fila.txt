@@ -1,0 +1,29 @@
+ 'Cambiar color fila
+                        If AppointmentDataGridView.Rows(i).Cells(3).Value = "Pending Confirmation" Then
+                            DataGridViewPEÑITAS.Rows(i).DefaultCellStyle.BackColor = Color.SkyBlue
+                        Else
+                            If AppointmentDataGridView.Rows(i).Cells(3).Value = "Confirmed" Then
+                                DataGridViewPEÑITAS.Rows(i).DefaultCellStyle.BackColor = Color.SeaGreen
+
+                            Else
+                                If AppointmentDataGridView.Rows(i).Cells(3).Value = "Cancelled" Then
+                                    DataGridViewPEÑITAS.Rows(i).DefaultCellStyle.BackColor = Color.PaleVioletRed
+                                End If
+                            End If
+                        End If
+
+
+
+'Cambiar color fila
+                        If AppointmentDataGridView.Rows(i).Cells(3).Value = "Pending Confirmation" Then
+                            DataGridViewLago.Rows(i).DefaultCellStyle.BackColor = Color.SkyBlue
+                        Else
+                            If AppointmentDataGridView.Rows(i).Cells(3).Value = "Confirmed" Then
+                                DataGridViewLago.Rows(i).DefaultCellStyle.BackColor = Color.SeaGreen
+
+                            Else
+                                If AppointmentDataGridView.Rows(i).Cells(3).Value = "Cancelled" Then
+                                    DataGridViewLago.Rows(i).DefaultCellStyle.BackColor = Color.PaleVioletRed
+                                End If
+                            End If
+                        End If

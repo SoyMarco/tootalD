@@ -1,0 +1,1031 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+td
+</name>
+</assembly>
+<members>
+<member name="T:td.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:td.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:td.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.accountantDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.appointmentDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.bankbDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.diagnostic_reportDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.doctorDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.donorDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.emailDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.email_settingsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.expenseDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.expense_categoryDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.featuredDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.groupsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.holidaysDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.labDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.lab_categoryDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.laboratoristDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.login_attemptsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.medical_historyDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.medicineDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.medicine_categoryDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.nurseDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.ot_paymentDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.patientDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.patient_depositDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.patient_materialDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.paymentDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.payment_categoryDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.paymentGatewayDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.pharmacistDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.pharmacy_expenseDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.pharmacy_expense_categoryDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.pharmacy_paymentDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.pharmacy_payment_categoryDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.prescriptionDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.receptionistDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.serviceDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.settingsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.slideDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.smsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.sms_settingsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.templateDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.time_scheduleDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.time_slotDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.usersDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.users_groupsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.website_settingsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.paciente_pagoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.paciente_servicioDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.accountantRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.appointmentRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.bankbRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.diagnostic_reportRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.doctorRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.donorRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.emailRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.email_settingsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.expenseRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.expense_categoryRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.featuredRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.groupsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.holidaysRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.labRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.lab_categoryRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.laboratoristRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.login_attemptsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.medical_historyRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.medicineRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.medicine_categoryRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.nurseRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.ot_paymentRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.patientRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.patient_depositRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.patient_materialRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.paymentRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.payment_categoryRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.paymentGatewayRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.pharmacistRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.pharmacy_expenseRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.pharmacy_expense_categoryRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.pharmacy_paymentRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.pharmacy_payment_categoryRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.prescriptionRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.receptionistRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.serviceRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.settingsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.slideRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.smsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.sms_settingsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.templateRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.time_scheduleRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.time_slotRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.usersRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.users_groupsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.website_settingsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.paciente_pagoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.paciente_servicioRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.accountantRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.appointmentRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.bankbRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.diagnostic_reportRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.doctorRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.donorRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.emailRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.email_settingsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.expenseRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.expense_categoryRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.featuredRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.groupsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.holidaysRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.labRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.lab_categoryRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.laboratoristRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.login_attemptsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.medical_historyRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.medicineRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.medicine_categoryRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.nurseRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.ot_paymentRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.patientRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.patient_depositRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.patient_materialRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.paymentRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.payment_categoryRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.paymentGatewayRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.pharmacistRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.pharmacy_expenseRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.pharmacy_expense_categoryRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.pharmacy_paymentRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.pharmacy_payment_categoryRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.prescriptionRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.receptionistRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.serviceRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.settingsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.slideRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.smsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.sms_settingsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.templateRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.time_scheduleRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.time_slotRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.usersRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.users_groupsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.website_settingsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.paciente_pagoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSet.paciente_servicioRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.accountantTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.appointmentTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.bankbTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.diagnostic_reportTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.doctorTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.donorTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.emailTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.email_settingsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.expenseTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.expense_categoryTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.featuredTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.groupsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.holidaysTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.labTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.lab_categoryTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.laboratoristTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.login_attemptsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.medical_historyTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.medicineTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.medicine_categoryTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.nurseTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.ot_paymentTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.patientTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.patient_depositTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.patient_materialTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.paymentTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.payment_categoryTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.paymentGatewayTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.pharmacistTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.pharmacy_expenseTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.pharmacy_expense_categoryTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.pharmacy_paymentTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.pharmacy_payment_categoryTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.prescriptionTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.receptionistTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.serviceTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.settingsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.slideTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.smsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.sms_settingsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.templateTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.time_scheduleTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.time_slotTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.usersTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.users_groupsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.website_settingsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.paciente_pagoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.paciente_servicioTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:td.tootalde_dbtDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(td.tootalde_dbtDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:td.tootalde_dbtDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(td.tootalde_dbtDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:td.tootalde_dbtDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(td.tootalde_dbtDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:td.tootalde_dbtDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:td.tootalde_dbtDataSetTableAdapters.TableAdapterManager.UpdateAll(td.tootalde_dbtDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:td.tootalde_dbtDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>

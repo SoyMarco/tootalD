@@ -176,6 +176,7 @@ Partial Class NuevaCita
         '
         'lugar
         '
+        Me.lugar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.lugar.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lugar.FormattingEnabled = True
         Me.lugar.Items.AddRange(New Object() {"Peñitas", "Lago"})
@@ -412,6 +413,8 @@ Partial Class NuevaCita
         Me.TableAdapterManager.medicineTableAdapter = Nothing
         Me.TableAdapterManager.nurseTableAdapter = Nothing
         Me.TableAdapterManager.ot_paymentTableAdapter = Nothing
+        Me.TableAdapterManager.paciente_pagoTableAdapter = Nothing
+        Me.TableAdapterManager.paciente_servicioTableAdapter = Nothing
         Me.TableAdapterManager.patient_depositTableAdapter = Nothing
         Me.TableAdapterManager.patient_materialTableAdapter = Nothing
         Me.TableAdapterManager.patientTableAdapter = Me.PatientTableAdapter

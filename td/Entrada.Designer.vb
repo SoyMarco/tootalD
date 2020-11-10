@@ -72,17 +72,6 @@ Partial Class Entrada
         Me.DataGridViewTextBoxColumn19 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Paciente_servicioBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Paciente_pagoDataGridView = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn20 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn22 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn23 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn24 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn25 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn26 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn28 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn29 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn30 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn31 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn32 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Paciente_pagoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
@@ -118,6 +107,23 @@ Partial Class Entrada
         Me.DataGridViewTextBoxColumn43 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TratamientoId = New System.Windows.Forms.Label()
         Me.InfoGuarServ = New System.Windows.Forms.Label()
+        Me.TotServicios = New System.Windows.Forms.Label()
+        Me.DataGridViewTextBoxColumn20 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.monto_efectivo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.monto_tarjeta = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.monto_total = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn22 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn23 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn24 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn25 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn26 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn28 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn29 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn30 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn31 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn32 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.resta = New System.Windows.Forms.Label()
         CType(Me.PaymentcategoryBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Tootalde_dbtDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Payment_categoryDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -258,12 +264,12 @@ Partial Class Entrada
         Me.Tratamiento.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
         Me.Tratamiento.DataSource = Me.PaymentcategoryBindingSource
         Me.Tratamiento.DisplayMember = "category"
-        Me.Tratamiento.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Tratamiento.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Tratamiento.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Tratamiento.FormattingEnabled = True
         Me.Tratamiento.Location = New System.Drawing.Point(193, 134)
         Me.Tratamiento.Name = "Tratamiento"
-        Me.Tratamiento.Size = New System.Drawing.Size(469, 40)
+        Me.Tratamiento.Size = New System.Drawing.Size(469, 31)
         Me.Tratamiento.TabIndex = 57400
         Me.Tratamiento.ValueMember = "category"
         '
@@ -447,9 +453,9 @@ Partial Class Entrada
         Me.Paciente_servicioDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Paciente_servicioDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn12, Me.DataGridViewTextBoxColumn13, Me.DataGridViewTextBoxColumn14, Me.DataGridViewTextBoxColumn15, Me.DataGridViewTextBoxColumn16, Me.DataGridViewTextBoxColumn17, Me.DataGridViewTextBoxColumn18, Me.DataGridViewTextBoxColumn19})
         Me.Paciente_servicioDataGridView.DataSource = Me.Paciente_servicioBindingSource
-        Me.Paciente_servicioDataGridView.Location = New System.Drawing.Point(193, 405)
+        Me.Paciente_servicioDataGridView.Location = New System.Drawing.Point(14, 405)
         Me.Paciente_servicioDataGridView.Name = "Paciente_servicioDataGridView"
-        Me.Paciente_servicioDataGridView.Size = New System.Drawing.Size(470, 220)
+        Me.Paciente_servicioDataGridView.Size = New System.Drawing.Size(649, 220)
         Me.Paciente_servicioDataGridView.TabIndex = 57411
         '
         'DataGridViewTextBoxColumn8
@@ -533,78 +539,12 @@ Partial Class Entrada
         '
         Me.Paciente_pagoDataGridView.AutoGenerateColumns = False
         Me.Paciente_pagoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.Paciente_pagoDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn20, Me.DataGridViewTextBoxColumn22, Me.DataGridViewTextBoxColumn23, Me.DataGridViewTextBoxColumn24, Me.DataGridViewTextBoxColumn25, Me.DataGridViewTextBoxColumn26, Me.DataGridViewTextBoxColumn28, Me.DataGridViewTextBoxColumn29, Me.DataGridViewTextBoxColumn30, Me.DataGridViewTextBoxColumn31, Me.DataGridViewTextBoxColumn32})
+        Me.Paciente_pagoDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn20, Me.monto_efectivo, Me.monto_tarjeta, Me.monto_total, Me.DataGridViewTextBoxColumn22, Me.DataGridViewTextBoxColumn23, Me.DataGridViewTextBoxColumn24, Me.DataGridViewTextBoxColumn25, Me.DataGridViewTextBoxColumn26, Me.DataGridViewTextBoxColumn28, Me.DataGridViewTextBoxColumn29, Me.DataGridViewTextBoxColumn30, Me.DataGridViewTextBoxColumn31, Me.DataGridViewTextBoxColumn32})
         Me.Paciente_pagoDataGridView.DataSource = Me.Paciente_pagoBindingSource
         Me.Paciente_pagoDataGridView.Location = New System.Drawing.Point(682, 405)
         Me.Paciente_pagoDataGridView.Name = "Paciente_pagoDataGridView"
         Me.Paciente_pagoDataGridView.Size = New System.Drawing.Size(470, 220)
         Me.Paciente_pagoDataGridView.TabIndex = 57411
-        '
-        'DataGridViewTextBoxColumn20
-        '
-        Me.DataGridViewTextBoxColumn20.DataPropertyName = "id"
-        Me.DataGridViewTextBoxColumn20.HeaderText = "id"
-        Me.DataGridViewTextBoxColumn20.Name = "DataGridViewTextBoxColumn20"
-        '
-        'DataGridViewTextBoxColumn22
-        '
-        Me.DataGridViewTextBoxColumn22.DataPropertyName = "d_comision"
-        Me.DataGridViewTextBoxColumn22.HeaderText = "d_comision"
-        Me.DataGridViewTextBoxColumn22.Name = "DataGridViewTextBoxColumn22"
-        '
-        'DataGridViewTextBoxColumn23
-        '
-        Me.DataGridViewTextBoxColumn23.DataPropertyName = "paciente"
-        Me.DataGridViewTextBoxColumn23.HeaderText = "paciente"
-        Me.DataGridViewTextBoxColumn23.Name = "DataGridViewTextBoxColumn23"
-        '
-        'DataGridViewTextBoxColumn24
-        '
-        Me.DataGridViewTextBoxColumn24.DataPropertyName = "doctor"
-        Me.DataGridViewTextBoxColumn24.HeaderText = "doctor"
-        Me.DataGridViewTextBoxColumn24.Name = "DataGridViewTextBoxColumn24"
-        '
-        'DataGridViewTextBoxColumn25
-        '
-        Me.DataGridViewTextBoxColumn25.DataPropertyName = "cita"
-        Me.DataGridViewTextBoxColumn25.HeaderText = "cita"
-        Me.DataGridViewTextBoxColumn25.Name = "DataGridViewTextBoxColumn25"
-        '
-        'DataGridViewTextBoxColumn26
-        '
-        Me.DataGridViewTextBoxColumn26.DataPropertyName = "notas"
-        Me.DataGridViewTextBoxColumn26.HeaderText = "notas"
-        Me.DataGridViewTextBoxColumn26.Name = "DataGridViewTextBoxColumn26"
-        '
-        'DataGridViewTextBoxColumn28
-        '
-        Me.DataGridViewTextBoxColumn28.DataPropertyName = "usuario"
-        Me.DataGridViewTextBoxColumn28.HeaderText = "usuario"
-        Me.DataGridViewTextBoxColumn28.Name = "DataGridViewTextBoxColumn28"
-        '
-        'DataGridViewTextBoxColumn29
-        '
-        Me.DataGridViewTextBoxColumn29.DataPropertyName = "fecha"
-        Me.DataGridViewTextBoxColumn29.HeaderText = "fecha"
-        Me.DataGridViewTextBoxColumn29.Name = "DataGridViewTextBoxColumn29"
-        '
-        'DataGridViewTextBoxColumn30
-        '
-        Me.DataGridViewTextBoxColumn30.DataPropertyName = "estatus"
-        Me.DataGridViewTextBoxColumn30.HeaderText = "estatus"
-        Me.DataGridViewTextBoxColumn30.Name = "DataGridViewTextBoxColumn30"
-        '
-        'DataGridViewTextBoxColumn31
-        '
-        Me.DataGridViewTextBoxColumn31.DataPropertyName = "fecha_cambio"
-        Me.DataGridViewTextBoxColumn31.HeaderText = "fecha_cambio"
-        Me.DataGridViewTextBoxColumn31.Name = "DataGridViewTextBoxColumn31"
-        '
-        'DataGridViewTextBoxColumn32
-        '
-        Me.DataGridViewTextBoxColumn32.DataPropertyName = "usuario_cambio"
-        Me.DataGridViewTextBoxColumn32.HeaderText = "usuario_cambio"
-        Me.DataGridViewTextBoxColumn32.Name = "DataGridViewTextBoxColumn32"
         '
         'Paciente_pagoBindingSource
         '
@@ -650,11 +590,11 @@ Partial Class Entrada
         '
         Me.TotPagos.AutoSize = True
         Me.TotPagos.BackColor = System.Drawing.Color.White
-        Me.TotPagos.Font = New System.Drawing.Font("Helvetica LT Std Black", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TotPagos.Font = New System.Drawing.Font("Helvetica LT Std", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TotPagos.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.TotPagos.Location = New System.Drawing.Point(803, 628)
         Me.TotPagos.Name = "TotPagos"
-        Me.TotPagos.Size = New System.Drawing.Size(33, 34)
+        Me.TotPagos.Size = New System.Drawing.Size(37, 42)
         Me.TotPagos.TabIndex = 57415
         Me.TotPagos.Text = "$"
         '
@@ -729,7 +669,7 @@ Partial Class Entrada
         '
         'PictureBox3
         '
-        Me.PictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.PictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.PictureBox3.Location = New System.Drawing.Point(667, -7)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(10, 700)
@@ -936,11 +876,131 @@ Partial Class Entrada
         Me.InfoGuarServ.AutoSize = True
         Me.InfoGuarServ.Font = New System.Drawing.Font("Helvetica LT Std", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.InfoGuarServ.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.InfoGuarServ.Location = New System.Drawing.Point(295, 628)
+        Me.InfoGuarServ.Location = New System.Drawing.Point(-2, 369)
         Me.InfoGuarServ.Name = "InfoGuarServ"
-        Me.InfoGuarServ.Size = New System.Drawing.Size(35, 38)
+        Me.InfoGuarServ.Size = New System.Drawing.Size(60, 38)
         Me.InfoGuarServ.TabIndex = 57428
-        Me.InfoGuarServ.Text = "$"
+        Me.InfoGuarServ.Text = "Ok"
+        '
+        'TotServicios
+        '
+        Me.TotServicios.AutoSize = True
+        Me.TotServicios.BackColor = System.Drawing.Color.White
+        Me.TotServicios.Font = New System.Drawing.Font("Helvetica LT Std", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TotServicios.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.TotServicios.Location = New System.Drawing.Point(305, 621)
+        Me.TotServicios.Name = "TotServicios"
+        Me.TotServicios.Size = New System.Drawing.Size(37, 42)
+        Me.TotServicios.TabIndex = 57429
+        Me.TotServicios.Text = "$"
+        '
+        'DataGridViewTextBoxColumn20
+        '
+        Me.DataGridViewTextBoxColumn20.DataPropertyName = "id"
+        Me.DataGridViewTextBoxColumn20.HeaderText = "id"
+        Me.DataGridViewTextBoxColumn20.Name = "DataGridViewTextBoxColumn20"
+        '
+        'monto_efectivo
+        '
+        Me.monto_efectivo.DataPropertyName = "monto_efectivo"
+        Me.monto_efectivo.HeaderText = "monto_efectivo"
+        Me.monto_efectivo.Name = "monto_efectivo"
+        '
+        'monto_tarjeta
+        '
+        Me.monto_tarjeta.DataPropertyName = "monto_tarjeta"
+        Me.monto_tarjeta.HeaderText = "monto_tarjeta"
+        Me.monto_tarjeta.Name = "monto_tarjeta"
+        '
+        'monto_total
+        '
+        Me.monto_total.DataPropertyName = "monto_total"
+        Me.monto_total.HeaderText = "monto_total"
+        Me.monto_total.Name = "monto_total"
+        '
+        'DataGridViewTextBoxColumn22
+        '
+        Me.DataGridViewTextBoxColumn22.DataPropertyName = "d_comision"
+        Me.DataGridViewTextBoxColumn22.HeaderText = "d_comision"
+        Me.DataGridViewTextBoxColumn22.Name = "DataGridViewTextBoxColumn22"
+        '
+        'DataGridViewTextBoxColumn23
+        '
+        Me.DataGridViewTextBoxColumn23.DataPropertyName = "paciente"
+        Me.DataGridViewTextBoxColumn23.HeaderText = "paciente"
+        Me.DataGridViewTextBoxColumn23.Name = "DataGridViewTextBoxColumn23"
+        '
+        'DataGridViewTextBoxColumn24
+        '
+        Me.DataGridViewTextBoxColumn24.DataPropertyName = "doctor"
+        Me.DataGridViewTextBoxColumn24.HeaderText = "doctor"
+        Me.DataGridViewTextBoxColumn24.Name = "DataGridViewTextBoxColumn24"
+        '
+        'DataGridViewTextBoxColumn25
+        '
+        Me.DataGridViewTextBoxColumn25.DataPropertyName = "cita"
+        Me.DataGridViewTextBoxColumn25.HeaderText = "cita"
+        Me.DataGridViewTextBoxColumn25.Name = "DataGridViewTextBoxColumn25"
+        '
+        'DataGridViewTextBoxColumn26
+        '
+        Me.DataGridViewTextBoxColumn26.DataPropertyName = "notas"
+        Me.DataGridViewTextBoxColumn26.HeaderText = "notas"
+        Me.DataGridViewTextBoxColumn26.Name = "DataGridViewTextBoxColumn26"
+        '
+        'DataGridViewTextBoxColumn28
+        '
+        Me.DataGridViewTextBoxColumn28.DataPropertyName = "usuario"
+        Me.DataGridViewTextBoxColumn28.HeaderText = "usuario"
+        Me.DataGridViewTextBoxColumn28.Name = "DataGridViewTextBoxColumn28"
+        '
+        'DataGridViewTextBoxColumn29
+        '
+        Me.DataGridViewTextBoxColumn29.DataPropertyName = "fecha"
+        Me.DataGridViewTextBoxColumn29.HeaderText = "fecha"
+        Me.DataGridViewTextBoxColumn29.Name = "DataGridViewTextBoxColumn29"
+        '
+        'DataGridViewTextBoxColumn30
+        '
+        Me.DataGridViewTextBoxColumn30.DataPropertyName = "estatus"
+        Me.DataGridViewTextBoxColumn30.HeaderText = "estatus"
+        Me.DataGridViewTextBoxColumn30.Name = "DataGridViewTextBoxColumn30"
+        '
+        'DataGridViewTextBoxColumn31
+        '
+        Me.DataGridViewTextBoxColumn31.DataPropertyName = "fecha_cambio"
+        Me.DataGridViewTextBoxColumn31.HeaderText = "fecha_cambio"
+        Me.DataGridViewTextBoxColumn31.Name = "DataGridViewTextBoxColumn31"
+        '
+        'DataGridViewTextBoxColumn32
+        '
+        Me.DataGridViewTextBoxColumn32.DataPropertyName = "usuario_cambio"
+        Me.DataGridViewTextBoxColumn32.HeaderText = "usuario_cambio"
+        Me.DataGridViewTextBoxColumn32.Name = "DataGridViewTextBoxColumn32"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.White
+        Me.Label10.Font = New System.Drawing.Font("Helvetica LT Std Black", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label10.Location = New System.Drawing.Point(675, 670)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(112, 34)
+        Me.Label10.TabIndex = 57430
+        Me.Label10.Text = "RESTA"
+        '
+        'resta
+        '
+        Me.resta.AutoSize = True
+        Me.resta.BackColor = System.Drawing.Color.White
+        Me.resta.Font = New System.Drawing.Font("Helvetica LT Std", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.resta.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.resta.Location = New System.Drawing.Point(803, 663)
+        Me.resta.Name = "resta"
+        Me.resta.Size = New System.Drawing.Size(37, 42)
+        Me.resta.TabIndex = 57431
+        Me.resta.Text = "$"
         '
         'Entrada
         '
@@ -948,6 +1008,9 @@ Partial Class Entrada
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1187, 713)
+        Me.Controls.Add(Me.resta)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.Paciente_servicioDataGridView)
         Me.Controls.Add(Me.InfoGuarServ)
         Me.Controls.Add(Me.TratamientoId)
         Me.Controls.Add(Me.Payment_categoryDataGridView)
@@ -971,7 +1034,6 @@ Partial Class Entrada
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Paciente_pagoDataGridView)
-        Me.Controls.Add(Me.Paciente_servicioDataGridView)
         Me.Controls.Add(Me.tarjeta)
         Me.Controls.Add(Me.efectivo)
         Me.Controls.Add(Me.descuento)
@@ -990,6 +1052,7 @@ Partial Class Entrada
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label15)
+        Me.Controls.Add(Me.TotServicios)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Entrada"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
@@ -1062,19 +1125,8 @@ Partial Class Entrada
     Friend WithEvents Paciente_pagoBindingSource As BindingSource
     Friend WithEvents Paciente_pagoTableAdapter As tootalde_dbtDataSetTableAdapters.paciente_pagoTableAdapter
     Friend WithEvents Paciente_pagoDataGridView As DataGridView
-    Friend WithEvents DataGridViewTextBoxColumn20 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn21 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn22 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn23 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn24 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn25 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn26 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn27 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn28 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn29 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn30 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn31 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn32 As DataGridViewTextBoxColumn
     Friend WithEvents Label12 As Label
     Friend WithEvents Label13 As Label
     Friend WithEvents Label14 As Label
@@ -1106,4 +1158,21 @@ Partial Class Entrada
     Friend WithEvents PaymentcategoryBindingSource As BindingSource
     Friend WithEvents TratamientoId As Label
     Friend WithEvents InfoGuarServ As Label
+    Friend WithEvents TotServicios As Label
+    Friend WithEvents DataGridViewTextBoxColumn20 As DataGridViewTextBoxColumn
+    Friend WithEvents monto_efectivo As DataGridViewTextBoxColumn
+    Friend WithEvents monto_tarjeta As DataGridViewTextBoxColumn
+    Friend WithEvents monto_total As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn22 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn23 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn24 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn25 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn26 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn28 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn29 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn30 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn31 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn32 As DataGridViewTextBoxColumn
+    Friend WithEvents Label10 As Label
+    Friend WithEvents resta As Label
 End Class

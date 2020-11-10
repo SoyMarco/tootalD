@@ -11,6 +11,11 @@
         Me.DoctorTableAdapter.Fill(Me.Tootalde_dbtDataSet.doctor)
         Me.Payment_categoryTableAdapter.Fill(Me.Tootalde_dbtDataSet.payment_category)
         Me.Payment_categoryDataGridView.Sort(Payment_categoryDataGridView.Columns(1), System.ComponentModel.ListSortDirection.Ascending)
+        Me.Paciente_servicioTableAdapter.Fill(Me.Tootalde_dbtDataSet.paciente_servicio)
+        Me.Paciente_pagoTableAdapter.Fill(Tootalde_dbtDataSet.paciente_pago)
+        SumTotServ()
+        SumTotPagos()
+        PaciResta()
     End Sub
     Private Sub GuardarServicio()
         If Total.Text = "ERROR" Then
@@ -21,9 +26,10 @@
 
         Else
             Paciente_servicioTableAdapter.InsertarServicioPaciente(TratamientoId.Text, CInt(TotParcial.Text), descuento.Text, CInt(Total.Text), PacienteID.Text, NuevoDr.Text, IdCita.Text, DateTimePickerDia.Value, "1", DateTimePickerDia.Value, vbNull)
-                                                                    (Tratamiento, precio, descuento, Total, paciente, Doctor, cita, fecha, estatus, fecha_cambio, usuario_cambio)
+                                                                 '(Tratamiento, precio, descuento, Total, paciente, Doctor, cita, fecha, estatus, fecha_cambio, usuario_cambio)
             InfoGuarServ.Text = "GUARDADO"
             InfoGuarServ.ForeColor = Color.DarkGreen
+            Me.Paciente_servicioTableAdapter.Fill(Me.Tootalde_dbtDataSet.paciente_servicio)
         End If
     End Sub
     Private Sub GuardarPago()
@@ -34,6 +40,7 @@
             Dim comi As String
             comi = montoT * 0.2
             Paciente_pagoTableAdapter.InPacientePago(comi, PacienteID.Text, NuevoDr.Text, IdCita.Text, comentarios.Text, NuevoDr.Text, DateTimePickerDia.Value, "1", DateTimePickerDia.Value, vbNull, efectivo.Text, tarjeta.Text, montoT)
+            Me.Paciente_pagoTableAdapter.Fill(Tootalde_dbtDataSet.paciente_pago)
         End If
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -132,10 +139,15 @@
             'Si el valor de la primera celda ubicada, por ejemplo, en la fila 1 es igual a 3
             If Payment_categoryDataGridView.Rows(i).Cells(1).Value = Tratamiento.Text Then
                 'Mueve el cursor a dicha fila
-                Payment_categoryDataGridView.CurrentCell = Payment_categoryDataGridView.Item(0, i)
-                'Pinta de color azul la fila para indicar al usuario que esa celda está seleccionada (Opcional)
-                Payment_categoryDataGridView.Rows(i).Selected = True
-                'Cambiar color fila
+                Try
+                    Payment_categoryDataGridView.CurrentCell = Payment_categoryDataGridView.Item(0, i)
+                    'Pinta de color azul la fila para indicar al usuario que esa celda está seleccionada (Opcional)
+                    Payment_categoryDataGridView.Rows(i).Selected = True
+                    'Cambiar color fila
+                Catch ex As Exception
+
+                End Try
+
             End If
         Next
         Dim Prec As String
@@ -158,13 +170,44 @@
                 Total.ForeColor = Color.Red
             End If
         Else
-            If CInt(TotParcial.Text) > 0 Then
-                Total.ForeColor = Color.Navy
-                Total.Text = TotParcial.Text
-            Else
-                Total.Text = "ERROR"
-                Total.ForeColor = Color.Red
-            End If
+            Try
+                If CInt(TotParcial.Text) > 0 Then
+                    Total.ForeColor = Color.Navy
+                    Total.Text = TotParcial.Text
+                Else
+                    Total.Text = "ERROR"
+                    Total.ForeColor = Color.Red
+                End If
+            Catch ex As Exception
+
+            End Try
+
+        End If
+    End Sub
+    Private Sub SumTotServ()
+        'SUMAR COLUMNA DE PRECIOS SERVICIOS
+        Dim Total As Single
+        Dim Col As Integer = Paciente_servicioDataGridView.CurrentCell.ColumnIndex
+        For Each row As DataGridViewRow In Me.Paciente_servicioDataGridView.Rows
+            Total += Val(row.Cells(4).Value)
+        Next
+        TotServicios.Text = FormatCurrency(Total.ToString)
+    End Sub
+    Private Sub SumTotPagos()
+        'SUMAR COLUMNA DE PRECIOS SERVICIOS
+        Dim Total As Single
+        Dim Col As Integer = Paciente_pagoDataGridView.CurrentCell.ColumnIndex
+        For Each row As DataGridViewRow In Me.Paciente_pagoDataGridView.Rows
+            Total += Val(row.Cells(3).Value)
+        Next
+        TotPagos.Text = FormatCurrency(Total.ToString)
+
+    End Sub
+    Private Sub PaciResta()
+        If TotPagos.Text And TotServicios.Text <> "" Then
+            Dim montoT As Integer
+            montoT = CInt(TotServicios.Text) - CInt(TotPagos.Text)
+            resta.Text = FormatCurrency(montoT)
         End If
     End Sub
 End Class

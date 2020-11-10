@@ -120,7 +120,7 @@ Partial Class citas
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(6, 9)
+        Me.Label4.Location = New System.Drawing.Point(131, 9)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(125, 32)
         Me.Label4.TabIndex = 12
@@ -131,7 +131,7 @@ Partial Class citas
         Me.Paciente.AutoSize = True
         Me.Paciente.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Paciente.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Paciente.Location = New System.Drawing.Point(128, 9)
+        Me.Paciente.Location = New System.Drawing.Point(253, 9)
         Me.Paciente.Name = "Paciente"
         Me.Paciente.Size = New System.Drawing.Size(134, 32)
         Me.Paciente.TabIndex = 13
@@ -142,7 +142,7 @@ Partial Class citas
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(6, 56)
+        Me.Label1.Location = New System.Drawing.Point(131, 56)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(78, 32)
         Me.Label1.TabIndex = 14
@@ -157,7 +157,7 @@ Partial Class citas
         Me.Doctor.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Doctor.FormattingEnabled = True
         Me.Doctor.Items.AddRange(New Object() {"J. Oscar Quevedo Mendoza", "Yeimi Yuriet Muñoz Angeles", "Ariadna Campos Hurtado", "Aime Abigail  Vasquez Perez"})
-        Me.Doctor.Location = New System.Drawing.Point(134, 56)
+        Me.Doctor.Location = New System.Drawing.Point(259, 56)
         Me.Doctor.Name = "Doctor"
         Me.Doctor.Size = New System.Drawing.Size(373, 31)
         Me.Doctor.TabIndex = 15
@@ -177,7 +177,7 @@ Partial Class citas
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(6, 158)
+        Me.Label2.Location = New System.Drawing.Point(131, 158)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(75, 32)
         Me.Label2.TabIndex = 16
@@ -188,15 +188,16 @@ Partial Class citas
         Me.fecha.AutoSize = True
         Me.fecha.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.fecha.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.fecha.Location = New System.Drawing.Point(513, 106)
+        Me.fecha.Location = New System.Drawing.Point(638, 106)
         Me.fecha.Name = "fecha"
         Me.fecha.Size = New System.Drawing.Size(66, 32)
         Me.fecha.TabIndex = 17
         Me.fecha.Text = "Día:"
+        Me.fecha.Visible = False
         '
         'DateTimePickerDia
         '
-        Me.DateTimePickerDia.Location = New System.Drawing.Point(134, 115)
+        Me.DateTimePickerDia.Location = New System.Drawing.Point(259, 115)
         Me.DateTimePickerDia.Name = "DateTimePickerDia"
         Me.DateTimePickerDia.Size = New System.Drawing.Size(373, 20)
         Me.DateTimePickerDia.TabIndex = 18
@@ -207,7 +208,7 @@ Partial Class citas
         Me.Hora.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Hora.FormattingEnabled = True
         Me.Hora.Items.AddRange(New Object() {"10:00 A. M.", "10:30 A. M.", "11:00 A. M.", "11:30 A. M.", "12:00 P. M.", "12:30 P. M.", "01:00 P. M.", "01:30 P. M.", "02:00 P. M.", "02:30 P. M.", "03:00 P. M.", "03:30 P. M.", "04:00 P. M.", "04:30 P. M.", "05:00 P. M.", "05:30 P. M.", "06:00 P. M.", "06:30 P. M.", "07:00 P. M.", "07:30 P. M.", "08:00 P. M."})
-        Me.Hora.Location = New System.Drawing.Point(134, 158)
+        Me.Hora.Location = New System.Drawing.Point(259, 158)
         Me.Hora.Name = "Hora"
         Me.Hora.Size = New System.Drawing.Size(373, 31)
         Me.Hora.TabIndex = 19
@@ -217,7 +218,7 @@ Partial Class citas
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(12, 276)
+        Me.Label6.Location = New System.Drawing.Point(137, 276)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(111, 32)
         Me.Label6.TabIndex = 20
@@ -226,10 +227,10 @@ Partial Class citas
         'Estatus
         '
         Me.Estatus.AutoSize = True
-        Me.Estatus.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Estatus.BackColor = System.Drawing.Color.White
         Me.Estatus.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Estatus.ForeColor = System.Drawing.Color.White
-        Me.Estatus.Location = New System.Drawing.Point(139, 276)
+        Me.Estatus.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Estatus.Location = New System.Drawing.Point(264, 276)
         Me.Estatus.Name = "Estatus"
         Me.Estatus.Size = New System.Drawing.Size(111, 32)
         Me.Estatus.TabIndex = 21
@@ -293,10 +294,11 @@ Partial Class citas
         Me.AppointmentDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.AppointmentDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn12, Me.DataGridViewTextBoxColumn13, Me.DataGridViewTextBoxColumn14})
         Me.AppointmentDataGridView.DataSource = Me.AppointmentBindingSource
-        Me.AppointmentDataGridView.Location = New System.Drawing.Point(12, 233)
+        Me.AppointmentDataGridView.Location = New System.Drawing.Point(0, 234)
         Me.AppointmentDataGridView.Name = "AppointmentDataGridView"
         Me.AppointmentDataGridView.Size = New System.Drawing.Size(300, 220)
         Me.AppointmentDataGridView.TabIndex = 57344
+        Me.AppointmentDataGridView.Visible = False
         '
         'DataGridViewTextBoxColumn1
         '
@@ -388,10 +390,11 @@ Partial Class citas
         Me.DoctorDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DoctorDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn15, Me.DataGridViewTextBoxColumn17, Me.DataGridViewTextBoxColumn16, Me.DataGridViewTextBoxColumn18, Me.DataGridViewTextBoxColumn19, Me.DataGridViewTextBoxColumn20, Me.DataGridViewTextBoxColumn21, Me.DataGridViewTextBoxColumn22, Me.DataGridViewTextBoxColumn23, Me.DataGridViewTextBoxColumn24, Me.DataGridViewTextBoxColumn25})
         Me.DoctorDataGridView.DataSource = Me.DoctorBindingSource
-        Me.DoctorDataGridView.Location = New System.Drawing.Point(12, 233)
+        Me.DoctorDataGridView.Location = New System.Drawing.Point(0, 234)
         Me.DoctorDataGridView.Name = "DoctorDataGridView"
         Me.DoctorDataGridView.Size = New System.Drawing.Size(300, 220)
         Me.DoctorDataGridView.TabIndex = 57344
+        Me.DoctorDataGridView.Visible = False
         '
         'DataGridViewTextBoxColumn15
         '
@@ -470,10 +473,11 @@ Partial Class citas
         Me.PatientDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.PatientDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn26, Me.DataGridViewTextBoxColumn28, Me.DataGridViewTextBoxColumn27, Me.DataGridViewTextBoxColumn29, Me.DataGridViewTextBoxColumn30, Me.DataGridViewTextBoxColumn31, Me.DataGridViewTextBoxColumn32, Me.DataGridViewTextBoxColumn33, Me.DataGridViewTextBoxColumn34, Me.DataGridViewTextBoxColumn35, Me.DataGridViewTextBoxColumn36, Me.DataGridViewTextBoxColumn37, Me.DataGridViewTextBoxColumn38, Me.DataGridViewTextBoxColumn39, Me.DataGridViewTextBoxColumn40, Me.DataGridViewTextBoxColumn41})
         Me.PatientDataGridView.DataSource = Me.PatientBindingSource
-        Me.PatientDataGridView.Location = New System.Drawing.Point(12, 235)
+        Me.PatientDataGridView.Location = New System.Drawing.Point(0, 236)
         Me.PatientDataGridView.Name = "PatientDataGridView"
         Me.PatientDataGridView.Size = New System.Drawing.Size(300, 220)
         Me.PatientDataGridView.TabIndex = 57344
+        Me.PatientDataGridView.Visible = False
         '
         'DataGridViewTextBoxColumn26
         '
@@ -581,7 +585,7 @@ Partial Class citas
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(6, 213)
+        Me.Label5.Location = New System.Drawing.Point(131, 213)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(89, 32)
         Me.Label5.TabIndex = 57345
@@ -592,7 +596,7 @@ Partial Class citas
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(6, 115)
+        Me.Label3.Location = New System.Drawing.Point(131, 115)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(57, 32)
         Me.Label3.TabIndex = 57347
@@ -603,11 +607,12 @@ Partial Class citas
         Me.NuevoDr.AutoSize = True
         Me.NuevoDr.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NuevoDr.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.NuevoDr.Location = New System.Drawing.Point(513, 52)
+        Me.NuevoDr.Location = New System.Drawing.Point(638, 52)
         Me.NuevoDr.Name = "NuevoDr"
         Me.NuevoDr.Size = New System.Drawing.Size(45, 32)
         Me.NuevoDr.TabIndex = 57350
         Me.NuevoDr.Text = "Dr"
+        Me.NuevoDr.Visible = False
         '
         'lugar
         '
@@ -615,7 +620,7 @@ Partial Class citas
         Me.lugar.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lugar.FormattingEnabled = True
         Me.lugar.Items.AddRange(New Object() {"Peñitas", "Lago"})
-        Me.lugar.Location = New System.Drawing.Point(134, 213)
+        Me.lugar.Location = New System.Drawing.Point(259, 213)
         Me.lugar.Name = "lugar"
         Me.lugar.Size = New System.Drawing.Size(373, 31)
         Me.lugar.TabIndex = 57351
@@ -625,11 +630,12 @@ Partial Class citas
         Me.IdAppointment.AutoSize = True
         Me.IdAppointment.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.IdAppointment.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.IdAppointment.Location = New System.Drawing.Point(504, 276)
+        Me.IdAppointment.Location = New System.Drawing.Point(629, 276)
         Me.IdAppointment.Name = "IdAppointment"
         Me.IdAppointment.Size = New System.Drawing.Size(90, 32)
         Me.IdAppointment.TabIndex = 57352
         Me.IdAppointment.Text = "idCita"
+        Me.IdAppointment.Visible = False
         '
         'Label7
         '
@@ -647,29 +653,31 @@ Partial Class citas
         Me.NuevaHora.AutoSize = True
         Me.NuevaHora.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NuevaHora.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.NuevaHora.Location = New System.Drawing.Point(513, 154)
+        Me.NuevaHora.Location = New System.Drawing.Point(638, 154)
         Me.NuevaHora.Name = "NuevaHora"
         Me.NuevaHora.Size = New System.Drawing.Size(75, 32)
         Me.NuevaHora.TabIndex = 57354
         Me.NuevaHora.Text = "Hora"
+        Me.NuevaHora.Visible = False
         '
         'NuevoLugar
         '
         Me.NuevoLugar.AutoSize = True
         Me.NuevoLugar.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NuevoLugar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.NuevoLugar.Location = New System.Drawing.Point(513, 213)
+        Me.NuevoLugar.Location = New System.Drawing.Point(638, 213)
         Me.NuevoLugar.Name = "NuevoLugar"
         Me.NuevoLugar.Size = New System.Drawing.Size(89, 32)
         Me.NuevoLugar.TabIndex = 57355
         Me.NuevoLugar.Text = "Lugar"
+        Me.NuevoLugar.Visible = False
         '
         'PictureBox3
         '
         Me.PictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.PictureBox3.Location = New System.Drawing.Point(585, 52)
+        Me.PictureBox3.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(154, 63)
+        Me.PictureBox3.Size = New System.Drawing.Size(125, 308)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox3.TabIndex = 57356
         Me.PictureBox3.TabStop = False
@@ -681,7 +689,7 @@ Partial Class citas
         Me.Label8.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Label8.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(660, 52)
+        Me.Label8.Location = New System.Drawing.Point(46, 18)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(79, 32)
         Me.Label8.TabIndex = 57357
@@ -692,7 +700,7 @@ Partial Class citas
         Me.PictureBox5.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
         Me.PictureBox5.InitialImage = CType(resources.GetObject("PictureBox5.InitialImage"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(609, 56)
+        Me.PictureBox5.Location = New System.Drawing.Point(0, 12)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(45, 41)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -705,11 +713,12 @@ Partial Class citas
         Me.IdPaciente.AutoSize = True
         Me.IdPaciente.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.IdPaciente.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.IdPaciente.Location = New System.Drawing.Point(494, 9)
+        Me.IdPaciente.Location = New System.Drawing.Point(619, 9)
         Me.IdPaciente.Name = "IdPaciente"
         Me.IdPaciente.Size = New System.Drawing.Size(149, 32)
         Me.IdPaciente.TabIndex = 57359
         Me.IdPaciente.Text = "idPaciente"
+        Me.IdPaciente.Visible = False
         '
         'AppointmentTableAdapter
         '
@@ -818,6 +827,7 @@ Partial Class citas
         Me.Controls.Add(Me.AppointmentDataGridView)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "citas"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "citas"
         CType(Me.AppointmentBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Tootalde_dbtDataSet, System.ComponentModel.ISupportInitialize).EndInit()

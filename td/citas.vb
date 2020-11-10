@@ -105,19 +105,19 @@
 
     Private Sub Estatus_TextChanged(sender As Object, e As EventArgs) Handles Estatus.TextChanged
         If Estatus.Text = "Pending Confirmation" Then
-            Estatus.BackColor = Color.DarkGoldenrod
+            Estatus.ForeColor = Color.DarkGoldenrod
 
         Else
             If Estatus.Text = "Cancelled" Then
-                Estatus.BackColor = Color.Pink
+                Estatus.ForeColor = Color.Pink
 
             Else
                 If Estatus.Text = "Confirmed" Then
-                    Estatus.BackColor = Color.SkyBlue
+                    Estatus.ForeColor = Color.SkyBlue
 
                 Else
                     If Estatus.Text = "Treated" Then
-                        Estatus.BackColor = Color.LightGreen
+                        Estatus.ForeColor = Color.LightGreen
 
                     End If
                 End If

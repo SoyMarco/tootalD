@@ -72,6 +72,20 @@ Partial Class Entrada
         Me.DataGridViewTextBoxColumn19 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Paciente_servicioBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Paciente_pagoDataGridView = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn20 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.monto_efectivo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.monto_tarjeta = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.monto_total = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn22 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn23 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn24 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn25 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn26 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn28 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn29 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn30 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn31 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn32 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Paciente_pagoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
@@ -108,22 +122,20 @@ Partial Class Entrada
         Me.TratamientoId = New System.Windows.Forms.Label()
         Me.InfoGuarServ = New System.Windows.Forms.Label()
         Me.TotServicios = New System.Windows.Forms.Label()
-        Me.DataGridViewTextBoxColumn20 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.monto_efectivo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.monto_tarjeta = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.monto_total = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn22 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn23 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn24 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn25 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn26 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn28 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn29 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn30 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn31 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn32 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.resta = New System.Windows.Forms.Label()
+        Me.IdServ = New System.Windows.Forms.Label()
+        Me.PatientBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.PatientTableAdapter = New td.tootalde_dbtDataSetTableAdapters.patientTableAdapter()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.NameServ = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Label18 = New System.Windows.Forms.Label()
         CType(Me.PaymentcategoryBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Tootalde_dbtDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Payment_categoryDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -135,6 +147,7 @@ Partial Class Entrada
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DoctorBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DoctorDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PatientBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'NuevaHora
@@ -453,9 +466,10 @@ Partial Class Entrada
         Me.Paciente_servicioDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Paciente_servicioDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn12, Me.DataGridViewTextBoxColumn13, Me.DataGridViewTextBoxColumn14, Me.DataGridViewTextBoxColumn15, Me.DataGridViewTextBoxColumn16, Me.DataGridViewTextBoxColumn17, Me.DataGridViewTextBoxColumn18, Me.DataGridViewTextBoxColumn19})
         Me.Paciente_servicioDataGridView.DataSource = Me.Paciente_servicioBindingSource
-        Me.Paciente_servicioDataGridView.Location = New System.Drawing.Point(14, 405)
+        Me.Paciente_servicioDataGridView.Location = New System.Drawing.Point(115, 405)
         Me.Paciente_servicioDataGridView.Name = "Paciente_servicioDataGridView"
-        Me.Paciente_servicioDataGridView.Size = New System.Drawing.Size(649, 220)
+        Me.Paciente_servicioDataGridView.ReadOnly = True
+        Me.Paciente_servicioDataGridView.Size = New System.Drawing.Size(548, 220)
         Me.Paciente_servicioDataGridView.TabIndex = 57411
         '
         'DataGridViewTextBoxColumn8
@@ -463,72 +477,84 @@ Partial Class Entrada
         Me.DataGridViewTextBoxColumn8.DataPropertyName = "id"
         Me.DataGridViewTextBoxColumn8.HeaderText = "id"
         Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        Me.DataGridViewTextBoxColumn8.ReadOnly = True
         '
         'DataGridViewTextBoxColumn9
         '
         Me.DataGridViewTextBoxColumn9.DataPropertyName = "tratamiento"
         Me.DataGridViewTextBoxColumn9.HeaderText = "tratamiento"
         Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
+        Me.DataGridViewTextBoxColumn9.ReadOnly = True
         '
         'DataGridViewTextBoxColumn10
         '
         Me.DataGridViewTextBoxColumn10.DataPropertyName = "precio"
         Me.DataGridViewTextBoxColumn10.HeaderText = "precio"
         Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
+        Me.DataGridViewTextBoxColumn10.ReadOnly = True
         '
         'DataGridViewTextBoxColumn11
         '
         Me.DataGridViewTextBoxColumn11.DataPropertyName = "descuento"
         Me.DataGridViewTextBoxColumn11.HeaderText = "descuento"
         Me.DataGridViewTextBoxColumn11.Name = "DataGridViewTextBoxColumn11"
+        Me.DataGridViewTextBoxColumn11.ReadOnly = True
         '
         'DataGridViewTextBoxColumn12
         '
         Me.DataGridViewTextBoxColumn12.DataPropertyName = "total"
         Me.DataGridViewTextBoxColumn12.HeaderText = "total"
         Me.DataGridViewTextBoxColumn12.Name = "DataGridViewTextBoxColumn12"
+        Me.DataGridViewTextBoxColumn12.ReadOnly = True
         '
         'DataGridViewTextBoxColumn13
         '
         Me.DataGridViewTextBoxColumn13.DataPropertyName = "paciente"
         Me.DataGridViewTextBoxColumn13.HeaderText = "paciente"
         Me.DataGridViewTextBoxColumn13.Name = "DataGridViewTextBoxColumn13"
+        Me.DataGridViewTextBoxColumn13.ReadOnly = True
         '
         'DataGridViewTextBoxColumn14
         '
         Me.DataGridViewTextBoxColumn14.DataPropertyName = "doctor"
         Me.DataGridViewTextBoxColumn14.HeaderText = "doctor"
         Me.DataGridViewTextBoxColumn14.Name = "DataGridViewTextBoxColumn14"
+        Me.DataGridViewTextBoxColumn14.ReadOnly = True
         '
         'DataGridViewTextBoxColumn15
         '
         Me.DataGridViewTextBoxColumn15.DataPropertyName = "cita"
         Me.DataGridViewTextBoxColumn15.HeaderText = "cita"
         Me.DataGridViewTextBoxColumn15.Name = "DataGridViewTextBoxColumn15"
+        Me.DataGridViewTextBoxColumn15.ReadOnly = True
         '
         'DataGridViewTextBoxColumn16
         '
         Me.DataGridViewTextBoxColumn16.DataPropertyName = "fecha"
         Me.DataGridViewTextBoxColumn16.HeaderText = "fecha"
         Me.DataGridViewTextBoxColumn16.Name = "DataGridViewTextBoxColumn16"
+        Me.DataGridViewTextBoxColumn16.ReadOnly = True
         '
         'DataGridViewTextBoxColumn17
         '
         Me.DataGridViewTextBoxColumn17.DataPropertyName = "estatus"
         Me.DataGridViewTextBoxColumn17.HeaderText = "estatus"
         Me.DataGridViewTextBoxColumn17.Name = "DataGridViewTextBoxColumn17"
+        Me.DataGridViewTextBoxColumn17.ReadOnly = True
         '
         'DataGridViewTextBoxColumn18
         '
         Me.DataGridViewTextBoxColumn18.DataPropertyName = "fecha_cambio"
         Me.DataGridViewTextBoxColumn18.HeaderText = "fecha_cambio"
         Me.DataGridViewTextBoxColumn18.Name = "DataGridViewTextBoxColumn18"
+        Me.DataGridViewTextBoxColumn18.ReadOnly = True
         '
         'DataGridViewTextBoxColumn19
         '
         Me.DataGridViewTextBoxColumn19.DataPropertyName = "usuario_cambio"
         Me.DataGridViewTextBoxColumn19.HeaderText = "usuario_cambio"
         Me.DataGridViewTextBoxColumn19.Name = "DataGridViewTextBoxColumn19"
+        Me.DataGridViewTextBoxColumn19.ReadOnly = True
         '
         'Paciente_servicioBindingSource
         '
@@ -543,8 +569,107 @@ Partial Class Entrada
         Me.Paciente_pagoDataGridView.DataSource = Me.Paciente_pagoBindingSource
         Me.Paciente_pagoDataGridView.Location = New System.Drawing.Point(682, 405)
         Me.Paciente_pagoDataGridView.Name = "Paciente_pagoDataGridView"
+        Me.Paciente_pagoDataGridView.ReadOnly = True
         Me.Paciente_pagoDataGridView.Size = New System.Drawing.Size(470, 220)
         Me.Paciente_pagoDataGridView.TabIndex = 57411
+        '
+        'DataGridViewTextBoxColumn20
+        '
+        Me.DataGridViewTextBoxColumn20.DataPropertyName = "id"
+        Me.DataGridViewTextBoxColumn20.HeaderText = "id"
+        Me.DataGridViewTextBoxColumn20.Name = "DataGridViewTextBoxColumn20"
+        Me.DataGridViewTextBoxColumn20.ReadOnly = True
+        '
+        'monto_efectivo
+        '
+        Me.monto_efectivo.DataPropertyName = "monto_efectivo"
+        Me.monto_efectivo.HeaderText = "monto_efectivo"
+        Me.monto_efectivo.Name = "monto_efectivo"
+        Me.monto_efectivo.ReadOnly = True
+        '
+        'monto_tarjeta
+        '
+        Me.monto_tarjeta.DataPropertyName = "monto_tarjeta"
+        Me.monto_tarjeta.HeaderText = "monto_tarjeta"
+        Me.monto_tarjeta.Name = "monto_tarjeta"
+        Me.monto_tarjeta.ReadOnly = True
+        '
+        'monto_total
+        '
+        Me.monto_total.DataPropertyName = "monto_total"
+        Me.monto_total.HeaderText = "monto_total"
+        Me.monto_total.Name = "monto_total"
+        Me.monto_total.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn22
+        '
+        Me.DataGridViewTextBoxColumn22.DataPropertyName = "d_comision"
+        Me.DataGridViewTextBoxColumn22.HeaderText = "d_comision"
+        Me.DataGridViewTextBoxColumn22.Name = "DataGridViewTextBoxColumn22"
+        Me.DataGridViewTextBoxColumn22.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn23
+        '
+        Me.DataGridViewTextBoxColumn23.DataPropertyName = "paciente"
+        Me.DataGridViewTextBoxColumn23.HeaderText = "paciente"
+        Me.DataGridViewTextBoxColumn23.Name = "DataGridViewTextBoxColumn23"
+        Me.DataGridViewTextBoxColumn23.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn24
+        '
+        Me.DataGridViewTextBoxColumn24.DataPropertyName = "doctor"
+        Me.DataGridViewTextBoxColumn24.HeaderText = "doctor"
+        Me.DataGridViewTextBoxColumn24.Name = "DataGridViewTextBoxColumn24"
+        Me.DataGridViewTextBoxColumn24.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn25
+        '
+        Me.DataGridViewTextBoxColumn25.DataPropertyName = "cita"
+        Me.DataGridViewTextBoxColumn25.HeaderText = "cita"
+        Me.DataGridViewTextBoxColumn25.Name = "DataGridViewTextBoxColumn25"
+        Me.DataGridViewTextBoxColumn25.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn26
+        '
+        Me.DataGridViewTextBoxColumn26.DataPropertyName = "notas"
+        Me.DataGridViewTextBoxColumn26.HeaderText = "notas"
+        Me.DataGridViewTextBoxColumn26.Name = "DataGridViewTextBoxColumn26"
+        Me.DataGridViewTextBoxColumn26.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn28
+        '
+        Me.DataGridViewTextBoxColumn28.DataPropertyName = "usuario"
+        Me.DataGridViewTextBoxColumn28.HeaderText = "usuario"
+        Me.DataGridViewTextBoxColumn28.Name = "DataGridViewTextBoxColumn28"
+        Me.DataGridViewTextBoxColumn28.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn29
+        '
+        Me.DataGridViewTextBoxColumn29.DataPropertyName = "fecha"
+        Me.DataGridViewTextBoxColumn29.HeaderText = "fecha"
+        Me.DataGridViewTextBoxColumn29.Name = "DataGridViewTextBoxColumn29"
+        Me.DataGridViewTextBoxColumn29.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn30
+        '
+        Me.DataGridViewTextBoxColumn30.DataPropertyName = "estatus"
+        Me.DataGridViewTextBoxColumn30.HeaderText = "estatus"
+        Me.DataGridViewTextBoxColumn30.Name = "DataGridViewTextBoxColumn30"
+        Me.DataGridViewTextBoxColumn30.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn31
+        '
+        Me.DataGridViewTextBoxColumn31.DataPropertyName = "fecha_cambio"
+        Me.DataGridViewTextBoxColumn31.HeaderText = "fecha_cambio"
+        Me.DataGridViewTextBoxColumn31.Name = "DataGridViewTextBoxColumn31"
+        Me.DataGridViewTextBoxColumn31.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn32
+        '
+        Me.DataGridViewTextBoxColumn32.DataPropertyName = "usuario_cambio"
+        Me.DataGridViewTextBoxColumn32.HeaderText = "usuario_cambio"
+        Me.DataGridViewTextBoxColumn32.Name = "DataGridViewTextBoxColumn32"
+        Me.DataGridViewTextBoxColumn32.ReadOnly = True
         '
         'Paciente_pagoBindingSource
         '
@@ -603,7 +728,7 @@ Partial Class Entrada
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Helvetica LT Std Black", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label16.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label16.Location = New System.Drawing.Point(187, 628)
+        Me.Label16.Location = New System.Drawing.Point(241, 630)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(112, 34)
         Me.Label16.TabIndex = 57416
@@ -649,7 +774,7 @@ Partial Class Entrada
         Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Button2.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(281, 310)
+        Me.Button2.Location = New System.Drawing.Point(271, 316)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(280, 50)
         Me.Button2.TabIndex = 57421
@@ -888,95 +1013,11 @@ Partial Class Entrada
         Me.TotServicios.BackColor = System.Drawing.Color.White
         Me.TotServicios.Font = New System.Drawing.Font("Helvetica LT Std", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TotServicios.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.TotServicios.Location = New System.Drawing.Point(305, 621)
+        Me.TotServicios.Location = New System.Drawing.Point(359, 626)
         Me.TotServicios.Name = "TotServicios"
         Me.TotServicios.Size = New System.Drawing.Size(37, 42)
         Me.TotServicios.TabIndex = 57429
         Me.TotServicios.Text = "$"
-        '
-        'DataGridViewTextBoxColumn20
-        '
-        Me.DataGridViewTextBoxColumn20.DataPropertyName = "id"
-        Me.DataGridViewTextBoxColumn20.HeaderText = "id"
-        Me.DataGridViewTextBoxColumn20.Name = "DataGridViewTextBoxColumn20"
-        '
-        'monto_efectivo
-        '
-        Me.monto_efectivo.DataPropertyName = "monto_efectivo"
-        Me.monto_efectivo.HeaderText = "monto_efectivo"
-        Me.monto_efectivo.Name = "monto_efectivo"
-        '
-        'monto_tarjeta
-        '
-        Me.monto_tarjeta.DataPropertyName = "monto_tarjeta"
-        Me.monto_tarjeta.HeaderText = "monto_tarjeta"
-        Me.monto_tarjeta.Name = "monto_tarjeta"
-        '
-        'monto_total
-        '
-        Me.monto_total.DataPropertyName = "monto_total"
-        Me.monto_total.HeaderText = "monto_total"
-        Me.monto_total.Name = "monto_total"
-        '
-        'DataGridViewTextBoxColumn22
-        '
-        Me.DataGridViewTextBoxColumn22.DataPropertyName = "d_comision"
-        Me.DataGridViewTextBoxColumn22.HeaderText = "d_comision"
-        Me.DataGridViewTextBoxColumn22.Name = "DataGridViewTextBoxColumn22"
-        '
-        'DataGridViewTextBoxColumn23
-        '
-        Me.DataGridViewTextBoxColumn23.DataPropertyName = "paciente"
-        Me.DataGridViewTextBoxColumn23.HeaderText = "paciente"
-        Me.DataGridViewTextBoxColumn23.Name = "DataGridViewTextBoxColumn23"
-        '
-        'DataGridViewTextBoxColumn24
-        '
-        Me.DataGridViewTextBoxColumn24.DataPropertyName = "doctor"
-        Me.DataGridViewTextBoxColumn24.HeaderText = "doctor"
-        Me.DataGridViewTextBoxColumn24.Name = "DataGridViewTextBoxColumn24"
-        '
-        'DataGridViewTextBoxColumn25
-        '
-        Me.DataGridViewTextBoxColumn25.DataPropertyName = "cita"
-        Me.DataGridViewTextBoxColumn25.HeaderText = "cita"
-        Me.DataGridViewTextBoxColumn25.Name = "DataGridViewTextBoxColumn25"
-        '
-        'DataGridViewTextBoxColumn26
-        '
-        Me.DataGridViewTextBoxColumn26.DataPropertyName = "notas"
-        Me.DataGridViewTextBoxColumn26.HeaderText = "notas"
-        Me.DataGridViewTextBoxColumn26.Name = "DataGridViewTextBoxColumn26"
-        '
-        'DataGridViewTextBoxColumn28
-        '
-        Me.DataGridViewTextBoxColumn28.DataPropertyName = "usuario"
-        Me.DataGridViewTextBoxColumn28.HeaderText = "usuario"
-        Me.DataGridViewTextBoxColumn28.Name = "DataGridViewTextBoxColumn28"
-        '
-        'DataGridViewTextBoxColumn29
-        '
-        Me.DataGridViewTextBoxColumn29.DataPropertyName = "fecha"
-        Me.DataGridViewTextBoxColumn29.HeaderText = "fecha"
-        Me.DataGridViewTextBoxColumn29.Name = "DataGridViewTextBoxColumn29"
-        '
-        'DataGridViewTextBoxColumn30
-        '
-        Me.DataGridViewTextBoxColumn30.DataPropertyName = "estatus"
-        Me.DataGridViewTextBoxColumn30.HeaderText = "estatus"
-        Me.DataGridViewTextBoxColumn30.Name = "DataGridViewTextBoxColumn30"
-        '
-        'DataGridViewTextBoxColumn31
-        '
-        Me.DataGridViewTextBoxColumn31.DataPropertyName = "fecha_cambio"
-        Me.DataGridViewTextBoxColumn31.HeaderText = "fecha_cambio"
-        Me.DataGridViewTextBoxColumn31.Name = "DataGridViewTextBoxColumn31"
-        '
-        'DataGridViewTextBoxColumn32
-        '
-        Me.DataGridViewTextBoxColumn32.DataPropertyName = "usuario_cambio"
-        Me.DataGridViewTextBoxColumn32.HeaderText = "usuario_cambio"
-        Me.DataGridViewTextBoxColumn32.Name = "DataGridViewTextBoxColumn32"
         '
         'Label10
         '
@@ -1002,12 +1043,147 @@ Partial Class Entrada
         Me.resta.TabIndex = 57431
         Me.resta.Text = "$"
         '
+        'IdServ
+        '
+        Me.IdServ.AutoSize = True
+        Me.IdServ.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IdServ.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.IdServ.Location = New System.Drawing.Point(-1, 636)
+        Me.IdServ.Name = "IdServ"
+        Me.IdServ.Size = New System.Drawing.Size(30, 32)
+        Me.IdServ.TabIndex = 57432
+        Me.IdServ.Text = "0"
+        '
+        'PatientBindingSource
+        '
+        Me.PatientBindingSource.DataMember = "patient"
+        Me.PatientBindingSource.DataSource = Me.Tootalde_dbtDataSet
+        '
+        'PatientTableAdapter
+        '
+        Me.PatientTableAdapter.ClearBeforeFill = True
+        '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.Color.White
+        Me.Button4.Font = New System.Drawing.Font("Helvetica LT Std", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button4.Location = New System.Drawing.Point(-1, 449)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(110, 31)
+        Me.Button4.TabIndex = 57434
+        Me.Button4.Text = "Cancelados"
+        Me.Button4.UseVisualStyleBackColor = False
+        '
+        'Button5
+        '
+        Me.Button5.BackColor = System.Drawing.Color.White
+        Me.Button5.Font = New System.Drawing.Font("Helvetica LT Std", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Button5.Location = New System.Drawing.Point(-1, 480)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(110, 28)
+        Me.Button5.TabIndex = 57435
+        Me.Button5.Text = "Todos"
+        Me.Button5.UseVisualStyleBackColor = False
+        '
+        'Button6
+        '
+        Me.Button6.BackColor = System.Drawing.Color.White
+        Me.Button6.Font = New System.Drawing.Font("Helvetica LT Std", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button6.Location = New System.Drawing.Point(-1, 506)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(110, 29)
+        Me.Button6.TabIndex = 57436
+        Me.Button6.Text = "Activos"
+        Me.Button6.UseVisualStyleBackColor = False
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Helvetica LT Std", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label11.Location = New System.Drawing.Point(16, 423)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(81, 25)
+        Me.Label11.TabIndex = 57437
+        Me.Label11.Text = "Mostar"
+        '
+        'NameServ
+        '
+        Me.NameServ.AutoSize = True
+        Me.NameServ.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NameServ.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.NameServ.Location = New System.Drawing.Point(-1, 671)
+        Me.NameServ.Name = "NameServ"
+        Me.NameServ.Size = New System.Drawing.Size(30, 32)
+        Me.NameServ.TabIndex = 57438
+        Me.NameServ.Text = "0"
+        '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.Color.White
+        Me.Button3.Font = New System.Drawing.Font("Helvetica LT Std", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button3.Location = New System.Drawing.Point(1158, 506)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(110, 29)
+        Me.Button3.TabIndex = 57441
+        Me.Button3.Text = "Activos"
+        Me.Button3.UseVisualStyleBackColor = False
+        '
+        'Button7
+        '
+        Me.Button7.BackColor = System.Drawing.Color.White
+        Me.Button7.Font = New System.Drawing.Font("Helvetica LT Std", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Button7.Location = New System.Drawing.Point(1158, 480)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(110, 28)
+        Me.Button7.TabIndex = 57440
+        Me.Button7.Text = "Todos"
+        Me.Button7.UseVisualStyleBackColor = False
+        '
+        'Button8
+        '
+        Me.Button8.BackColor = System.Drawing.Color.White
+        Me.Button8.Font = New System.Drawing.Font("Helvetica LT Std", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button8.Location = New System.Drawing.Point(1158, 449)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(110, 31)
+        Me.Button8.TabIndex = 57439
+        Me.Button8.Text = "Cancelados"
+        Me.Button8.UseVisualStyleBackColor = False
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Font = New System.Drawing.Font("Helvetica LT Std", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label18.Location = New System.Drawing.Point(1175, 423)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(81, 25)
+        Me.Label18.TabIndex = 57442
+        Me.Label18.Text = "Mostar"
+        '
         'Entrada
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1187, 713)
+        Me.ClientSize = New System.Drawing.Size(1272, 743)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Button7)
+        Me.Controls.Add(Me.Button8)
+        Me.Controls.Add(Me.Label18)
+        Me.Controls.Add(Me.Button6)
+        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.Label11)
+        Me.Controls.Add(Me.NameServ)
+        Me.Controls.Add(Me.IdServ)
         Me.Controls.Add(Me.resta)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Paciente_servicioDataGridView)
@@ -1068,6 +1244,7 @@ Partial Class Entrada
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DoctorBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DoctorDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PatientBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1110,18 +1287,6 @@ Partial Class Entrada
     Friend WithEvents Paciente_servicioBindingSource As BindingSource
     Friend WithEvents Paciente_servicioTableAdapter As tootalde_dbtDataSetTableAdapters.paciente_servicioTableAdapter
     Friend WithEvents Paciente_servicioDataGridView As DataGridView
-    Friend WithEvents DataGridViewTextBoxColumn8 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn9 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn10 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn11 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn12 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn13 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn14 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn15 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn16 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn17 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn18 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn19 As DataGridViewTextBoxColumn
     Friend WithEvents Paciente_pagoBindingSource As BindingSource
     Friend WithEvents Paciente_pagoTableAdapter As tootalde_dbtDataSetTableAdapters.paciente_pagoTableAdapter
     Friend WithEvents Paciente_pagoDataGridView As DataGridView
@@ -1175,4 +1340,28 @@ Partial Class Entrada
     Friend WithEvents DataGridViewTextBoxColumn32 As DataGridViewTextBoxColumn
     Friend WithEvents Label10 As Label
     Friend WithEvents resta As Label
+    Friend WithEvents IdServ As Label
+    Friend WithEvents PatientBindingSource As BindingSource
+    Friend WithEvents PatientTableAdapter As tootalde_dbtDataSetTableAdapters.patientTableAdapter
+    Friend WithEvents DataGridViewTextBoxColumn8 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn9 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn10 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn11 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn12 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn13 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn14 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn15 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn16 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn17 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn18 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn19 As DataGridViewTextBoxColumn
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Button6 As Button
+    Friend WithEvents Label11 As Label
+    Friend WithEvents NameServ As Label
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button7 As Button
+    Friend WithEvents Button8 As Button
+    Friend WithEvents Label18 As Label
 End Class

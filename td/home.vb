@@ -318,6 +318,12 @@
     End Sub
 
     Private Sub DataGridViewPEÑITAS_CellContentDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridViewPEÑITAS.CellContentDoubleClick
+
+    End Sub
+    Private Sub DataGridViewPEÑITAS_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridViewPEÑITAS.CellContentClick
+        MostrarIdCita()
+    End Sub
+    Private Sub MostrarIdCita()
         If contador.Text < 1 Then
             Dim NomDr As String
             Dim rowCU As DataGridViewRow = DataGridViewPEÑITAS.CurrentRow
@@ -331,21 +337,6 @@
         End If
         citas.Show()
     End Sub
-
-    Private Sub DataGridViewPEÑITAS_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridViewPEÑITAS.CellContentClick
-        If contador.Text < 1 Then
-            Dim NomDr As String
-            Dim rowCU As DataGridViewRow = DataGridViewPEÑITAS.CurrentRow
-            NomDr = CStr(rowCU.Cells(2).Value)
-            IDcita.Text = NomDr
-        Else
-            Dim NomDr As String
-            Dim rowCU As DataGridViewRow = DataGridViewPEÑITAS.CurrentRow
-            NomDr = CStr(rowCU.Cells(8).Value)
-            IDcita.Text = NomDr
-        End If
-    End Sub
-
     Private Sub Label11_Click(sender As Object, e As EventArgs) Handles Label11.Click
         recargar()
     End Sub
@@ -360,5 +351,9 @@
 
     Private Sub Label6_Click_1(sender As Object, e As EventArgs) Handles Label6.Click
         Entrada.Show()
+    End Sub
+
+    Private Sub DataGridViewPEÑITAS_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridViewPEÑITAS.CellClick
+        MostrarIdCita()
     End Sub
 End Class

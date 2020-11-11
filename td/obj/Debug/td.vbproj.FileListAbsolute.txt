@@ -71,3 +71,4 @@ C:\Users\Marco\Source\Repos\tootalD\td\bin\Debug\MySql.Data.xml
 C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.exe.manifest
 C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.application
 C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.vbproj.CopyComplete
+C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.EditarCancelarServicio.resources

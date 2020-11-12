@@ -326,9 +326,9 @@ Partial Class home
         Me.PictureBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.InitialImage = CType(resources.GetObject("PictureBox2.InitialImage"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(12, 276)
+        Me.PictureBox2.Location = New System.Drawing.Point(22, 282)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(45, 41)
+        Me.PictureBox2.Size = New System.Drawing.Size(35, 35)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 57327
         Me.PictureBox2.TabStop = False
@@ -344,6 +344,7 @@ Partial Class home
         Me.PatientDataGridView.Name = "PatientDataGridView"
         Me.PatientDataGridView.Size = New System.Drawing.Size(288, 220)
         Me.PatientDataGridView.TabIndex = 57330
+        Me.PatientDataGridView.Visible = False
         '
         'DataGridViewTextBoxColumn26
         '
@@ -451,7 +452,7 @@ Partial Class home
         Me.PictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.PictureBox3.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(288, 700)
+        Me.PictureBox3.Size = New System.Drawing.Size(251, 700)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox3.TabIndex = 57320
         Me.PictureBox3.TabStop = False
@@ -480,12 +481,12 @@ Partial Class home
         DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DataGridViewPEÑITAS.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
         Me.DataGridViewPEÑITAS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridViewPEÑITAS.Location = New System.Drawing.Point(300, 90)
+        Me.DataGridViewPEÑITAS.Location = New System.Drawing.Point(272, 90)
         Me.DataGridViewPEÑITAS.Name = "DataGridViewPEÑITAS"
         DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White
         DataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black
         Me.DataGridViewPEÑITAS.RowsDefaultCellStyle = DataGridViewCellStyle8
-        Me.DataGridViewPEÑITAS.Size = New System.Drawing.Size(430, 430)
+        Me.DataGridViewPEÑITAS.Size = New System.Drawing.Size(458, 430)
         Me.DataGridViewPEÑITAS.TabIndex = 12
         '
         'Label6
@@ -528,9 +529,9 @@ Partial Class home
         Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.InitialImage = CType(resources.GetObject("PictureBox1.InitialImage"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(22, 21)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(45, 41)
+        Me.PictureBox1.Size = New System.Drawing.Size(35, 35)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 57328
         Me.PictureBox1.TabStop = False
@@ -576,9 +577,9 @@ Partial Class home
         Me.PictureBox5.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
         Me.PictureBox5.InitialImage = CType(resources.GetObject("PictureBox5.InitialImage"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(12, 106)
+        Me.PictureBox5.Location = New System.Drawing.Point(22, 110)
         Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(45, 41)
+        Me.PictureBox5.Size = New System.Drawing.Size(35, 35)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox5.TabIndex = 57330
         Me.PictureBox5.TabStop = False
@@ -589,9 +590,9 @@ Partial Class home
         Me.PictureBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
         Me.PictureBox4.InitialImage = CType(resources.GetObject("PictureBox4.InitialImage"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(12, 197)
+        Me.PictureBox4.Location = New System.Drawing.Point(22, 206)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(45, 41)
+        Me.PictureBox4.Size = New System.Drawing.Size(35, 35)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox4.TabIndex = 57329
         Me.PictureBox4.TabStop = False
@@ -608,6 +609,7 @@ Partial Class home
         Me.SplitContainer1.Panel1.Controls.Add(Me.funix2)
         Me.SplitContainer1.Panel1.Controls.Add(Me.funix)
         Me.SplitContainer1.Panel1.Controls.Add(Me.PictureBox7)
+        Me.SplitContainer1.Panel1.Controls.Add(Me.PictureBox2)
         Me.SplitContainer1.Panel1.Controls.Add(Me.Label11)
         Me.SplitContainer1.Panel1.Controls.Add(Me.ftitulo)
         Me.SplitContainer1.Panel1.Controls.Add(Me.PictureBox6)
@@ -689,9 +691,9 @@ Partial Class home
         'PictureBox6
         '
         Me.PictureBox6.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.PictureBox6.Location = New System.Drawing.Point(257, 54)
+        Me.PictureBox6.Location = New System.Drawing.Point(242, 54)
         Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(474, 10)
+        Me.PictureBox6.Size = New System.Drawing.Size(489, 10)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox6.TabIndex = 57341
         Me.PictureBox6.TabStop = False
@@ -764,6 +766,7 @@ Partial Class home
         Me.DoctorDataGridView.Name = "DoctorDataGridView"
         Me.DoctorDataGridView.Size = New System.Drawing.Size(288, 220)
         Me.DoctorDataGridView.TabIndex = 57343
+        Me.DoctorDataGridView.Visible = False
         '
         'DataGridViewTextBoxColumn15
         '
@@ -951,7 +954,6 @@ Partial Class home
         Me.Controls.Add(Me.PictureBox5)
         Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label2)

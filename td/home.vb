@@ -335,7 +335,11 @@
             NomDr = CStr(rowCU.Cells(8).Value)
             IDcita.Text = NomDr
         End If
-        citas.Show()
+        If IDcita.Text > "1" Then
+            citas.Show()
+
+        End If
+        Cursor = Cursors.Default
     End Sub
     Private Sub Label11_Click(sender As Object, e As EventArgs) Handles Label11.Click
         recargar()
@@ -354,6 +358,7 @@
     End Sub
 
     Private Sub DataGridViewPEÑITAS_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridViewPEÑITAS.CellClick
+        Cursor = Cursors.WaitCursor
         MostrarIdCita()
     End Sub
 End Class

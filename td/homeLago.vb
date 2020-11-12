@@ -176,10 +176,22 @@
             NomDr = CStr(rowCU.Cells(8).Value)
             home.IDcita.Text = NomDr
         End If
-        citas.Show()
+
     End Sub
 
     Private Sub DataGridViewLago_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridViewLago.CellContentClick
+        AbrirCita()
+    End Sub
+
+    Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles PictureBox7.Click
+        home.recargar()
+    End Sub
+
+    Private Sub DataGridViewLago_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridViewLago.CellClick
+        AbrirCita()
+    End Sub
+    Private Sub AbrirCita()
+        Cursor = Cursors.WaitCursor
         If home.contador.Text < 1 Then
             Dim NomDr As String
             Dim rowCU As DataGridViewRow = DataGridViewLago.CurrentRow
@@ -191,9 +203,10 @@
             NomDr = CStr(rowCU.Cells(8).Value)
             home.IDcita.Text = NomDr
         End If
-    End Sub
+        If home.IDcita.Text > "1" Then
+            citas.Show()
+            Cursor = Cursors.Default
+        End If
 
-    Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles PictureBox7.Click
-        home.recargar()
     End Sub
 End Class

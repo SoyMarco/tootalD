@@ -130,6 +130,12 @@
     <Compile Include="dinero.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="EditarCancelarPago.Designer.vb">
+      <DependentUpon>EditarCancelarPago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditarCancelarPago.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="EditarCancelarServicio.Designer.vb">
       <DependentUpon>EditarCancelarServicio.vb</DependentUpon>
     </Compile>
@@ -203,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="dinero.resx">
       <DependentUpon>dinero.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarCancelarPago.resx">
+      <DependentUpon>EditarCancelarPago.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditarCancelarServicio.resx">
       <DependentUpon>EditarCancelarServicio.vb</DependentUpon>

@@ -46,6 +46,8 @@ Partial Class EditarCancelarServicio
         Me.Paciente_servicioTableAdapter = New td.tootalde_dbtDataSetTableAdapters.paciente_servicioTableAdapter()
         Me.TableAdapterManager = New td.tootalde_dbtDataSetTableAdapters.TableAdapterManager()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.idPaciente = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.Paciente_servicioDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Paciente_servicioBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Tootalde_dbtDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -56,7 +58,7 @@ Partial Class EditarCancelarServicio
         Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Button1.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(12, 96)
+        Me.Button1.Location = New System.Drawing.Point(12, 137)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(175, 50)
         Me.Button1.TabIndex = 57423
@@ -252,19 +254,43 @@ Partial Class EditarCancelarServicio
         Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Button3.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(193, 96)
+        Me.Button3.Location = New System.Drawing.Point(193, 137)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(175, 50)
         Me.Button3.TabIndex = 57437
         Me.Button3.Text = "Activar"
         Me.Button3.UseVisualStyleBackColor = False
         '
+        'idPaciente
+        '
+        Me.idPaciente.AutoSize = True
+        Me.idPaciente.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.idPaciente.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.idPaciente.Location = New System.Drawing.Point(98, 91)
+        Me.idPaciente.Name = "idPaciente"
+        Me.idPaciente.Size = New System.Drawing.Size(39, 32)
+        Me.idPaciente.TabIndex = 57445
+        Me.idPaciente.Text = "Id"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(14, 91)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(78, 32)
+        Me.Label1.TabIndex = 57446
+        Me.Label1.Text = "Paci."
+        '
         'EditarCancelarServicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(382, 172)
+        Me.ClientSize = New System.Drawing.Size(416, 199)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.idPaciente)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.NameServ)
@@ -305,4 +331,6 @@ Partial Class EditarCancelarServicio
     Friend WithEvents DataGridViewTextBoxColumn11 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn12 As DataGridViewTextBoxColumn
     Friend WithEvents Button3 As Button
+    Friend WithEvents idPaciente As Label
+    Friend WithEvents Label1 As Label
 End Class

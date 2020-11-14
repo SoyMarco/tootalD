@@ -1,18 +1,28 @@
 ﻿Public Class homeLago
     Private Sub homeLago_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'TODO: esta línea de código carga datos en la tabla 'Tootalde_dbtDataSet.patient' Puede moverla o quitarla según sea necesario.
-        Me.PatientTableAdapter.Fill(Me.Tootalde_dbtDataSet.patient)
-        'TODO: esta línea de código carga datos en la tabla 'Tootalde_dbtDataSet.doctor' Puede moverla o quitarla según sea necesario.
-        Me.DoctorTableAdapter.Fill(Me.Tootalde_dbtDataSet.doctor)
+        Try
+            'TODO: esta línea de código carga datos en la tabla 'Tootalde_dbtDataSet.patient' Puede moverla o quitarla según sea necesario.
+            Me.PatientTableAdapter.Fill(Me.Tootalde_dbtDataSet.patient)
+            'TODO: esta línea de código carga datos en la tabla 'Tootalde_dbtDataSet.doctor' Puede moverla o quitarla según sea necesario.
+            Me.DoctorTableAdapter.Fill(Me.Tootalde_dbtDataSet.doctor)
 
-        Lago()
+            Lago()
+        Catch ex As Exception
+            home.ErrCnn.Visible = True
+        End Try
+
     End Sub
 
     Public Sub Lago()
         For Each col As DataGridViewColumn In AppointmentDataGridView.Columns
             DataGridViewLago.Columns.Add(DirectCast(col.Clone(), DataGridViewColumn))
         Next
-        Me.AppointmentTableAdapter.FillFiltroLago(Me.Tootalde_dbtDataSet.appointment, home.funix.Text, home.funix2.Text)
+        Try
+            Me.AppointmentTableAdapter.FillFiltroLago(Me.Tootalde_dbtDataSet.appointment, home.funix.Text, home.funix2.Text)
+
+        Catch ex As Exception
+            home.ErrCnn.Visible = True
+        End Try
         'COPIA LOS DATOS DE LA PRINCIPAL A LAGO
         DataGridViewLago.DataSource = AppointmentDataGridView.DataSource
 

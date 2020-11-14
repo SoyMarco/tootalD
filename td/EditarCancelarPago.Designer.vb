@@ -23,6 +23,7 @@ Partial Class EditarCancelarPago
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EditarCancelarPago))
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.NamePago = New System.Windows.Forms.Label()
@@ -323,8 +324,11 @@ Partial Class EditarCancelarPago
         Me.Controls.Add(Me.IdPago)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Paciente_pagoDataGridView)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "EditarCancelarPago"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "EditarCancelarPago"
+        Me.TopMost = True
         CType(Me.Paciente_pagoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Tootalde_dbtDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Paciente_pagoDataGridView, System.ComponentModel.ISupportInitialize).EndInit()

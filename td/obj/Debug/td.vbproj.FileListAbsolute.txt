@@ -73,3 +73,4 @@ C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.vbproj.CopyComplete
 C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.EditarCancelarServicio.resources
 C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.Pacientes.resources
 C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.EditarCancelarPago.resources
+C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.vbprojAssemblyReference.cache

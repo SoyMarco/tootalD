@@ -1,18 +1,28 @@
 ﻿Public Class homeLago
     Private Sub homeLago_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'TODO: esta línea de código carga datos en la tabla 'Tootalde_dbtDataSet.patient' Puede moverla o quitarla según sea necesario.
-        Me.PatientTableAdapter.Fill(Me.Tootalde_dbtDataSet.patient)
-        'TODO: esta línea de código carga datos en la tabla 'Tootalde_dbtDataSet.doctor' Puede moverla o quitarla según sea necesario.
-        Me.DoctorTableAdapter.Fill(Me.Tootalde_dbtDataSet.doctor)
+        Try
+            'TODO: esta línea de código carga datos en la tabla 'Tootalde_dbtDataSet.patient' Puede moverla o quitarla según sea necesario.
+            Me.PatientTableAdapter.Fill(Me.Tootalde_dbtDataSet.patient)
+            'TODO: esta línea de código carga datos en la tabla 'Tootalde_dbtDataSet.doctor' Puede moverla o quitarla según sea necesario.
+            Me.DoctorTableAdapter.Fill(Me.Tootalde_dbtDataSet.doctor)
 
-        Lago()
+            Lago()
+        Catch ex As Exception
+            home.ErrCnn.Visible = True
+        End Try
+
     End Sub
 
     Public Sub Lago()
         For Each col As DataGridViewColumn In AppointmentDataGridView.Columns
             DataGridViewLago.Columns.Add(DirectCast(col.Clone(), DataGridViewColumn))
         Next
-        Me.AppointmentTableAdapter.FillFiltroLago(Me.Tootalde_dbtDataSet.appointment, home.funix.Text, home.funix2.Text)
+        Try
+            Me.AppointmentTableAdapter.FillFiltroLago(Me.Tootalde_dbtDataSet.appointment, home.funix.Text, home.funix2.Text)
+
+        Catch ex As Exception
+            home.ErrCnn.Visible = True
+        End Try
         'COPIA LOS DATOS DE LA PRINCIPAL A LAGO
         DataGridViewLago.DataSource = AppointmentDataGridView.DataSource
 
@@ -176,10 +186,22 @@
             NomDr = CStr(rowCU.Cells(8).Value)
             home.IDcita.Text = NomDr
         End If
-        citas.Show()
+
     End Sub
 
     Private Sub DataGridViewLago_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridViewLago.CellContentClick
+        AbrirCita()
+    End Sub
+
+    Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles PictureBox7.Click
+        home.recargar()
+    End Sub
+
+    Private Sub DataGridViewLago_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridViewLago.CellClick
+        AbrirCita()
+    End Sub
+    Private Sub AbrirCita()
+        Cursor = Cursors.WaitCursor
         If home.contador.Text < 1 Then
             Dim NomDr As String
             Dim rowCU As DataGridViewRow = DataGridViewLago.CurrentRow
@@ -191,9 +213,10 @@
             NomDr = CStr(rowCU.Cells(8).Value)
             home.IDcita.Text = NomDr
         End If
-    End Sub
+        If home.IDcita.Text > "1" Then
+            citas.Show()
+            Cursor = Cursors.Default
+        End If
 
-    Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles PictureBox7.Click
-        home.recargar()
     End Sub
 End Class

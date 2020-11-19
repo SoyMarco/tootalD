@@ -34,7 +34,6 @@ C:\Users\Marco\Documents\Tootal Dental\td\bin\Debug\td.application
 C:\Users\Marco\Documents\Tootal Dental\td\obj\Debug\td.exe.manifest
 C:\Users\Marco\Documents\Tootal Dental\td\obj\Debug\td.application
 C:\Users\Marco\Documents\Tootal Dental\td\obj\Debug\td.Entrada.resources
-C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.vbprojAssemblyReference.cache
 C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.exe.config
 C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.citas.resources
 C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.dinero.resources
@@ -72,3 +71,7 @@ C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.exe.manifest
 C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.application
 C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.vbproj.CopyComplete
 C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.EditarCancelarServicio.resources
+C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.Pacientes.resources
+C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.EditarCancelarPago.resources
+C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.vbprojAssemblyReference.cache
+C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.Tratamientos.resources

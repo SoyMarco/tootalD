@@ -15,11 +15,17 @@
     End Sub
 
     Private Sub home_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Try
+            'TODO: esta línea de código carga datos en la tabla 'Tootalde_dbtDataSet.patient' Puede moverla o quitarla según sea necesario.
+            Me.PatientTableAdapter.Fill(Me.Tootalde_dbtDataSet.patient)
+            'TODO: esta línea de código carga datos en la tabla 'Tootalde_dbtDataSet.doctor' Puede moverla o quitarla según sea necesario.
+            Me.DoctorTableAdapter.Fill(Me.Tootalde_dbtDataSet.doctor)
 
-        'TODO: esta línea de código carga datos en la tabla 'Tootalde_dbtDataSet.patient' Puede moverla o quitarla según sea necesario.
-        Me.PatientTableAdapter.Fill(Me.Tootalde_dbtDataSet.patient)
-        'TODO: esta línea de código carga datos en la tabla 'Tootalde_dbtDataSet.doctor' Puede moverla o quitarla según sea necesario.
-        Me.DoctorTableAdapter.Fill(Me.Tootalde_dbtDataSet.doctor)
+        Catch ex As Exception
+            ErrCnn.Visible = True
+        End Try
+
+
         DateTimePicker2.Value = DateTimePicker2.Value.AddDays(1)
 
         LlenarCols()
@@ -65,12 +71,16 @@
 
     End Sub
     Public Sub Peñitas()
+        Try
+            'TODO: esta línea de código carga datos en la tabla 'Tootalde_dbtDataSet.appointment' Puede moverla o quitarla según sea necesario.
 
-        'TODO: esta línea de código carga datos en la tabla 'Tootalde_dbtDataSet.appointment' Puede moverla o quitarla según sea necesario.
 
+            Me.AppointmentTableAdapter.FillFiltroPeñitas(Me.Tootalde_dbtDataSet.appointment, funix.Text, funix2.Text)
+            Me.AppointmentDataGridView.Sort(AppointmentDataGridView.Columns(0), System.ComponentModel.ListSortDirection.Ascending)
 
-        Me.AppointmentTableAdapter.FillFiltroPeñitas(Me.Tootalde_dbtDataSet.appointment, funix.Text, funix2.Text)
-        Me.AppointmentDataGridView.Sort(AppointmentDataGridView.Columns(0), System.ComponentModel.ListSortDirection.Ascending)
+        Catch ex As Exception
+            ErrCnn.Visible = True
+        End Try
         'COPIA LOS DATOS DE LA PRINCIPAL A PEÑITAS
         For Each col As DataGridViewColumn In AppointmentDataGridView.Columns
             DataGridViewPEÑITAS.Columns.Add(DirectCast(col.Clone(), DataGridViewColumn))
@@ -335,7 +345,11 @@
             NomDr = CStr(rowCU.Cells(8).Value)
             IDcita.Text = NomDr
         End If
-        citas.Show()
+        If IDcita.Text > "1" Then
+            citas.Show()
+
+        End If
+        Cursor = Cursors.Default
     End Sub
     Private Sub Label11_Click(sender As Object, e As EventArgs) Handles Label11.Click
         recargar()
@@ -354,6 +368,15 @@
     End Sub
 
     Private Sub DataGridViewPEÑITAS_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridViewPEÑITAS.CellClick
+        Cursor = Cursors.WaitCursor
         MostrarIdCita()
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+        Tratamientos.Show()
+    End Sub
+
+    Private Sub PictureBox8_Click(sender As Object, e As EventArgs) Handles PictureBox8.Click
+        Tratamientos.Show()
     End Sub
 End Class

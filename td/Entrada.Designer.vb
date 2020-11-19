@@ -23,6 +23,15 @@ Partial Class Entrada
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Entrada))
         Me.NuevaHora = New System.Windows.Forms.Label()
         Me.DateTimePickerDia = New System.Windows.Forms.DateTimePicker()
@@ -76,13 +85,13 @@ Partial Class Entrada
         Me.monto_efectivo = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.monto_tarjeta = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.monto_total = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn29 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn26 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn22 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn23 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn24 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn25 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn26 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn28 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn29 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn30 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn31 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn32 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -136,6 +145,11 @@ Partial Class Entrada
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Label18 = New System.Windows.Forms.Label()
+        Me.IdPago = New System.Windows.Forms.Label()
+        Me.TotalPago = New System.Windows.Forms.Label()
+        Me.MontoTotal = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.Button9 = New System.Windows.Forms.Button()
         CType(Me.PaymentcategoryBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Tootalde_dbtDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Payment_categoryDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -160,10 +174,12 @@ Partial Class Entrada
         Me.NuevaHora.Size = New System.Drawing.Size(30, 32)
         Me.NuevaHora.TabIndex = 57398
         Me.NuevaHora.Text = "0"
+        Me.NuevaHora.Visible = False
         '
         'DateTimePickerDia
         '
-        Me.DateTimePickerDia.Location = New System.Drawing.Point(790, 13)
+        Me.DateTimePickerDia.Enabled = False
+        Me.DateTimePickerDia.Location = New System.Drawing.Point(115, 685)
         Me.DateTimePickerDia.Name = "DateTimePickerDia"
         Me.DateTimePickerDia.Size = New System.Drawing.Size(377, 20)
         Me.DateTimePickerDia.TabIndex = 57388
@@ -178,6 +194,7 @@ Partial Class Entrada
         Me.fecha.Size = New System.Drawing.Size(30, 32)
         Me.fecha.TabIndex = 57396
         Me.fecha.Text = "0"
+        Me.fecha.Visible = False
         '
         'NuevoLugar
         '
@@ -189,6 +206,7 @@ Partial Class Entrada
         Me.NuevoLugar.Size = New System.Drawing.Size(30, 32)
         Me.NuevoLugar.TabIndex = 57394
         Me.NuevoLugar.Text = "0"
+        Me.NuevoLugar.Visible = False
         '
         'lugar
         '
@@ -207,7 +225,7 @@ Partial Class Entrada
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label5.Location = New System.Drawing.Point(8, 87)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(89, 32)
@@ -231,7 +249,7 @@ Partial Class Entrada
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(8, 43)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(78, 32)
@@ -248,12 +266,13 @@ Partial Class Entrada
         Me.PacienteID.Size = New System.Drawing.Size(30, 32)
         Me.PacienteID.TabIndex = 57391
         Me.PacienteID.Text = "0"
+        Me.PacienteID.Visible = False
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label4.Location = New System.Drawing.Point(8, 11)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(125, 32)
@@ -264,7 +283,7 @@ Partial Class Entrada
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label2.Location = New System.Drawing.Point(8, 179)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(173, 32)
@@ -300,7 +319,7 @@ Partial Class Entrada
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label3.Location = New System.Drawing.Point(8, 133)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(165, 32)
@@ -311,7 +330,7 @@ Partial Class Entrada
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label6.Location = New System.Drawing.Point(8, 222)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(150, 32)
@@ -322,7 +341,7 @@ Partial Class Entrada
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label7.Location = New System.Drawing.Point(8, 272)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(77, 32)
@@ -334,8 +353,8 @@ Partial Class Entrada
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.White
         Me.Label8.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(676, 94)
+        Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label8.Location = New System.Drawing.Point(701, 71)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(119, 32)
         Me.Label8.TabIndex = 57404
@@ -346,8 +365,8 @@ Partial Class Entrada
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.Color.White
         Me.Label9.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label9.Location = New System.Drawing.Point(676, 179)
+        Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label9.Location = New System.Drawing.Point(701, 135)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(102, 32)
         Me.Label9.TabIndex = 57405
@@ -388,7 +407,7 @@ Partial Class Entrada
         '
         Me.efectivo.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.efectivo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.efectivo.Location = New System.Drawing.Point(801, 94)
+        Me.efectivo.Location = New System.Drawing.Point(826, 71)
         Me.efectivo.Name = "efectivo"
         Me.efectivo.Size = New System.Drawing.Size(351, 40)
         Me.efectivo.TabIndex = 57409
@@ -397,7 +416,7 @@ Partial Class Entrada
         '
         Me.tarjeta.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tarjeta.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.tarjeta.Location = New System.Drawing.Point(801, 179)
+        Me.tarjeta.Location = New System.Drawing.Point(826, 132)
         Me.tarjeta.Name = "tarjeta"
         Me.tarjeta.Size = New System.Drawing.Size(351, 40)
         Me.tarjeta.TabIndex = 57410
@@ -412,6 +431,7 @@ Partial Class Entrada
         Me.Payment_categoryDataGridView.Name = "Payment_categoryDataGridView"
         Me.Payment_categoryDataGridView.Size = New System.Drawing.Size(300, 220)
         Me.Payment_categoryDataGridView.TabIndex = 57411
+        Me.Payment_categoryDataGridView.Visible = False
         '
         'DataGridViewTextBoxColumn1
         '
@@ -474,38 +494,60 @@ Partial Class Entrada
         '
         'DataGridViewTextBoxColumn8
         '
+        Me.DataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCellsExceptHeader
         Me.DataGridViewTextBoxColumn8.DataPropertyName = "id"
         Me.DataGridViewTextBoxColumn8.HeaderText = "id"
         Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
         Me.DataGridViewTextBoxColumn8.ReadOnly = True
+        Me.DataGridViewTextBoxColumn8.Width = 21
         '
         'DataGridViewTextBoxColumn9
         '
+        Me.DataGridViewTextBoxColumn9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
         Me.DataGridViewTextBoxColumn9.DataPropertyName = "tratamiento"
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Helvetica LT Std", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DataGridViewTextBoxColumn9.DefaultCellStyle = DataGridViewCellStyle1
         Me.DataGridViewTextBoxColumn9.HeaderText = "tratamiento"
         Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
         Me.DataGridViewTextBoxColumn9.ReadOnly = True
+        Me.DataGridViewTextBoxColumn9.Width = 84
         '
         'DataGridViewTextBoxColumn10
         '
+        Me.DataGridViewTextBoxColumn10.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
         Me.DataGridViewTextBoxColumn10.DataPropertyName = "precio"
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Helvetica LT Std", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.Format = "C2"
+        Me.DataGridViewTextBoxColumn10.DefaultCellStyle = DataGridViewCellStyle2
         Me.DataGridViewTextBoxColumn10.HeaderText = "precio"
         Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
         Me.DataGridViewTextBoxColumn10.ReadOnly = True
+        Me.DataGridViewTextBoxColumn10.Width = 61
         '
         'DataGridViewTextBoxColumn11
         '
+        Me.DataGridViewTextBoxColumn11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
         Me.DataGridViewTextBoxColumn11.DataPropertyName = "descuento"
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Helvetica LT Std", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.Format = "C2"
+        Me.DataGridViewTextBoxColumn11.DefaultCellStyle = DataGridViewCellStyle3
         Me.DataGridViewTextBoxColumn11.HeaderText = "descuento"
         Me.DataGridViewTextBoxColumn11.Name = "DataGridViewTextBoxColumn11"
         Me.DataGridViewTextBoxColumn11.ReadOnly = True
+        Me.DataGridViewTextBoxColumn11.Width = 82
         '
         'DataGridViewTextBoxColumn12
         '
+        Me.DataGridViewTextBoxColumn12.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
         Me.DataGridViewTextBoxColumn12.DataPropertyName = "total"
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Helvetica LT Std", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.Format = "C2"
+        DataGridViewCellStyle4.NullValue = Nothing
+        Me.DataGridViewTextBoxColumn12.DefaultCellStyle = DataGridViewCellStyle4
         Me.DataGridViewTextBoxColumn12.HeaderText = "total"
         Me.DataGridViewTextBoxColumn12.Name = "DataGridViewTextBoxColumn12"
         Me.DataGridViewTextBoxColumn12.ReadOnly = True
+        Me.DataGridViewTextBoxColumn12.Width = 52
         '
         'DataGridViewTextBoxColumn13
         '
@@ -565,7 +607,7 @@ Partial Class Entrada
         '
         Me.Paciente_pagoDataGridView.AutoGenerateColumns = False
         Me.Paciente_pagoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.Paciente_pagoDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn20, Me.monto_efectivo, Me.monto_tarjeta, Me.monto_total, Me.DataGridViewTextBoxColumn22, Me.DataGridViewTextBoxColumn23, Me.DataGridViewTextBoxColumn24, Me.DataGridViewTextBoxColumn25, Me.DataGridViewTextBoxColumn26, Me.DataGridViewTextBoxColumn28, Me.DataGridViewTextBoxColumn29, Me.DataGridViewTextBoxColumn30, Me.DataGridViewTextBoxColumn31, Me.DataGridViewTextBoxColumn32})
+        Me.Paciente_pagoDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn20, Me.monto_efectivo, Me.monto_tarjeta, Me.monto_total, Me.DataGridViewTextBoxColumn29, Me.DataGridViewTextBoxColumn26, Me.DataGridViewTextBoxColumn22, Me.DataGridViewTextBoxColumn23, Me.DataGridViewTextBoxColumn24, Me.DataGridViewTextBoxColumn25, Me.DataGridViewTextBoxColumn28, Me.DataGridViewTextBoxColumn30, Me.DataGridViewTextBoxColumn31, Me.DataGridViewTextBoxColumn32})
         Me.Paciente_pagoDataGridView.DataSource = Me.Paciente_pagoBindingSource
         Me.Paciente_pagoDataGridView.Location = New System.Drawing.Point(682, 405)
         Me.Paciente_pagoDataGridView.Name = "Paciente_pagoDataGridView"
@@ -575,38 +617,78 @@ Partial Class Entrada
         '
         'DataGridViewTextBoxColumn20
         '
+        Me.DataGridViewTextBoxColumn20.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
         Me.DataGridViewTextBoxColumn20.DataPropertyName = "id"
         Me.DataGridViewTextBoxColumn20.HeaderText = "id"
         Me.DataGridViewTextBoxColumn20.Name = "DataGridViewTextBoxColumn20"
         Me.DataGridViewTextBoxColumn20.ReadOnly = True
+        Me.DataGridViewTextBoxColumn20.Width = 40
         '
         'monto_efectivo
         '
+        Me.monto_efectivo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
         Me.monto_efectivo.DataPropertyName = "monto_efectivo"
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Helvetica LT Std", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.Format = "C2"
+        DataGridViewCellStyle5.NullValue = Nothing
+        Me.monto_efectivo.DefaultCellStyle = DataGridViewCellStyle5
         Me.monto_efectivo.HeaderText = "monto_efectivo"
         Me.monto_efectivo.Name = "monto_efectivo"
         Me.monto_efectivo.ReadOnly = True
+        Me.monto_efectivo.Width = 105
         '
         'monto_tarjeta
         '
+        Me.monto_tarjeta.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
         Me.monto_tarjeta.DataPropertyName = "monto_tarjeta"
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Helvetica LT Std", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.monto_tarjeta.DefaultCellStyle = DataGridViewCellStyle6
         Me.monto_tarjeta.HeaderText = "monto_tarjeta"
         Me.monto_tarjeta.Name = "monto_tarjeta"
         Me.monto_tarjeta.ReadOnly = True
+        Me.monto_tarjeta.Width = 96
         '
         'monto_total
         '
+        Me.monto_total.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
         Me.monto_total.DataPropertyName = "monto_total"
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Helvetica LT Std", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.monto_total.DefaultCellStyle = DataGridViewCellStyle7
         Me.monto_total.HeaderText = "monto_total"
         Me.monto_total.Name = "monto_total"
         Me.monto_total.ReadOnly = True
+        Me.monto_total.Width = 87
+        '
+        'DataGridViewTextBoxColumn29
+        '
+        Me.DataGridViewTextBoxColumn29.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.DataGridViewTextBoxColumn29.DataPropertyName = "fecha"
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Helvetica LT Std", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.DataGridViewTextBoxColumn29.DefaultCellStyle = DataGridViewCellStyle8
+        Me.DataGridViewTextBoxColumn29.HeaderText = "fecha"
+        Me.DataGridViewTextBoxColumn29.Name = "DataGridViewTextBoxColumn29"
+        Me.DataGridViewTextBoxColumn29.ReadOnly = True
+        Me.DataGridViewTextBoxColumn29.Width = 59
+        '
+        'DataGridViewTextBoxColumn26
+        '
+        Me.DataGridViewTextBoxColumn26.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.DataGridViewTextBoxColumn26.DataPropertyName = "notas"
+        DataGridViewCellStyle9.Font = New System.Drawing.Font("Helvetica LT Std", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.DataGridViewTextBoxColumn26.DefaultCellStyle = DataGridViewCellStyle9
+        Me.DataGridViewTextBoxColumn26.HeaderText = "notas"
+        Me.DataGridViewTextBoxColumn26.Name = "DataGridViewTextBoxColumn26"
+        Me.DataGridViewTextBoxColumn26.ReadOnly = True
+        Me.DataGridViewTextBoxColumn26.Width = 58
         '
         'DataGridViewTextBoxColumn22
         '
+        Me.DataGridViewTextBoxColumn22.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
         Me.DataGridViewTextBoxColumn22.DataPropertyName = "d_comision"
         Me.DataGridViewTextBoxColumn22.HeaderText = "d_comision"
         Me.DataGridViewTextBoxColumn22.Name = "DataGridViewTextBoxColumn22"
         Me.DataGridViewTextBoxColumn22.ReadOnly = True
+        Me.DataGridViewTextBoxColumn22.Width = 85
         '
         'DataGridViewTextBoxColumn23
         '
@@ -629,26 +711,12 @@ Partial Class Entrada
         Me.DataGridViewTextBoxColumn25.Name = "DataGridViewTextBoxColumn25"
         Me.DataGridViewTextBoxColumn25.ReadOnly = True
         '
-        'DataGridViewTextBoxColumn26
-        '
-        Me.DataGridViewTextBoxColumn26.DataPropertyName = "notas"
-        Me.DataGridViewTextBoxColumn26.HeaderText = "notas"
-        Me.DataGridViewTextBoxColumn26.Name = "DataGridViewTextBoxColumn26"
-        Me.DataGridViewTextBoxColumn26.ReadOnly = True
-        '
         'DataGridViewTextBoxColumn28
         '
         Me.DataGridViewTextBoxColumn28.DataPropertyName = "usuario"
         Me.DataGridViewTextBoxColumn28.HeaderText = "usuario"
         Me.DataGridViewTextBoxColumn28.Name = "DataGridViewTextBoxColumn28"
         Me.DataGridViewTextBoxColumn28.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn29
-        '
-        Me.DataGridViewTextBoxColumn29.DataPropertyName = "fecha"
-        Me.DataGridViewTextBoxColumn29.HeaderText = "fecha"
-        Me.DataGridViewTextBoxColumn29.Name = "DataGridViewTextBoxColumn29"
-        Me.DataGridViewTextBoxColumn29.ReadOnly = True
         '
         'DataGridViewTextBoxColumn30
         '
@@ -681,8 +749,8 @@ Partial Class Entrada
         Me.Label12.AutoSize = True
         Me.Label12.BackColor = System.Drawing.Color.White
         Me.Label12.Font = New System.Drawing.Font("Helvetica LT Std Black", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label12.Location = New System.Drawing.Point(828, 48)
+        Me.Label12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label12.Location = New System.Drawing.Point(853, 25)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(212, 34)
         Me.Label12.TabIndex = 57412
@@ -693,8 +761,8 @@ Partial Class Entrada
         Me.Label13.AutoSize = True
         Me.Label13.BackColor = System.Drawing.Color.White
         Me.Label13.Font = New System.Drawing.Font("Helvetica LT Std Black", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label13.Location = New System.Drawing.Point(828, 369)
+        Me.Label13.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label13.Location = New System.Drawing.Point(853, 368)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(116, 34)
         Me.Label13.TabIndex = 57413
@@ -704,7 +772,7 @@ Partial Class Entrada
         '
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Helvetica LT Std Black", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label14.Location = New System.Drawing.Point(331, 369)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(179, 34)
@@ -727,8 +795,8 @@ Partial Class Entrada
         '
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Helvetica LT Std Black", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label16.Location = New System.Drawing.Point(241, 630)
+        Me.Label16.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label16.Location = New System.Drawing.Point(109, 628)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(112, 34)
         Me.Label16.TabIndex = 57416
@@ -739,7 +807,7 @@ Partial Class Entrada
         Me.Label17.AutoSize = True
         Me.Label17.BackColor = System.Drawing.Color.White
         Me.Label17.Font = New System.Drawing.Font("Helvetica LT Std Black", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label17.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label17.Location = New System.Drawing.Point(676, 628)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(112, 34)
@@ -762,7 +830,7 @@ Partial Class Entrada
         Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Button1.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(801, 310)
+        Me.Button1.Location = New System.Drawing.Point(826, 287)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(280, 50)
         Me.Button1.TabIndex = 57420
@@ -791,17 +859,17 @@ Partial Class Entrada
         Me.NuevoDr.Size = New System.Drawing.Size(30, 32)
         Me.NuevoDr.TabIndex = 57422
         Me.NuevoDr.Text = "0"
+        Me.NuevoDr.Visible = False
         '
         'PictureBox3
         '
-        Me.PictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.PictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.PictureBox3.Location = New System.Drawing.Point(667, -7)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(10, 700)
+        Me.PictureBox3.Size = New System.Drawing.Size(10, 748)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox3.TabIndex = 57423
         Me.PictureBox3.TabStop = False
-        Me.PictureBox3.Visible = False
         '
         'IdCita
         '
@@ -813,11 +881,12 @@ Partial Class Entrada
         Me.IdCita.Size = New System.Drawing.Size(30, 32)
         Me.IdCita.TabIndex = 57424
         Me.IdCita.Text = "0"
+        Me.IdCita.Visible = False
         '
         'comentarios
         '
         Me.comentarios.Font = New System.Drawing.Font("Helvetica LT Std", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.comentarios.Location = New System.Drawing.Point(824, 245)
+        Me.comentarios.Location = New System.Drawing.Point(849, 222)
         Me.comentarios.Name = "comentarios"
         Me.comentarios.Size = New System.Drawing.Size(328, 33)
         Me.comentarios.TabIndex = 57426
@@ -827,8 +896,8 @@ Partial Class Entrada
         Me.Label15.AutoSize = True
         Me.Label15.BackColor = System.Drawing.Color.White
         Me.Label15.Font = New System.Drawing.Font("Helvetica LT Std", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label15.Location = New System.Drawing.Point(676, 253)
+        Me.Label15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label15.Location = New System.Drawing.Point(701, 230)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(142, 25)
         Me.Label15.TabIndex = 57425
@@ -918,6 +987,7 @@ Partial Class Entrada
         Me.DoctorDataGridView.Name = "DoctorDataGridView"
         Me.DoctorDataGridView.Size = New System.Drawing.Size(300, 220)
         Me.DoctorDataGridView.TabIndex = 57426
+        Me.DoctorDataGridView.Visible = False
         '
         'DataGridViewTextBoxColumn33
         '
@@ -995,6 +1065,7 @@ Partial Class Entrada
         Me.TratamientoId.Size = New System.Drawing.Size(30, 32)
         Me.TratamientoId.TabIndex = 57427
         Me.TratamientoId.Text = "0"
+        Me.TratamientoId.Visible = False
         '
         'InfoGuarServ
         '
@@ -1003,9 +1074,9 @@ Partial Class Entrada
         Me.InfoGuarServ.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.InfoGuarServ.Location = New System.Drawing.Point(-2, 369)
         Me.InfoGuarServ.Name = "InfoGuarServ"
-        Me.InfoGuarServ.Size = New System.Drawing.Size(60, 38)
+        Me.InfoGuarServ.Size = New System.Drawing.Size(26, 38)
         Me.InfoGuarServ.TabIndex = 57428
-        Me.InfoGuarServ.Text = "Ok"
+        Me.InfoGuarServ.Text = "."
         '
         'TotServicios
         '
@@ -1013,7 +1084,7 @@ Partial Class Entrada
         Me.TotServicios.BackColor = System.Drawing.Color.White
         Me.TotServicios.Font = New System.Drawing.Font("Helvetica LT Std", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TotServicios.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.TotServicios.Location = New System.Drawing.Point(359, 626)
+        Me.TotServicios.Location = New System.Drawing.Point(227, 624)
         Me.TotServicios.Name = "TotServicios"
         Me.TotServicios.Size = New System.Drawing.Size(37, 42)
         Me.TotServicios.TabIndex = 57429
@@ -1024,7 +1095,7 @@ Partial Class Entrada
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.Color.White
         Me.Label10.Font = New System.Drawing.Font("Helvetica LT Std Black", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label10.Location = New System.Drawing.Point(675, 670)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(112, 34)
@@ -1053,6 +1124,7 @@ Partial Class Entrada
         Me.IdServ.Size = New System.Drawing.Size(30, 32)
         Me.IdServ.TabIndex = 57432
         Me.IdServ.Text = "0"
+        Me.IdServ.Visible = False
         '
         'PatientBindingSource
         '
@@ -1103,7 +1175,7 @@ Partial Class Entrada
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Helvetica LT Std", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label11.Location = New System.Drawing.Point(16, 423)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(81, 25)
@@ -1120,6 +1192,7 @@ Partial Class Entrada
         Me.NameServ.Size = New System.Drawing.Size(30, 32)
         Me.NameServ.TabIndex = 57438
         Me.NameServ.Text = "0"
+        Me.NameServ.Visible = False
         '
         'Button3
         '
@@ -1161,12 +1234,70 @@ Partial Class Entrada
         '
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Helvetica LT Std", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label18.Location = New System.Drawing.Point(1175, 423)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(81, 25)
         Me.Label18.TabIndex = 57442
         Me.Label18.Text = "Mostar"
+        '
+        'IdPago
+        '
+        Me.IdPago.AutoSize = True
+        Me.IdPago.Font = New System.Drawing.Font("Helvetica LT Std", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IdPago.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.IdPago.Location = New System.Drawing.Point(1165, 305)
+        Me.IdPago.Name = "IdPago"
+        Me.IdPago.Size = New System.Drawing.Size(60, 38)
+        Me.IdPago.TabIndex = 57443
+        Me.IdPago.Text = "Ok"
+        Me.IdPago.Visible = False
+        '
+        'TotalPago
+        '
+        Me.TotalPago.AutoSize = True
+        Me.TotalPago.Font = New System.Drawing.Font("Helvetica LT Std", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TotalPago.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.TotalPago.Location = New System.Drawing.Point(1165, 341)
+        Me.TotalPago.Name = "TotalPago"
+        Me.TotalPago.Size = New System.Drawing.Size(60, 38)
+        Me.TotalPago.TabIndex = 57444
+        Me.TotalPago.Text = "Ok"
+        Me.TotalPago.Visible = False
+        '
+        'MontoTotal
+        '
+        Me.MontoTotal.AutoSize = True
+        Me.MontoTotal.Font = New System.Drawing.Font("Helvetica LT Std", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MontoTotal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.MontoTotal.Location = New System.Drawing.Point(829, 182)
+        Me.MontoTotal.Name = "MontoTotal"
+        Me.MontoTotal.Size = New System.Drawing.Size(119, 35)
+        Me.MontoTotal.TabIndex = 57446
+        Me.MontoTotal.Text = "ERROR"
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label20.Location = New System.Drawing.Point(701, 184)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(77, 32)
+        Me.Label20.TabIndex = 57445
+        Me.Label20.Text = "Total"
+        '
+        'Button9
+        '
+        Me.Button9.BackColor = System.Drawing.Color.White
+        Me.Button9.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Button9.Location = New System.Drawing.Point(1234, 4)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(34, 39)
+        Me.Button9.TabIndex = 57447
+        Me.Button9.Text = "X"
+        Me.Button9.UseVisualStyleBackColor = False
         '
         'Entrada
         '
@@ -1174,6 +1305,10 @@ Partial Class Entrada
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1272, 743)
+        Me.Controls.Add(Me.Button9)
+        Me.Controls.Add(Me.MontoTotal)
+        Me.Controls.Add(Me.TotalPago)
+        Me.Controls.Add(Me.IdPago)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button8)
@@ -1185,21 +1320,13 @@ Partial Class Entrada
         Me.Controls.Add(Me.NameServ)
         Me.Controls.Add(Me.IdServ)
         Me.Controls.Add(Me.resta)
-        Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Paciente_servicioDataGridView)
-        Me.Controls.Add(Me.InfoGuarServ)
-        Me.Controls.Add(Me.TratamientoId)
         Me.Controls.Add(Me.Payment_categoryDataGridView)
         Me.Controls.Add(Me.DoctorDataGridView)
-        Me.Controls.Add(Me.NuevaHora)
-        Me.Controls.Add(Me.fecha)
         Me.Controls.Add(Me.comentarios)
         Me.Controls.Add(Me.IdCita)
         Me.Controls.Add(Me.PictureBox3)
-        Me.Controls.Add(Me.NuevoLugar)
-        Me.Controls.Add(Me.NuevoDr)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.PacienteID)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.NomPaciente)
@@ -1229,9 +1356,19 @@ Partial Class Entrada
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.TotServicios)
+        Me.Controls.Add(Me.TratamientoId)
+        Me.Controls.Add(Me.NuevaHora)
+        Me.Controls.Add(Me.fecha)
+        Me.Controls.Add(Me.NuevoLugar)
+        Me.Controls.Add(Me.NuevoDr)
+        Me.Controls.Add(Me.PacienteID)
+        Me.Controls.Add(Me.InfoGuarServ)
+        Me.Controls.Add(Me.Label20)
+        Me.Controls.Add(Me.Label10)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Entrada"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Entrada"
         CType(Me.PaymentcategoryBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Tootalde_dbtDataSet, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1324,25 +1461,24 @@ Partial Class Entrada
     Friend WithEvents TratamientoId As Label
     Friend WithEvents InfoGuarServ As Label
     Friend WithEvents TotServicios As Label
-    Friend WithEvents DataGridViewTextBoxColumn20 As DataGridViewTextBoxColumn
-    Friend WithEvents monto_efectivo As DataGridViewTextBoxColumn
-    Friend WithEvents monto_tarjeta As DataGridViewTextBoxColumn
-    Friend WithEvents monto_total As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn22 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn23 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn24 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn25 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn26 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn28 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn29 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn30 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn31 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn32 As DataGridViewTextBoxColumn
     Friend WithEvents Label10 As Label
     Friend WithEvents resta As Label
     Friend WithEvents IdServ As Label
     Friend WithEvents PatientBindingSource As BindingSource
     Friend WithEvents PatientTableAdapter As tootalde_dbtDataSetTableAdapters.patientTableAdapter
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Button6 As Button
+    Friend WithEvents Label11 As Label
+    Friend WithEvents NameServ As Label
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button7 As Button
+    Friend WithEvents Button8 As Button
+    Friend WithEvents Label18 As Label
+    Friend WithEvents IdPago As Label
+    Friend WithEvents TotalPago As Label
+    Friend WithEvents MontoTotal As Label
+    Friend WithEvents Label20 As Label
     Friend WithEvents DataGridViewTextBoxColumn8 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn9 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn10 As DataGridViewTextBoxColumn
@@ -1355,13 +1491,19 @@ Partial Class Entrada
     Friend WithEvents DataGridViewTextBoxColumn17 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn18 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn19 As DataGridViewTextBoxColumn
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Label11 As Label
-    Friend WithEvents NameServ As Label
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button7 As Button
-    Friend WithEvents Button8 As Button
-    Friend WithEvents Label18 As Label
+    Friend WithEvents DataGridViewTextBoxColumn20 As DataGridViewTextBoxColumn
+    Friend WithEvents monto_efectivo As DataGridViewTextBoxColumn
+    Friend WithEvents monto_tarjeta As DataGridViewTextBoxColumn
+    Friend WithEvents monto_total As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn29 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn26 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn22 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn23 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn24 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn25 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn28 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn30 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn31 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn32 As DataGridViewTextBoxColumn
+    Friend WithEvents Button9 As Button
 End Class

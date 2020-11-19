@@ -25,7 +25,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationRevision>4</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -130,6 +130,12 @@
     <Compile Include="dinero.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="EditarCancelarPago.Designer.vb">
+      <DependentUpon>EditarCancelarPago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditarCancelarPago.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="EditarCancelarServicio.Designer.vb">
       <DependentUpon>EditarCancelarServicio.vb</DependentUpon>
     </Compile>
@@ -196,6 +202,12 @@
     <Compile Include="tootalde_dbtDataSet.vb">
       <DependentUpon>tootalde_dbtDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Tratamientos.Designer.vb">
+      <DependentUpon>Tratamientos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tratamientos.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="citas.resx">
@@ -203,6 +215,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="dinero.resx">
       <DependentUpon>dinero.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarCancelarPago.resx">
+      <DependentUpon>EditarCancelarPago.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditarCancelarServicio.resx">
       <DependentUpon>EditarCancelarServicio.vb</DependentUpon>
@@ -230,6 +245,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pacientes.resx">
       <DependentUpon>Pacientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tratamientos.resx">
+      <DependentUpon>Tratamientos.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

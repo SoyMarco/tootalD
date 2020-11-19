@@ -202,6 +202,12 @@
     <Compile Include="tootalde_dbtDataSet.vb">
       <DependentUpon>tootalde_dbtDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Tratamientos.Designer.vb">
+      <DependentUpon>Tratamientos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tratamientos.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="citas.resx">
@@ -239,6 +245,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pacientes.resx">
       <DependentUpon>Pacientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tratamientos.resx">
+      <DependentUpon>Tratamientos.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -371,4 +371,12 @@
         Cursor = Cursors.WaitCursor
         MostrarIdCita()
     End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+        Tratamientos.Show()
+    End Sub
+
+    Private Sub PictureBox8_Click(sender As Object, e As EventArgs) Handles PictureBox8.Click
+        Tratamientos.Show()
+    End Sub
 End Class

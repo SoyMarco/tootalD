@@ -163,14 +163,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="td.exe" size="1884640">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="td.exe" size="1931232">
       <assemblyIdentity name="td" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>cbHCBeFmmthd/bk5XgNwRt2Q5dMES7FyiiLPBd+kMGg=</dsig:DigestValue>
+        <dsig:DigestValue>HEFyy/a6OJMria+ci5X82ndUR/LqoNjB2QbCNa7j54I=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

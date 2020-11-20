@@ -364,7 +364,7 @@
     End Sub
 
     Private Sub Label6_Click_1(sender As Object, e As EventArgs) Handles Label6.Click
-        Entrada.Show()
+
     End Sub
 
     Private Sub DataGridViewPEÑITAS_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridViewPEÑITAS.CellClick
@@ -378,5 +378,9 @@
 
     Private Sub PictureBox8_Click(sender As Object, e As EventArgs) Handles PictureBox8.Click
         Tratamientos.Show()
+    End Sub
+
+    Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
+        Pacientes.Show()
     End Sub
 End Class

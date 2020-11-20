@@ -928,7 +928,7 @@ Partial Class NuevaCita
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(580, 477)
+        Me.ClientSize = New System.Drawing.Size(586, 477)
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.IdAppointment)
         Me.Controls.Add(Me.PatientDataGridView)

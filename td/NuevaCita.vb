@@ -117,8 +117,6 @@
     End Sub
     Private Sub GuardarCita()
 
-
-
         If PacienteID.Text <> "0" And NuevoDr.Text <> "0" And fecha.Text <> "0" And NuevaHora.Text <> "0" And Estatus.Text <> "0" And NuevoLugar.Text <> "0" Then
             If MsgPacient.Text = "PACIENTE NUEVO" Then
                 NuevoPaciente()

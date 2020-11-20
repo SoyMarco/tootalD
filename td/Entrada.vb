@@ -119,6 +119,7 @@
     End Sub
 
     Private Sub efectivo_KeyPress(sender As Object, e As KeyPressEventArgs) Handles efectivo.KeyPress
+        'SOLO NUMEROS Y UN PUNTO
         If Char.IsNumber(e.KeyChar) Then
             e.Handled = False
         ElseIf Char.IsControl(e.KeyChar) Then

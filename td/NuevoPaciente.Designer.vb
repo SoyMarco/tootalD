@@ -24,53 +24,9 @@ Partial Class NuevoPaciente
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(NuevoPaciente))
-        Me.Tootalde_dbtDataSet = New td.tootalde_dbtDataSet()
-        Me.PatientBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.PatientTableAdapter = New td.tootalde_dbtDataSetTableAdapters.patientTableAdapter()
-        Me.TableAdapterManager = New td.tootalde_dbtDataSetTableAdapters.TableAdapterManager()
-        Me.Users_groupsTableAdapter = New td.tootalde_dbtDataSetTableAdapters.users_groupsTableAdapter()
-        Me.UsersTableAdapter = New td.tootalde_dbtDataSetTableAdapters.usersTableAdapter()
         Me.PatientDataGridView = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn15 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn16 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Users_groupsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Users_groupsDataGridView = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn17 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn18 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn19 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.UsersBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.UsersDataGridView = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn20 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn21 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn22 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn23 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn24 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn25 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn26 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn27 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn28 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn29 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn30 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn31 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn32 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn33 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn34 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn35 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn36 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Email = New System.Windows.Forms.TextBox()
@@ -97,8 +53,6 @@ Partial Class NuevoPaciente
         Me.BtnEditar = New System.Windows.Forms.Button()
         Me.PacienteId = New System.Windows.Forms.Label()
         Me.NuevoDr = New System.Windows.Forms.Label()
-        Me.DoctorBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.DoctorTableAdapter = New td.tootalde_dbtDataSetTableAdapters.doctorTableAdapter()
         Me.DoctorDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn37 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn38 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -111,91 +65,62 @@ Partial Class NuevoPaciente
         Me.DataGridViewTextBoxColumn45 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn46 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn47 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        CType(Me.Tootalde_dbtDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PatientBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.DoctorBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Tootalde_dbtDataSet = New td.tootalde_dbtDataSet()
+        Me.DataGridViewTextBoxColumn17 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn18 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn19 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Users_groupsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn15 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn16 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PatientBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DataGridViewTextBoxColumn20 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn21 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn22 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn23 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn24 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn25 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn26 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn27 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn28 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn29 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn30 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn31 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn32 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn33 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn34 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn35 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn36 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.UsersBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.PatientTableAdapter = New td.tootalde_dbtDataSetTableAdapters.patientTableAdapter()
+        Me.TableAdapterManager = New td.tootalde_dbtDataSetTableAdapters.TableAdapterManager()
+        Me.Users_groupsTableAdapter = New td.tootalde_dbtDataSetTableAdapters.users_groupsTableAdapter()
+        Me.UsersTableAdapter = New td.tootalde_dbtDataSetTableAdapters.usersTableAdapter()
+        Me.DoctorTableAdapter = New td.tootalde_dbtDataSetTableAdapters.doctorTableAdapter()
         CType(Me.PatientDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Users_groupsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Users_groupsDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.UsersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.UsersDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DoctorBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DoctorDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoctorBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Tootalde_dbtDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Users_groupsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PatientBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.UsersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'Tootalde_dbtDataSet
-        '
-        Me.Tootalde_dbtDataSet.DataSetName = "tootalde_dbtDataSet"
-        Me.Tootalde_dbtDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'PatientBindingSource
-        '
-        Me.PatientBindingSource.DataMember = "patient"
-        Me.PatientBindingSource.DataSource = Me.Tootalde_dbtDataSet
-        '
-        'PatientTableAdapter
-        '
-        Me.PatientTableAdapter.ClearBeforeFill = True
-        '
-        'TableAdapterManager
-        '
-        Me.TableAdapterManager.accountantTableAdapter = Nothing
-        Me.TableAdapterManager.appointmentTableAdapter = Nothing
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.bankbTableAdapter = Nothing
-        Me.TableAdapterManager.diagnostic_reportTableAdapter = Nothing
-        Me.TableAdapterManager.doctorTableAdapter = Nothing
-        Me.TableAdapterManager.donorTableAdapter = Nothing
-        Me.TableAdapterManager.email_settingsTableAdapter = Nothing
-        Me.TableAdapterManager.emailTableAdapter = Nothing
-        Me.TableAdapterManager.expense_categoryTableAdapter = Nothing
-        Me.TableAdapterManager.expenseTableAdapter = Nothing
-        Me.TableAdapterManager.featuredTableAdapter = Nothing
-        Me.TableAdapterManager.groupsTableAdapter = Nothing
-        Me.TableAdapterManager.holidaysTableAdapter = Nothing
-        Me.TableAdapterManager.lab_categoryTableAdapter = Nothing
-        Me.TableAdapterManager.laboratoristTableAdapter = Nothing
-        Me.TableAdapterManager.labTableAdapter = Nothing
-        Me.TableAdapterManager.login_attemptsTableAdapter = Nothing
-        Me.TableAdapterManager.medical_historyTableAdapter = Nothing
-        Me.TableAdapterManager.medicine_categoryTableAdapter = Nothing
-        Me.TableAdapterManager.medicineTableAdapter = Nothing
-        Me.TableAdapterManager.nurseTableAdapter = Nothing
-        Me.TableAdapterManager.ot_paymentTableAdapter = Nothing
-        Me.TableAdapterManager.paciente_pagoTableAdapter = Nothing
-        Me.TableAdapterManager.paciente_servicioTableAdapter = Nothing
-        Me.TableAdapterManager.patient_depositTableAdapter = Nothing
-        Me.TableAdapterManager.patient_materialTableAdapter = Nothing
-        Me.TableAdapterManager.patientTableAdapter = Me.PatientTableAdapter
-        Me.TableAdapterManager.payment_categoryTableAdapter = Nothing
-        Me.TableAdapterManager.paymentGatewayTableAdapter = Nothing
-        Me.TableAdapterManager.paymentTableAdapter = Nothing
-        Me.TableAdapterManager.pharmacistTableAdapter = Nothing
-        Me.TableAdapterManager.pharmacy_expense_categoryTableAdapter = Nothing
-        Me.TableAdapterManager.pharmacy_expenseTableAdapter = Nothing
-        Me.TableAdapterManager.pharmacy_payment_categoryTableAdapter = Nothing
-        Me.TableAdapterManager.pharmacy_paymentTableAdapter = Nothing
-        Me.TableAdapterManager.prescriptionTableAdapter = Nothing
-        Me.TableAdapterManager.receptionistTableAdapter = Nothing
-        Me.TableAdapterManager.serviceTableAdapter = Nothing
-        Me.TableAdapterManager.settingsTableAdapter = Nothing
-        Me.TableAdapterManager.slideTableAdapter = Nothing
-        Me.TableAdapterManager.sms_settingsTableAdapter = Nothing
-        Me.TableAdapterManager.smsTableAdapter = Nothing
-        Me.TableAdapterManager.templateTableAdapter = Nothing
-        Me.TableAdapterManager.time_scheduleTableAdapter = Nothing
-        Me.TableAdapterManager.time_slotTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = td.tootalde_dbtDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        Me.TableAdapterManager.users_groupsTableAdapter = Me.Users_groupsTableAdapter
-        Me.TableAdapterManager.usersTableAdapter = Me.UsersTableAdapter
-        Me.TableAdapterManager.website_settingsTableAdapter = Nothing
-        '
-        'Users_groupsTableAdapter
-        '
-        Me.Users_groupsTableAdapter.ClearBeforeFill = True
-        '
-        'UsersTableAdapter
-        '
-        Me.UsersTableAdapter.ClearBeforeFill = True
         '
         'PatientDataGridView
         '
@@ -207,6 +132,421 @@ Partial Class NuevoPaciente
         Me.PatientDataGridView.Name = "PatientDataGridView"
         Me.PatientDataGridView.Size = New System.Drawing.Size(300, 220)
         Me.PatientDataGridView.TabIndex = 1
+        Me.PatientDataGridView.Visible = False
+        '
+        'Users_groupsDataGridView
+        '
+        Me.Users_groupsDataGridView.AutoGenerateColumns = False
+        Me.Users_groupsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.Users_groupsDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn17, Me.DataGridViewTextBoxColumn18, Me.DataGridViewTextBoxColumn19})
+        Me.Users_groupsDataGridView.DataSource = Me.Users_groupsBindingSource
+        Me.Users_groupsDataGridView.Location = New System.Drawing.Point(619, 226)
+        Me.Users_groupsDataGridView.Name = "Users_groupsDataGridView"
+        Me.Users_groupsDataGridView.Size = New System.Drawing.Size(300, 220)
+        Me.Users_groupsDataGridView.TabIndex = 1
+        Me.Users_groupsDataGridView.Visible = False
+        '
+        'UsersDataGridView
+        '
+        Me.UsersDataGridView.AutoGenerateColumns = False
+        Me.UsersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.UsersDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn20, Me.DataGridViewTextBoxColumn21, Me.DataGridViewTextBoxColumn22, Me.DataGridViewTextBoxColumn23, Me.DataGridViewTextBoxColumn24, Me.DataGridViewTextBoxColumn25, Me.DataGridViewTextBoxColumn26, Me.DataGridViewTextBoxColumn27, Me.DataGridViewTextBoxColumn28, Me.DataGridViewTextBoxColumn29, Me.DataGridViewTextBoxColumn30, Me.DataGridViewTextBoxColumn31, Me.DataGridViewTextBoxColumn32, Me.DataGridViewTextBoxColumn33, Me.DataGridViewTextBoxColumn34, Me.DataGridViewTextBoxColumn35, Me.DataGridViewTextBoxColumn36})
+        Me.UsersDataGridView.DataSource = Me.UsersBindingSource
+        Me.UsersDataGridView.Location = New System.Drawing.Point(619, 0)
+        Me.UsersDataGridView.Name = "UsersDataGridView"
+        Me.UsersDataGridView.Size = New System.Drawing.Size(300, 220)
+        Me.UsersDataGridView.TabIndex = 2
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Location = New System.Drawing.Point(216, 552)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
+        Me.DateTimePicker1.TabIndex = 57394
+        Me.DateTimePicker1.Visible = False
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label4.Location = New System.Drawing.Point(7, 48)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(115, 32)
+        Me.Label4.TabIndex = 57392
+        Me.Label4.Text = "Nombre"
+        '
+        'Email
+        '
+        Me.Email.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.Email.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Email.Location = New System.Drawing.Point(135, 96)
+        Me.Email.Name = "Email"
+        Me.Email.Size = New System.Drawing.Size(373, 30)
+        Me.Email.TabIndex = 57395
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(10, 96)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(88, 32)
+        Me.Label1.TabIndex = 57396
+        Me.Label1.Text = "Email"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(10, 239)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(123, 32)
+        Me.Label2.TabIndex = 57397
+        Me.Label2.Text = "Telefono"
+        '
+        'Doctor
+        '
+        Me.Doctor.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest
+        Me.Doctor.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.Doctor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Doctor.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Doctor.FormattingEnabled = True
+        Me.Doctor.Items.AddRange(New Object() {"J. Oscar Quevedo Mendoza", "Yeimi Yuriet Muñoz Angeles", "Ariadna Campos Hurtado", "Aime Abigail  Vasquez Perez"})
+        Me.Doctor.Location = New System.Drawing.Point(135, 136)
+        Me.Doctor.Name = "Doctor"
+        Me.Doctor.Size = New System.Drawing.Size(373, 31)
+        Me.Doctor.TabIndex = 57398
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label3.Location = New System.Drawing.Point(7, 136)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(78, 32)
+        Me.Label3.TabIndex = 57399
+        Me.Label3.Text = "Dr(a)"
+        '
+        'lugar
+        '
+        Me.lugar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.lugar.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lugar.FormattingEnabled = True
+        Me.lugar.Items.AddRange(New Object() {"Peñitas", "Lago"})
+        Me.lugar.Location = New System.Drawing.Point(135, 187)
+        Me.lugar.Name = "lugar"
+        Me.lugar.Size = New System.Drawing.Size(373, 31)
+        Me.lugar.TabIndex = 57401
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label5.Location = New System.Drawing.Point(7, 187)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(89, 32)
+        Me.Label5.TabIndex = 57402
+        Me.Label5.Text = "Lugar"
+        '
+        'Telefono
+        '
+        Me.Telefono.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.Telefono.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Telefono.Location = New System.Drawing.Point(135, 243)
+        Me.Telefono.Name = "Telefono"
+        Me.Telefono.Size = New System.Drawing.Size(373, 30)
+        Me.Telefono.TabIndex = 57404
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label6.Location = New System.Drawing.Point(7, 287)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(78, 32)
+        Me.Label6.TabIndex = 57405
+        Me.Label6.Text = "Sexo"
+        '
+        'Sexo
+        '
+        Me.Sexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Sexo.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Sexo.FormattingEnabled = True
+        Me.Sexo.Items.AddRange(New Object() {"Femenino", "Masculino", "Otro"})
+        Me.Sexo.Location = New System.Drawing.Point(135, 291)
+        Me.Sexo.Name = "Sexo"
+        Me.Sexo.Size = New System.Drawing.Size(373, 31)
+        Me.Sexo.TabIndex = 57406
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label7.Location = New System.Drawing.Point(10, 342)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(80, 32)
+        Me.Label7.TabIndex = 57407
+        Me.Label7.Text = "Edad"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Helvetica LT Std", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label8.Location = New System.Drawing.Point(8, 387)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(127, 50)
+        Me.Label8.TabIndex = 57408
+        Me.Label8.Text = "Fecha " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Nacimiento"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Helvetica LT Std", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label9.Location = New System.Drawing.Point(8, 447)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(88, 50)
+        Me.Label9.TabIndex = 57409
+        Me.Label9.Text = "Tipo de" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Sangre"
+        '
+        'Edad
+        '
+        Me.Edad.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.Edad.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Edad.Location = New System.Drawing.Point(135, 342)
+        Me.Edad.Name = "Edad"
+        Me.Edad.Size = New System.Drawing.Size(373, 30)
+        Me.Edad.TabIndex = 57410
+        '
+        'FNacimiento
+        '
+        Me.FNacimiento.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.FNacimiento.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.FNacimiento.Location = New System.Drawing.Point(135, 407)
+        Me.FNacimiento.Name = "FNacimiento"
+        Me.FNacimiento.Size = New System.Drawing.Size(373, 30)
+        Me.FNacimiento.TabIndex = 57411
+        '
+        'TipSangre
+        '
+        Me.TipSangre.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.TipSangre.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.TipSangre.Location = New System.Drawing.Point(135, 467)
+        Me.TipSangre.Name = "TipSangre"
+        Me.TipSangre.Size = New System.Drawing.Size(373, 30)
+        Me.TipSangre.TabIndex = 57412
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Helvetica LT Std", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label10.Location = New System.Drawing.Point(132, 386)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(138, 25)
+        Me.Label10.TabIndex = 57413
+        Me.Label10.Text = "dd-mm-aaaa"
+        '
+        'BtnGuardar
+        '
+        Me.BtnGuardar.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BtnGuardar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnGuardar.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnGuardar.ForeColor = System.Drawing.Color.White
+        Me.BtnGuardar.Location = New System.Drawing.Point(135, 503)
+        Me.BtnGuardar.Name = "BtnGuardar"
+        Me.BtnGuardar.Size = New System.Drawing.Size(185, 49)
+        Me.BtnGuardar.TabIndex = 57414
+        Me.BtnGuardar.Text = "Guardar"
+        Me.BtnGuardar.UseVisualStyleBackColor = False
+        Me.BtnGuardar.Visible = False
+        '
+        'Informe
+        '
+        Me.Informe.AutoSize = True
+        Me.Informe.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Informe.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Informe.Location = New System.Drawing.Point(195, -1)
+        Me.Informe.Name = "Informe"
+        Me.Informe.Size = New System.Drawing.Size(243, 32)
+        Me.Informe.TabIndex = 57415
+        Me.Informe.Text = "DATOS PACIENTE"
+        '
+        'Nombre
+        '
+        Me.Nombre.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.Nombre.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Nombre.Location = New System.Drawing.Point(135, 48)
+        Me.Nombre.Name = "Nombre"
+        Me.Nombre.Size = New System.Drawing.Size(373, 30)
+        Me.Nombre.TabIndex = 57416
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.ForeColor = System.Drawing.Color.Red
+        Me.Label12.Location = New System.Drawing.Point(503, 44)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(26, 32)
+        Me.Label12.TabIndex = 57417
+        Me.Label12.Text = "*"
+        '
+        'BtnEditar
+        '
+        Me.BtnEditar.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.BtnEditar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnEditar.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnEditar.ForeColor = System.Drawing.Color.White
+        Me.BtnEditar.Location = New System.Drawing.Point(323, 503)
+        Me.BtnEditar.Name = "BtnEditar"
+        Me.BtnEditar.Size = New System.Drawing.Size(185, 49)
+        Me.BtnEditar.TabIndex = 57418
+        Me.BtnEditar.Text = "Editar"
+        Me.BtnEditar.UseVisualStyleBackColor = False
+        Me.BtnEditar.Visible = False
+        '
+        'PacienteId
+        '
+        Me.PacienteId.AutoSize = True
+        Me.PacienteId.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PacienteId.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.PacienteId.Location = New System.Drawing.Point(7, 520)
+        Me.PacienteId.Name = "PacienteId"
+        Me.PacienteId.Size = New System.Drawing.Size(39, 32)
+        Me.PacienteId.TabIndex = 57419
+        Me.PacienteId.Text = "id"
+        '
+        'NuevoDr
+        '
+        Me.NuevoDr.AutoSize = True
+        Me.NuevoDr.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NuevoDr.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.NuevoDr.Location = New System.Drawing.Point(514, 136)
+        Me.NuevoDr.Name = "NuevoDr"
+        Me.NuevoDr.Size = New System.Drawing.Size(30, 32)
+        Me.NuevoDr.TabIndex = 57420
+        Me.NuevoDr.Text = "0"
+        Me.NuevoDr.Visible = False
+        '
+        'DoctorDataGridView
+        '
+        Me.DoctorDataGridView.AutoGenerateColumns = False
+        Me.DoctorDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DoctorDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn37, Me.DataGridViewTextBoxColumn38, Me.DataGridViewTextBoxColumn39, Me.DataGridViewTextBoxColumn40, Me.DataGridViewTextBoxColumn41, Me.DataGridViewTextBoxColumn42, Me.DataGridViewTextBoxColumn43, Me.DataGridViewTextBoxColumn44, Me.DataGridViewTextBoxColumn45, Me.DataGridViewTextBoxColumn46, Me.DataGridViewTextBoxColumn47})
+        Me.DoctorDataGridView.DataSource = Me.DoctorBindingSource
+        Me.DoctorDataGridView.Location = New System.Drawing.Point(619, 342)
+        Me.DoctorDataGridView.Name = "DoctorDataGridView"
+        Me.DoctorDataGridView.Size = New System.Drawing.Size(300, 220)
+        Me.DoctorDataGridView.TabIndex = 57420
+        Me.DoctorDataGridView.Visible = False
+        '
+        'DataGridViewTextBoxColumn37
+        '
+        Me.DataGridViewTextBoxColumn37.DataPropertyName = "id"
+        Me.DataGridViewTextBoxColumn37.HeaderText = "id"
+        Me.DataGridViewTextBoxColumn37.Name = "DataGridViewTextBoxColumn37"
+        '
+        'DataGridViewTextBoxColumn38
+        '
+        Me.DataGridViewTextBoxColumn38.DataPropertyName = "img_url"
+        Me.DataGridViewTextBoxColumn38.HeaderText = "img_url"
+        Me.DataGridViewTextBoxColumn38.Name = "DataGridViewTextBoxColumn38"
+        '
+        'DataGridViewTextBoxColumn39
+        '
+        Me.DataGridViewTextBoxColumn39.DataPropertyName = "name"
+        Me.DataGridViewTextBoxColumn39.HeaderText = "name"
+        Me.DataGridViewTextBoxColumn39.Name = "DataGridViewTextBoxColumn39"
+        '
+        'DataGridViewTextBoxColumn40
+        '
+        Me.DataGridViewTextBoxColumn40.DataPropertyName = "email"
+        Me.DataGridViewTextBoxColumn40.HeaderText = "email"
+        Me.DataGridViewTextBoxColumn40.Name = "DataGridViewTextBoxColumn40"
+        '
+        'DataGridViewTextBoxColumn41
+        '
+        Me.DataGridViewTextBoxColumn41.DataPropertyName = "address"
+        Me.DataGridViewTextBoxColumn41.HeaderText = "address"
+        Me.DataGridViewTextBoxColumn41.Name = "DataGridViewTextBoxColumn41"
+        '
+        'DataGridViewTextBoxColumn42
+        '
+        Me.DataGridViewTextBoxColumn42.DataPropertyName = "phone"
+        Me.DataGridViewTextBoxColumn42.HeaderText = "phone"
+        Me.DataGridViewTextBoxColumn42.Name = "DataGridViewTextBoxColumn42"
+        '
+        'DataGridViewTextBoxColumn43
+        '
+        Me.DataGridViewTextBoxColumn43.DataPropertyName = "department"
+        Me.DataGridViewTextBoxColumn43.HeaderText = "department"
+        Me.DataGridViewTextBoxColumn43.Name = "DataGridViewTextBoxColumn43"
+        '
+        'DataGridViewTextBoxColumn44
+        '
+        Me.DataGridViewTextBoxColumn44.DataPropertyName = "profile"
+        Me.DataGridViewTextBoxColumn44.HeaderText = "profile"
+        Me.DataGridViewTextBoxColumn44.Name = "DataGridViewTextBoxColumn44"
+        '
+        'DataGridViewTextBoxColumn45
+        '
+        Me.DataGridViewTextBoxColumn45.DataPropertyName = "x"
+        Me.DataGridViewTextBoxColumn45.HeaderText = "x"
+        Me.DataGridViewTextBoxColumn45.Name = "DataGridViewTextBoxColumn45"
+        '
+        'DataGridViewTextBoxColumn46
+        '
+        Me.DataGridViewTextBoxColumn46.DataPropertyName = "y"
+        Me.DataGridViewTextBoxColumn46.HeaderText = "y"
+        Me.DataGridViewTextBoxColumn46.Name = "DataGridViewTextBoxColumn46"
+        '
+        'DataGridViewTextBoxColumn47
+        '
+        Me.DataGridViewTextBoxColumn47.DataPropertyName = "ion_user_id"
+        Me.DataGridViewTextBoxColumn47.HeaderText = "ion_user_id"
+        Me.DataGridViewTextBoxColumn47.Name = "DataGridViewTextBoxColumn47"
+        '
+        'DoctorBindingSource
+        '
+        Me.DoctorBindingSource.DataMember = "doctor"
+        Me.DoctorBindingSource.DataSource = Me.Tootalde_dbtDataSet
+        '
+        'Tootalde_dbtDataSet
+        '
+        Me.Tootalde_dbtDataSet.DataSetName = "tootalde_dbtDataSet"
+        Me.Tootalde_dbtDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'DataGridViewTextBoxColumn17
+        '
+        Me.DataGridViewTextBoxColumn17.DataPropertyName = "id"
+        Me.DataGridViewTextBoxColumn17.HeaderText = "id"
+        Me.DataGridViewTextBoxColumn17.Name = "DataGridViewTextBoxColumn17"
+        '
+        'DataGridViewTextBoxColumn18
+        '
+        Me.DataGridViewTextBoxColumn18.DataPropertyName = "user_id"
+        Me.DataGridViewTextBoxColumn18.HeaderText = "user_id"
+        Me.DataGridViewTextBoxColumn18.Name = "DataGridViewTextBoxColumn18"
+        '
+        'DataGridViewTextBoxColumn19
+        '
+        Me.DataGridViewTextBoxColumn19.DataPropertyName = "group_id"
+        Me.DataGridViewTextBoxColumn19.HeaderText = "group_id"
+        Me.DataGridViewTextBoxColumn19.Name = "DataGridViewTextBoxColumn19"
+        '
+        'Users_groupsBindingSource
+        '
+        Me.Users_groupsBindingSource.DataMember = "users_groups"
+        Me.Users_groupsBindingSource.DataSource = Me.Tootalde_dbtDataSet
         '
         'DataGridViewTextBoxColumn1
         '
@@ -304,55 +644,10 @@ Partial Class NuevoPaciente
         Me.DataGridViewTextBoxColumn16.HeaderText = "how_added"
         Me.DataGridViewTextBoxColumn16.Name = "DataGridViewTextBoxColumn16"
         '
-        'Users_groupsBindingSource
+        'PatientBindingSource
         '
-        Me.Users_groupsBindingSource.DataMember = "users_groups"
-        Me.Users_groupsBindingSource.DataSource = Me.Tootalde_dbtDataSet
-        '
-        'Users_groupsDataGridView
-        '
-        Me.Users_groupsDataGridView.AutoGenerateColumns = False
-        Me.Users_groupsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.Users_groupsDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn17, Me.DataGridViewTextBoxColumn18, Me.DataGridViewTextBoxColumn19})
-        Me.Users_groupsDataGridView.DataSource = Me.Users_groupsBindingSource
-        Me.Users_groupsDataGridView.Location = New System.Drawing.Point(619, 226)
-        Me.Users_groupsDataGridView.Name = "Users_groupsDataGridView"
-        Me.Users_groupsDataGridView.Size = New System.Drawing.Size(300, 220)
-        Me.Users_groupsDataGridView.TabIndex = 1
-        '
-        'DataGridViewTextBoxColumn17
-        '
-        Me.DataGridViewTextBoxColumn17.DataPropertyName = "id"
-        Me.DataGridViewTextBoxColumn17.HeaderText = "id"
-        Me.DataGridViewTextBoxColumn17.Name = "DataGridViewTextBoxColumn17"
-        '
-        'DataGridViewTextBoxColumn18
-        '
-        Me.DataGridViewTextBoxColumn18.DataPropertyName = "user_id"
-        Me.DataGridViewTextBoxColumn18.HeaderText = "user_id"
-        Me.DataGridViewTextBoxColumn18.Name = "DataGridViewTextBoxColumn18"
-        '
-        'DataGridViewTextBoxColumn19
-        '
-        Me.DataGridViewTextBoxColumn19.DataPropertyName = "group_id"
-        Me.DataGridViewTextBoxColumn19.HeaderText = "group_id"
-        Me.DataGridViewTextBoxColumn19.Name = "DataGridViewTextBoxColumn19"
-        '
-        'UsersBindingSource
-        '
-        Me.UsersBindingSource.DataMember = "users"
-        Me.UsersBindingSource.DataSource = Me.Tootalde_dbtDataSet
-        '
-        'UsersDataGridView
-        '
-        Me.UsersDataGridView.AutoGenerateColumns = False
-        Me.UsersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.UsersDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn20, Me.DataGridViewTextBoxColumn21, Me.DataGridViewTextBoxColumn22, Me.DataGridViewTextBoxColumn23, Me.DataGridViewTextBoxColumn24, Me.DataGridViewTextBoxColumn25, Me.DataGridViewTextBoxColumn26, Me.DataGridViewTextBoxColumn27, Me.DataGridViewTextBoxColumn28, Me.DataGridViewTextBoxColumn29, Me.DataGridViewTextBoxColumn30, Me.DataGridViewTextBoxColumn31, Me.DataGridViewTextBoxColumn32, Me.DataGridViewTextBoxColumn33, Me.DataGridViewTextBoxColumn34, Me.DataGridViewTextBoxColumn35, Me.DataGridViewTextBoxColumn36})
-        Me.UsersDataGridView.DataSource = Me.UsersBindingSource
-        Me.UsersDataGridView.Location = New System.Drawing.Point(619, 0)
-        Me.UsersDataGridView.Name = "UsersDataGridView"
-        Me.UsersDataGridView.Size = New System.Drawing.Size(300, 220)
-        Me.UsersDataGridView.TabIndex = 2
+        Me.PatientBindingSource.DataMember = "patient"
+        Me.PatientBindingSource.DataSource = Me.Tootalde_dbtDataSet
         '
         'DataGridViewTextBoxColumn20
         '
@@ -456,377 +751,86 @@ Partial Class NuevoPaciente
         Me.DataGridViewTextBoxColumn36.HeaderText = "phone"
         Me.DataGridViewTextBoxColumn36.Name = "DataGridViewTextBoxColumn36"
         '
-        'DateTimePicker1
+        'UsersBindingSource
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(216, 552)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
-        Me.DateTimePicker1.TabIndex = 57394
-        Me.DateTimePicker1.Visible = False
+        Me.UsersBindingSource.DataMember = "users"
+        Me.UsersBindingSource.DataSource = Me.Tootalde_dbtDataSet
         '
-        'Label4
+        'PatientTableAdapter
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(7, 48)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(115, 32)
-        Me.Label4.TabIndex = 57392
-        Me.Label4.Text = "Nombre"
+        Me.PatientTableAdapter.ClearBeforeFill = True
         '
-        'Email
+        'TableAdapterManager
         '
-        Me.Email.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.Email.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Email.Location = New System.Drawing.Point(135, 96)
-        Me.Email.Name = "Email"
-        Me.Email.Size = New System.Drawing.Size(373, 30)
-        Me.Email.TabIndex = 57395
+        Me.TableAdapterManager.accountantTableAdapter = Nothing
+        Me.TableAdapterManager.appointmentTableAdapter = Nothing
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.bankbTableAdapter = Nothing
+        Me.TableAdapterManager.diagnostic_reportTableAdapter = Nothing
+        Me.TableAdapterManager.doctorTableAdapter = Nothing
+        Me.TableAdapterManager.donorTableAdapter = Nothing
+        Me.TableAdapterManager.email_settingsTableAdapter = Nothing
+        Me.TableAdapterManager.emailTableAdapter = Nothing
+        Me.TableAdapterManager.expense_categoryTableAdapter = Nothing
+        Me.TableAdapterManager.expenseTableAdapter = Nothing
+        Me.TableAdapterManager.featuredTableAdapter = Nothing
+        Me.TableAdapterManager.groupsTableAdapter = Nothing
+        Me.TableAdapterManager.holidaysTableAdapter = Nothing
+        Me.TableAdapterManager.lab_categoryTableAdapter = Nothing
+        Me.TableAdapterManager.laboratoristTableAdapter = Nothing
+        Me.TableAdapterManager.labTableAdapter = Nothing
+        Me.TableAdapterManager.login_attemptsTableAdapter = Nothing
+        Me.TableAdapterManager.medical_historyTableAdapter = Nothing
+        Me.TableAdapterManager.medicine_categoryTableAdapter = Nothing
+        Me.TableAdapterManager.medicineTableAdapter = Nothing
+        Me.TableAdapterManager.nurseTableAdapter = Nothing
+        Me.TableAdapterManager.ot_paymentTableAdapter = Nothing
+        Me.TableAdapterManager.paciente_pagoTableAdapter = Nothing
+        Me.TableAdapterManager.paciente_servicioTableAdapter = Nothing
+        Me.TableAdapterManager.patient_depositTableAdapter = Nothing
+        Me.TableAdapterManager.patient_materialTableAdapter = Nothing
+        Me.TableAdapterManager.patientTableAdapter = Me.PatientTableAdapter
+        Me.TableAdapterManager.payment_categoryTableAdapter = Nothing
+        Me.TableAdapterManager.paymentGatewayTableAdapter = Nothing
+        Me.TableAdapterManager.paymentTableAdapter = Nothing
+        Me.TableAdapterManager.pharmacistTableAdapter = Nothing
+        Me.TableAdapterManager.pharmacy_expense_categoryTableAdapter = Nothing
+        Me.TableAdapterManager.pharmacy_expenseTableAdapter = Nothing
+        Me.TableAdapterManager.pharmacy_payment_categoryTableAdapter = Nothing
+        Me.TableAdapterManager.pharmacy_paymentTableAdapter = Nothing
+        Me.TableAdapterManager.prescriptionTableAdapter = Nothing
+        Me.TableAdapterManager.receptionistTableAdapter = Nothing
+        Me.TableAdapterManager.serviceTableAdapter = Nothing
+        Me.TableAdapterManager.settingsTableAdapter = Nothing
+        Me.TableAdapterManager.slideTableAdapter = Nothing
+        Me.TableAdapterManager.sms_settingsTableAdapter = Nothing
+        Me.TableAdapterManager.smsTableAdapter = Nothing
+        Me.TableAdapterManager.templateTableAdapter = Nothing
+        Me.TableAdapterManager.time_scheduleTableAdapter = Nothing
+        Me.TableAdapterManager.time_slotTableAdapter = Nothing
+        Me.TableAdapterManager.UpdateOrder = td.tootalde_dbtDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.users_groupsTableAdapter = Me.Users_groupsTableAdapter
+        Me.TableAdapterManager.usersTableAdapter = Me.UsersTableAdapter
+        Me.TableAdapterManager.website_settingsTableAdapter = Nothing
         '
-        'Label1
+        'Users_groupsTableAdapter
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(10, 96)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(88, 32)
-        Me.Label1.TabIndex = 57396
-        Me.Label1.Text = "Email"
+        Me.Users_groupsTableAdapter.ClearBeforeFill = True
         '
-        'Label2
+        'UsersTableAdapter
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(10, 239)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(123, 32)
-        Me.Label2.TabIndex = 57397
-        Me.Label2.Text = "Telefono"
-        '
-        'Doctor
-        '
-        Me.Doctor.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest
-        Me.Doctor.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.Doctor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Doctor.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Doctor.FormattingEnabled = True
-        Me.Doctor.Items.AddRange(New Object() {"J. Oscar Quevedo Mendoza", "Yeimi Yuriet Muñoz Angeles", "Ariadna Campos Hurtado", "Aime Abigail  Vasquez Perez"})
-        Me.Doctor.Location = New System.Drawing.Point(135, 136)
-        Me.Doctor.Name = "Doctor"
-        Me.Doctor.Size = New System.Drawing.Size(373, 31)
-        Me.Doctor.TabIndex = 57398
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(7, 136)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(78, 32)
-        Me.Label3.TabIndex = 57399
-        Me.Label3.Text = "Dr(a)"
-        '
-        'lugar
-        '
-        Me.lugar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.lugar.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lugar.FormattingEnabled = True
-        Me.lugar.Items.AddRange(New Object() {"Peñitas", "Lago"})
-        Me.lugar.Location = New System.Drawing.Point(135, 187)
-        Me.lugar.Name = "lugar"
-        Me.lugar.Size = New System.Drawing.Size(373, 31)
-        Me.lugar.TabIndex = 57401
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(7, 187)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(89, 32)
-        Me.Label5.TabIndex = 57402
-        Me.Label5.Text = "Lugar"
-        '
-        'Telefono
-        '
-        Me.Telefono.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.Telefono.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Telefono.Location = New System.Drawing.Point(135, 243)
-        Me.Telefono.Name = "Telefono"
-        Me.Telefono.Size = New System.Drawing.Size(373, 30)
-        Me.Telefono.TabIndex = 57404
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(7, 287)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(78, 32)
-        Me.Label6.TabIndex = 57405
-        Me.Label6.Text = "Sexo"
-        '
-        'Sexo
-        '
-        Me.Sexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Sexo.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Sexo.FormattingEnabled = True
-        Me.Sexo.Items.AddRange(New Object() {"Femenino", "Masculino", "Otro"})
-        Me.Sexo.Location = New System.Drawing.Point(135, 291)
-        Me.Sexo.Name = "Sexo"
-        Me.Sexo.Size = New System.Drawing.Size(373, 31)
-        Me.Sexo.TabIndex = 57406
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(10, 342)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(80, 32)
-        Me.Label7.TabIndex = 57407
-        Me.Label7.Text = "Edad"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Helvetica LT Std", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(8, 387)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(127, 50)
-        Me.Label8.TabIndex = 57408
-        Me.Label8.Text = "Fecha " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Nacimiento"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Helvetica LT Std", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label9.Location = New System.Drawing.Point(8, 447)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(88, 50)
-        Me.Label9.TabIndex = 57409
-        Me.Label9.Text = "Tipo de" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Sangre"
-        '
-        'Edad
-        '
-        Me.Edad.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.Edad.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Edad.Location = New System.Drawing.Point(135, 342)
-        Me.Edad.Name = "Edad"
-        Me.Edad.Size = New System.Drawing.Size(373, 30)
-        Me.Edad.TabIndex = 57410
-        '
-        'FNacimiento
-        '
-        Me.FNacimiento.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.FNacimiento.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.FNacimiento.Location = New System.Drawing.Point(135, 407)
-        Me.FNacimiento.Name = "FNacimiento"
-        Me.FNacimiento.Size = New System.Drawing.Size(373, 30)
-        Me.FNacimiento.TabIndex = 57411
-        '
-        'TipSangre
-        '
-        Me.TipSangre.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.TipSangre.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.TipSangre.Location = New System.Drawing.Point(135, 467)
-        Me.TipSangre.Name = "TipSangre"
-        Me.TipSangre.Size = New System.Drawing.Size(373, 30)
-        Me.TipSangre.TabIndex = 57412
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Helvetica LT Std", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label10.Location = New System.Drawing.Point(132, 386)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(138, 25)
-        Me.Label10.TabIndex = 57413
-        Me.Label10.Text = "dd-mm-aaaa"
-        '
-        'BtnGuardar
-        '
-        Me.BtnGuardar.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BtnGuardar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BtnGuardar.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnGuardar.ForeColor = System.Drawing.Color.White
-        Me.BtnGuardar.Location = New System.Drawing.Point(135, 503)
-        Me.BtnGuardar.Name = "BtnGuardar"
-        Me.BtnGuardar.Size = New System.Drawing.Size(185, 49)
-        Me.BtnGuardar.TabIndex = 57414
-        Me.BtnGuardar.Text = "Guardar"
-        Me.BtnGuardar.UseVisualStyleBackColor = False
-        Me.BtnGuardar.Visible = False
-        '
-        'Informe
-        '
-        Me.Informe.AutoSize = True
-        Me.Informe.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Informe.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Informe.Location = New System.Drawing.Point(152, 0)
-        Me.Informe.Name = "Informe"
-        Me.Informe.Size = New System.Drawing.Size(345, 32)
-        Me.Informe.TabIndex = 57415
-        Me.Informe.Text = "DATOS NUEVO PACIENTE"
-        '
-        'Nombre
-        '
-        Me.Nombre.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.Nombre.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Nombre.Location = New System.Drawing.Point(135, 48)
-        Me.Nombre.Name = "Nombre"
-        Me.Nombre.Size = New System.Drawing.Size(373, 30)
-        Me.Nombre.TabIndex = 57416
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.ForeColor = System.Drawing.Color.Red
-        Me.Label12.Location = New System.Drawing.Point(503, 44)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(26, 32)
-        Me.Label12.TabIndex = 57417
-        Me.Label12.Text = "*"
-        '
-        'BtnEditar
-        '
-        Me.BtnEditar.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.BtnEditar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BtnEditar.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnEditar.ForeColor = System.Drawing.Color.White
-        Me.BtnEditar.Location = New System.Drawing.Point(323, 503)
-        Me.BtnEditar.Name = "BtnEditar"
-        Me.BtnEditar.Size = New System.Drawing.Size(185, 49)
-        Me.BtnEditar.TabIndex = 57418
-        Me.BtnEditar.Text = "Editar"
-        Me.BtnEditar.UseVisualStyleBackColor = False
-        Me.BtnEditar.Visible = False
-        '
-        'PacienteId
-        '
-        Me.PacienteId.AutoSize = True
-        Me.PacienteId.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PacienteId.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.PacienteId.Location = New System.Drawing.Point(-3, 0)
-        Me.PacienteId.Name = "PacienteId"
-        Me.PacienteId.Size = New System.Drawing.Size(39, 32)
-        Me.PacienteId.TabIndex = 57419
-        Me.PacienteId.Text = "id"
-        '
-        'NuevoDr
-        '
-        Me.NuevoDr.AutoSize = True
-        Me.NuevoDr.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NuevoDr.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.NuevoDr.Location = New System.Drawing.Point(514, 136)
-        Me.NuevoDr.Name = "NuevoDr"
-        Me.NuevoDr.Size = New System.Drawing.Size(30, 32)
-        Me.NuevoDr.TabIndex = 57420
-        Me.NuevoDr.Text = "0"
-        '
-        'DoctorBindingSource
-        '
-        Me.DoctorBindingSource.DataMember = "doctor"
-        Me.DoctorBindingSource.DataSource = Me.Tootalde_dbtDataSet
+        Me.UsersTableAdapter.ClearBeforeFill = True
         '
         'DoctorTableAdapter
         '
         Me.DoctorTableAdapter.ClearBeforeFill = True
-        '
-        'DoctorDataGridView
-        '
-        Me.DoctorDataGridView.AutoGenerateColumns = False
-        Me.DoctorDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DoctorDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn37, Me.DataGridViewTextBoxColumn38, Me.DataGridViewTextBoxColumn39, Me.DataGridViewTextBoxColumn40, Me.DataGridViewTextBoxColumn41, Me.DataGridViewTextBoxColumn42, Me.DataGridViewTextBoxColumn43, Me.DataGridViewTextBoxColumn44, Me.DataGridViewTextBoxColumn45, Me.DataGridViewTextBoxColumn46, Me.DataGridViewTextBoxColumn47})
-        Me.DoctorDataGridView.DataSource = Me.DoctorBindingSource
-        Me.DoctorDataGridView.Location = New System.Drawing.Point(619, 342)
-        Me.DoctorDataGridView.Name = "DoctorDataGridView"
-        Me.DoctorDataGridView.Size = New System.Drawing.Size(300, 220)
-        Me.DoctorDataGridView.TabIndex = 57420
-        '
-        'DataGridViewTextBoxColumn37
-        '
-        Me.DataGridViewTextBoxColumn37.DataPropertyName = "id"
-        Me.DataGridViewTextBoxColumn37.HeaderText = "id"
-        Me.DataGridViewTextBoxColumn37.Name = "DataGridViewTextBoxColumn37"
-        '
-        'DataGridViewTextBoxColumn38
-        '
-        Me.DataGridViewTextBoxColumn38.DataPropertyName = "img_url"
-        Me.DataGridViewTextBoxColumn38.HeaderText = "img_url"
-        Me.DataGridViewTextBoxColumn38.Name = "DataGridViewTextBoxColumn38"
-        '
-        'DataGridViewTextBoxColumn39
-        '
-        Me.DataGridViewTextBoxColumn39.DataPropertyName = "name"
-        Me.DataGridViewTextBoxColumn39.HeaderText = "name"
-        Me.DataGridViewTextBoxColumn39.Name = "DataGridViewTextBoxColumn39"
-        '
-        'DataGridViewTextBoxColumn40
-        '
-        Me.DataGridViewTextBoxColumn40.DataPropertyName = "email"
-        Me.DataGridViewTextBoxColumn40.HeaderText = "email"
-        Me.DataGridViewTextBoxColumn40.Name = "DataGridViewTextBoxColumn40"
-        '
-        'DataGridViewTextBoxColumn41
-        '
-        Me.DataGridViewTextBoxColumn41.DataPropertyName = "address"
-        Me.DataGridViewTextBoxColumn41.HeaderText = "address"
-        Me.DataGridViewTextBoxColumn41.Name = "DataGridViewTextBoxColumn41"
-        '
-        'DataGridViewTextBoxColumn42
-        '
-        Me.DataGridViewTextBoxColumn42.DataPropertyName = "phone"
-        Me.DataGridViewTextBoxColumn42.HeaderText = "phone"
-        Me.DataGridViewTextBoxColumn42.Name = "DataGridViewTextBoxColumn42"
-        '
-        'DataGridViewTextBoxColumn43
-        '
-        Me.DataGridViewTextBoxColumn43.DataPropertyName = "department"
-        Me.DataGridViewTextBoxColumn43.HeaderText = "department"
-        Me.DataGridViewTextBoxColumn43.Name = "DataGridViewTextBoxColumn43"
-        '
-        'DataGridViewTextBoxColumn44
-        '
-        Me.DataGridViewTextBoxColumn44.DataPropertyName = "profile"
-        Me.DataGridViewTextBoxColumn44.HeaderText = "profile"
-        Me.DataGridViewTextBoxColumn44.Name = "DataGridViewTextBoxColumn44"
-        '
-        'DataGridViewTextBoxColumn45
-        '
-        Me.DataGridViewTextBoxColumn45.DataPropertyName = "x"
-        Me.DataGridViewTextBoxColumn45.HeaderText = "x"
-        Me.DataGridViewTextBoxColumn45.Name = "DataGridViewTextBoxColumn45"
-        '
-        'DataGridViewTextBoxColumn46
-        '
-        Me.DataGridViewTextBoxColumn46.DataPropertyName = "y"
-        Me.DataGridViewTextBoxColumn46.HeaderText = "y"
-        Me.DataGridViewTextBoxColumn46.Name = "DataGridViewTextBoxColumn46"
-        '
-        'DataGridViewTextBoxColumn47
-        '
-        Me.DataGridViewTextBoxColumn47.DataPropertyName = "ion_user_id"
-        Me.DataGridViewTextBoxColumn47.HeaderText = "ion_user_id"
-        Me.DataGridViewTextBoxColumn47.Name = "DataGridViewTextBoxColumn47"
         '
         'NuevoPaciente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(985, 578)
+        Me.ClientSize = New System.Drawing.Size(559, 578)
         Me.Controls.Add(Me.DoctorDataGridView)
         Me.Controls.Add(Me.NuevoDr)
         Me.Controls.Add(Me.PacienteId)
@@ -861,15 +865,15 @@ Partial Class NuevoPaciente
         Me.Name = "NuevoPaciente"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "NuevoPaciente"
-        CType(Me.Tootalde_dbtDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PatientBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PatientDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Users_groupsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Users_groupsDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.UsersBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.UsersDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DoctorBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DoctorDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoctorBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Tootalde_dbtDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Users_groupsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PatientBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.UsersBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

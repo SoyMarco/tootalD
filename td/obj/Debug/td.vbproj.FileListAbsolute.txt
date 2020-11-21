@@ -77,3 +77,5 @@ C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.vbprojAssemblyReference.cach
 C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.Tratamientos.resources
 C:\Users\Marco\Source\Repos\tootalD\td\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.NuevoPaciente.resources
+C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.OpcionesPacientes.resources
+C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.Corte.resources

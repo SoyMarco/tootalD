@@ -13,6 +13,8 @@
 
         DateTimePickerDia.Value = home.DateTimePicker1.Value
         IdAppointment.Text = home.IDcita.Text
+        Cursor = Cursors.Default
+        home.Cursor = Cursors.Default
     End Sub
 
     Public Sub DatosId()

@@ -274,6 +274,7 @@
     End Sub
 
     Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
+        Cursor = Cursors.WaitCursor
         NuevaCita.Show()
     End Sub
 
@@ -382,5 +383,9 @@
 
     Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
         Pacientes.Show()
+    End Sub
+
+    Private Sub Label12_Click(sender As Object, e As EventArgs) Handles Label12.Click
+        Corte.Show()
     End Sub
 End Class

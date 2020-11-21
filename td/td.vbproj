@@ -124,6 +124,12 @@
     <Compile Include="citas.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Corte.Designer.vb">
+      <DependentUpon>Corte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Corte.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="dinero.Designer.vb">
       <DependentUpon>dinero.vb</DependentUpon>
     </Compile>
@@ -194,6 +200,12 @@
     <Compile Include="NuevoPaciente.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="OpcionesPacientes.Designer.vb">
+      <DependentUpon>OpcionesPacientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionesPacientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Pacientes.Designer.vb">
       <DependentUpon>Pacientes.vb</DependentUpon>
     </Compile>
@@ -218,6 +230,9 @@
   <ItemGroup>
     <EmbeddedResource Include="citas.resx">
       <DependentUpon>citas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Corte.resx">
+      <DependentUpon>Corte.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="dinero.resx">
       <DependentUpon>dinero.vb</DependentUpon>
@@ -251,6 +266,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NuevoPaciente.resx">
       <DependentUpon>NuevoPaciente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionesPacientes.resx">
+      <DependentUpon>OpcionesPacientes.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pacientes.resx">
       <DependentUpon>Pacientes.vb</DependentUpon>

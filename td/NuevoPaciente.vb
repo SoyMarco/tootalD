@@ -7,6 +7,8 @@
     End Sub
 
     Private Sub NuevoPaciente_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: esta línea de código carga datos en la tabla 'Tootalde_dbtDataSet.doctor' Puede moverla o quitarla según sea necesario.
+        Me.DoctorTableAdapter.Fill(Me.Tootalde_dbtDataSet.doctor)
         'TODO: esta línea de código carga datos en la tabla 'Tootalde_dbtDataSet.users' Puede moverla o quitarla según sea necesario.
         Me.UsersTableAdapter.Fill(Me.Tootalde_dbtDataSet.users)
         'TODO: esta línea de código carga datos en la tabla 'Tootalde_dbtDataSet.users_groups' Puede moverla o quitarla según sea necesario.
@@ -68,49 +70,49 @@
             Dim eda As String
             Dim sang As String
 
-            If Doctor.Text = "" Then
-                doc = vbNull
+            If NuevoDr.Text = "0" Then
+                doc = "148"
             Else
-                doc = Doctor.Text
+                doc = NuevoDr.Text
             End If
 
             If lugar.Text = "" Then
-                lug = vbNull
+                lug = "0"
             Else
                 lug = lugar.Text
             End If
 
             If Telefono.Text = "" Then
-                tel = vbNull
+                tel = "0"
             Else
                 tel = Telefono.Text
             End If
 
             If Sexo.Text = "" Then
-                sex = vbNull
+                sex = "0"
             Else
                 sex = Sexo.Text
             End If
 
             If FNacimiento.Text = "" Then
-                fnac = vbNull
+                fnac = "0"
             Else
                 fnac = FNacimiento.Text
             End If
 
             If Edad.Text = "" Then
-                eda = vbNull
+                eda = "0"
             Else
                 eda = Edad.Text
             End If
 
             If TipSangre.Text = "" Then
-                sang = vbNull
+                sang = "0"
             Else
                 sang = TipSangre.Text
             End If
 
-            PatientTableAdapter.InsertNuevoPaciente(vbNull, name, correo, doc, lug, tel, sex, fnac, eda, sang, NUsGr, vbNull, Date.Today, dateInser, vbNull)
+            PatientTableAdapter.InsertNuevoPaciente("0", name, correo, doc, lug, tel, sex, fnac, eda, sang, NUsGr, "0", Date.Today, dateInser, "0")
             '                                   (img_url, name, email, doctor,address,phone,sex, birthdate, age, bloodgroup, ion_user_id, patient_id, add_date, registration_time, how_added`)
 
             idPacienteN()
@@ -125,7 +127,19 @@
     End Sub
 
     Private Sub Doctor_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Doctor.SelectedIndexChanged
+        Me.DoctorTableAdapter.FillBusDr(Me.Tootalde_dbtDataSet.doctor, Doctor.SelectedItem)
+        Try
+            Dim Ndr As String
 
+            Dim rowCU As DataGridViewRow = DoctorDataGridView.CurrentRow
+            Ndr = CStr(rowCU.Cells(0).Value)
+
+
+            NuevoDr.Text = Ndr
+
+
+        Catch ex As Exception
+        End Try
     End Sub
 
     Private Sub BtnGuardar_Click(sender As Object, e As EventArgs) Handles BtnGuardar.Click

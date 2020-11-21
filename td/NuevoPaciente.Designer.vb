@@ -94,7 +94,23 @@ Partial Class NuevoPaciente
         Me.Informe = New System.Windows.Forms.Label()
         Me.Nombre = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.BtnEditar = New System.Windows.Forms.Button()
+        Me.PacienteId = New System.Windows.Forms.Label()
+        Me.NuevoDr = New System.Windows.Forms.Label()
+        Me.DoctorBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DoctorTableAdapter = New td.tootalde_dbtDataSetTableAdapters.doctorTableAdapter()
+        Me.DoctorDataGridView = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn37 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn38 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn39 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn40 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn41 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn42 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn43 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn44 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn45 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn46 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn47 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.Tootalde_dbtDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PatientBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PatientDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -102,6 +118,8 @@ Partial Class NuevoPaciente
         CType(Me.Users_groupsDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.UsersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.UsersDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoctorBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoctorDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Tootalde_dbtDataSet
@@ -185,7 +203,7 @@ Partial Class NuevoPaciente
         Me.PatientDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.PatientDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn12, Me.DataGridViewTextBoxColumn13, Me.DataGridViewTextBoxColumn14, Me.DataGridViewTextBoxColumn15, Me.DataGridViewTextBoxColumn16})
         Me.PatientDataGridView.DataSource = Me.PatientBindingSource
-        Me.PatientDataGridView.Location = New System.Drawing.Point(619, 138)
+        Me.PatientDataGridView.Location = New System.Drawing.Point(619, 102)
         Me.PatientDataGridView.Name = "PatientDataGridView"
         Me.PatientDataGridView.Size = New System.Drawing.Size(300, 220)
         Me.PatientDataGridView.TabIndex = 1
@@ -297,7 +315,7 @@ Partial Class NuevoPaciente
         Me.Users_groupsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Users_groupsDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn17, Me.DataGridViewTextBoxColumn18, Me.DataGridViewTextBoxColumn19})
         Me.Users_groupsDataGridView.DataSource = Me.Users_groupsBindingSource
-        Me.Users_groupsDataGridView.Location = New System.Drawing.Point(619, 263)
+        Me.Users_groupsDataGridView.Location = New System.Drawing.Point(619, 226)
         Me.Users_groupsDataGridView.Name = "Users_groupsDataGridView"
         Me.Users_groupsDataGridView.Size = New System.Drawing.Size(300, 220)
         Me.Users_groupsDataGridView.TabIndex = 1
@@ -559,7 +577,7 @@ Partial Class NuevoPaciente
         Me.Sexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Sexo.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Sexo.FormattingEnabled = True
-        Me.Sexo.Items.AddRange(New Object() {"Peñitas", "Lago"})
+        Me.Sexo.Items.AddRange(New Object() {"Femenino", "Masculino", "Otro"})
         Me.Sexo.Location = New System.Drawing.Point(135, 291)
         Me.Sexo.Name = "Sexo"
         Me.Sexo.Size = New System.Drawing.Size(373, 31)
@@ -648,6 +666,7 @@ Partial Class NuevoPaciente
         Me.BtnGuardar.TabIndex = 57414
         Me.BtnGuardar.Text = "Guardar"
         Me.BtnGuardar.UseVisualStyleBackColor = False
+        Me.BtnGuardar.Visible = False
         '
         'Informe
         '
@@ -680,26 +699,138 @@ Partial Class NuevoPaciente
         Me.Label12.TabIndex = 57417
         Me.Label12.Text = "*"
         '
-        'Button1
+        'BtnEditar
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button1.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(323, 503)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(185, 49)
-        Me.Button1.TabIndex = 57418
-        Me.Button1.Text = "Editar"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.BtnEditar.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.BtnEditar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnEditar.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnEditar.ForeColor = System.Drawing.Color.White
+        Me.BtnEditar.Location = New System.Drawing.Point(323, 503)
+        Me.BtnEditar.Name = "BtnEditar"
+        Me.BtnEditar.Size = New System.Drawing.Size(185, 49)
+        Me.BtnEditar.TabIndex = 57418
+        Me.BtnEditar.Text = "Editar"
+        Me.BtnEditar.UseVisualStyleBackColor = False
+        Me.BtnEditar.Visible = False
+        '
+        'PacienteId
+        '
+        Me.PacienteId.AutoSize = True
+        Me.PacienteId.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PacienteId.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.PacienteId.Location = New System.Drawing.Point(-3, 0)
+        Me.PacienteId.Name = "PacienteId"
+        Me.PacienteId.Size = New System.Drawing.Size(39, 32)
+        Me.PacienteId.TabIndex = 57419
+        Me.PacienteId.Text = "id"
+        '
+        'NuevoDr
+        '
+        Me.NuevoDr.AutoSize = True
+        Me.NuevoDr.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NuevoDr.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.NuevoDr.Location = New System.Drawing.Point(514, 136)
+        Me.NuevoDr.Name = "NuevoDr"
+        Me.NuevoDr.Size = New System.Drawing.Size(30, 32)
+        Me.NuevoDr.TabIndex = 57420
+        Me.NuevoDr.Text = "0"
+        '
+        'DoctorBindingSource
+        '
+        Me.DoctorBindingSource.DataMember = "doctor"
+        Me.DoctorBindingSource.DataSource = Me.Tootalde_dbtDataSet
+        '
+        'DoctorTableAdapter
+        '
+        Me.DoctorTableAdapter.ClearBeforeFill = True
+        '
+        'DoctorDataGridView
+        '
+        Me.DoctorDataGridView.AutoGenerateColumns = False
+        Me.DoctorDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DoctorDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn37, Me.DataGridViewTextBoxColumn38, Me.DataGridViewTextBoxColumn39, Me.DataGridViewTextBoxColumn40, Me.DataGridViewTextBoxColumn41, Me.DataGridViewTextBoxColumn42, Me.DataGridViewTextBoxColumn43, Me.DataGridViewTextBoxColumn44, Me.DataGridViewTextBoxColumn45, Me.DataGridViewTextBoxColumn46, Me.DataGridViewTextBoxColumn47})
+        Me.DoctorDataGridView.DataSource = Me.DoctorBindingSource
+        Me.DoctorDataGridView.Location = New System.Drawing.Point(619, 342)
+        Me.DoctorDataGridView.Name = "DoctorDataGridView"
+        Me.DoctorDataGridView.Size = New System.Drawing.Size(300, 220)
+        Me.DoctorDataGridView.TabIndex = 57420
+        '
+        'DataGridViewTextBoxColumn37
+        '
+        Me.DataGridViewTextBoxColumn37.DataPropertyName = "id"
+        Me.DataGridViewTextBoxColumn37.HeaderText = "id"
+        Me.DataGridViewTextBoxColumn37.Name = "DataGridViewTextBoxColumn37"
+        '
+        'DataGridViewTextBoxColumn38
+        '
+        Me.DataGridViewTextBoxColumn38.DataPropertyName = "img_url"
+        Me.DataGridViewTextBoxColumn38.HeaderText = "img_url"
+        Me.DataGridViewTextBoxColumn38.Name = "DataGridViewTextBoxColumn38"
+        '
+        'DataGridViewTextBoxColumn39
+        '
+        Me.DataGridViewTextBoxColumn39.DataPropertyName = "name"
+        Me.DataGridViewTextBoxColumn39.HeaderText = "name"
+        Me.DataGridViewTextBoxColumn39.Name = "DataGridViewTextBoxColumn39"
+        '
+        'DataGridViewTextBoxColumn40
+        '
+        Me.DataGridViewTextBoxColumn40.DataPropertyName = "email"
+        Me.DataGridViewTextBoxColumn40.HeaderText = "email"
+        Me.DataGridViewTextBoxColumn40.Name = "DataGridViewTextBoxColumn40"
+        '
+        'DataGridViewTextBoxColumn41
+        '
+        Me.DataGridViewTextBoxColumn41.DataPropertyName = "address"
+        Me.DataGridViewTextBoxColumn41.HeaderText = "address"
+        Me.DataGridViewTextBoxColumn41.Name = "DataGridViewTextBoxColumn41"
+        '
+        'DataGridViewTextBoxColumn42
+        '
+        Me.DataGridViewTextBoxColumn42.DataPropertyName = "phone"
+        Me.DataGridViewTextBoxColumn42.HeaderText = "phone"
+        Me.DataGridViewTextBoxColumn42.Name = "DataGridViewTextBoxColumn42"
+        '
+        'DataGridViewTextBoxColumn43
+        '
+        Me.DataGridViewTextBoxColumn43.DataPropertyName = "department"
+        Me.DataGridViewTextBoxColumn43.HeaderText = "department"
+        Me.DataGridViewTextBoxColumn43.Name = "DataGridViewTextBoxColumn43"
+        '
+        'DataGridViewTextBoxColumn44
+        '
+        Me.DataGridViewTextBoxColumn44.DataPropertyName = "profile"
+        Me.DataGridViewTextBoxColumn44.HeaderText = "profile"
+        Me.DataGridViewTextBoxColumn44.Name = "DataGridViewTextBoxColumn44"
+        '
+        'DataGridViewTextBoxColumn45
+        '
+        Me.DataGridViewTextBoxColumn45.DataPropertyName = "x"
+        Me.DataGridViewTextBoxColumn45.HeaderText = "x"
+        Me.DataGridViewTextBoxColumn45.Name = "DataGridViewTextBoxColumn45"
+        '
+        'DataGridViewTextBoxColumn46
+        '
+        Me.DataGridViewTextBoxColumn46.DataPropertyName = "y"
+        Me.DataGridViewTextBoxColumn46.HeaderText = "y"
+        Me.DataGridViewTextBoxColumn46.Name = "DataGridViewTextBoxColumn46"
+        '
+        'DataGridViewTextBoxColumn47
+        '
+        Me.DataGridViewTextBoxColumn47.DataPropertyName = "ion_user_id"
+        Me.DataGridViewTextBoxColumn47.HeaderText = "ion_user_id"
+        Me.DataGridViewTextBoxColumn47.Name = "DataGridViewTextBoxColumn47"
         '
         'NuevoPaciente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(915, 572)
-        Me.Controls.Add(Me.Button1)
+        Me.ClientSize = New System.Drawing.Size(985, 578)
+        Me.Controls.Add(Me.DoctorDataGridView)
+        Me.Controls.Add(Me.NuevoDr)
+        Me.Controls.Add(Me.PacienteId)
+        Me.Controls.Add(Me.BtnEditar)
         Me.Controls.Add(Me.Nombre)
         Me.Controls.Add(Me.Informe)
         Me.Controls.Add(Me.BtnGuardar)
@@ -737,6 +868,8 @@ Partial Class NuevoPaciente
         CType(Me.Users_groupsDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.UsersBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.UsersDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoctorBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoctorDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -812,5 +945,21 @@ Partial Class NuevoPaciente
     Friend WithEvents Informe As Label
     Friend WithEvents Nombre As TextBox
     Friend WithEvents Label12 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents BtnEditar As Button
+    Friend WithEvents PacienteId As Label
+    Friend WithEvents NuevoDr As Label
+    Friend WithEvents DoctorBindingSource As BindingSource
+    Friend WithEvents DoctorTableAdapter As tootalde_dbtDataSetTableAdapters.doctorTableAdapter
+    Friend WithEvents DoctorDataGridView As DataGridView
+    Friend WithEvents DataGridViewTextBoxColumn37 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn38 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn39 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn40 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn41 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn42 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn43 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn44 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn45 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn46 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn47 As DataGridViewTextBoxColumn
 End Class

@@ -264,4 +264,7 @@
         PacienteID.Text = NUsGr
     End Sub
 
+    Private Sub NuevoDr_Click(sender As Object, e As EventArgs) Handles NuevoDr.Click
+
+    End Sub
 End Class

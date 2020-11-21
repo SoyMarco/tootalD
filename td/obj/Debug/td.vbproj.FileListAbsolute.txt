@@ -76,3 +76,4 @@ C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.EditarCancelarPago.resources
 C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.vbprojAssemblyReference.cache
 C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.Tratamientos.resources
 C:\Users\Marco\Source\Repos\tootalD\td\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.NuevoPaciente.resources

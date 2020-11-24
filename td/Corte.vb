@@ -13,7 +13,7 @@
         Me.PatientTableAdapter.Fill(Me.Tootalde_dbtDataSet.patient)
         'TODO: esta línea de código carga datos en la tabla 'Tootalde_dbtDataSet.paciente_pago' Puede moverla o quitarla según sea necesario.
         Me.Paciente_pagoTableAdapter.Fill(Me.Tootalde_dbtDataSet.paciente_pago)
-        Paciente_pagoTableAdapter.FillEntreFechas(Tootalde_dbtDataSet.paciente_pago, DateTimePicker1.Value, DateTimePicker2.Value)
+        Paciente_pagoTableAdapter.FillEntreFechas(Tootalde_dbtDataSet.paciente_pago, DateTimePicker1.Value, DateTimePicker2.Value, "1")
 
         DateTimePicker1.Value = DateTime.Today.AddDays(-DateTime.Today.DayOfWeek + 1)
         DateTimePicker2.Value = DateTimePicker1.Value.AddDays(5)

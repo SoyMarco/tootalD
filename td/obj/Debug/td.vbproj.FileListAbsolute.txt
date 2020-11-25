@@ -73,9 +73,13 @@ C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.vbproj.CopyComplete
 C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.EditarCancelarServicio.resources
 C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.Pacientes.resources
 C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.EditarCancelarPago.resources
-C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.vbprojAssemblyReference.cache
 C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.Tratamientos.resources
 C:\Users\Marco\Source\Repos\tootalD\td\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.NuevoPaciente.resources
 C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.OpcionesPacientes.resources
 C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.Corte.resources
+C:\Users\Marco\Source\Repos\tootalD\td\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\Marco\Source\Repos\tootalD\td\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.ImprimirPagoServicio.resources
+C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.vbprojAssemblyReference.cache
+C:\Users\Marco\Source\Repos\tootalD\td\obj\Debug\td.Info.resources

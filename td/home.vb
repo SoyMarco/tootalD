@@ -393,4 +393,8 @@
         Cursor = Cursors.WaitCursor
         Corte.Show()
     End Sub
+
+    Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
+        ImprimirPagoServicio.Show()
+    End Sub
 End Class

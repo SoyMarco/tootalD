@@ -26,13 +26,34 @@
 
         Me.Close()
     End Sub
-
-    Private Sub idPaciente_TextChanged(sender As Object, e As EventArgs) Handles PacienteId.TextChanged
-
-
+    Private Sub PasoDataPrintPago()
+        ImprimirPagoServicio.Show()
+        Me.Hide()
+        ImprimirPagoServicio.Label18.Focus()
+        ImprimirPagoServicio.paciente.Text = Entrada.NomPaciente.Text
+        ImprimirPagoServicio.id.Text = Entrada.PacienteID.Text
+        ImprimirPagoServicio.consultorio.Text = Entrada.NuevoLugar.Text
+        ImprimirPagoServicio.Fecha.Text = Entrada.DateTimePickerDia.Value
+        ImprimirPagoServicio.nota.Text = Entrada.IdPago.Text
+        ImprimirPagoServicio.TotalParcial.Text = Entrada.SumServ.Text
+        ImprimirPagoServicio.descuento.Text = Entrada.TotDesc.Text
+        ImprimirPagoServicio.total.Text = Entrada.TotServicios.Text
+        ImprimirPagoServicio.pago.Text = FormatCurrency(CantPago.Text)
+        ImprimirPagoServicio.Pagos.Text = Entrada.TotPagos.Text
+        ImprimirPagoServicio.resta.Text = Entrada.resta.Text
     End Sub
 
-    Private Sub idPaciente_Click(sender As Object, e As EventArgs) Handles PacienteId.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        PasoDataPrintPago()
+        ImprimirPagoServicio.PrintForm()
+        ImprimirPagoServicio.Hide()
+        Me.Close()
+    End Sub
 
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        PasoDataPrintPago()
+        ImprimirPagoServicio.pdf()
+        ImprimirPagoServicio.Hide()
+        Me.Close()
     End Sub
 End Class

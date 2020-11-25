@@ -152,6 +152,9 @@ Partial Class Entrada
         Me.Button9 = New System.Windows.Forms.Button()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.TotDesc = New System.Windows.Forms.Label()
+        Me.SumServ = New System.Windows.Forms.Label()
+        Me.EstatusPago = New System.Windows.Forms.Label()
         CType(Me.PaymentcategoryBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Tootalde_dbtDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Payment_categoryDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -296,10 +299,10 @@ Partial Class Entrada
         '
         'Tratamiento
         '
-        Me.Tratamiento.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest
         Me.Tratamiento.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
         Me.Tratamiento.DataSource = Me.PaymentcategoryBindingSource
         Me.Tratamiento.DisplayMember = "category"
+        Me.Tratamiento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Tratamiento.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Tratamiento.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Tratamiento.FormattingEnabled = True
@@ -355,7 +358,7 @@ Partial Class Entrada
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.BackColor = System.Drawing.Color.White
+        Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label8.Location = New System.Drawing.Point(701, 105)
@@ -367,7 +370,7 @@ Partial Class Entrada
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.BackColor = System.Drawing.Color.White
+        Me.Label9.BackColor = System.Drawing.Color.Transparent
         Me.Label9.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label9.Location = New System.Drawing.Point(701, 168)
@@ -751,7 +754,7 @@ Partial Class Entrada
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.BackColor = System.Drawing.Color.White
+        Me.Label12.BackColor = System.Drawing.Color.Transparent
         Me.Label12.Font = New System.Drawing.Font("Helvetica LT Std Black", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label12.Location = New System.Drawing.Point(853, -4)
@@ -763,7 +766,7 @@ Partial Class Entrada
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.BackColor = System.Drawing.Color.White
+        Me.Label13.BackColor = System.Drawing.Color.Transparent
         Me.Label13.Font = New System.Drawing.Font("Helvetica LT Std Black", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label13.Location = New System.Drawing.Point(843, 399)
@@ -786,7 +789,7 @@ Partial Class Entrada
         'TotPagos
         '
         Me.TotPagos.AutoSize = True
-        Me.TotPagos.BackColor = System.Drawing.Color.White
+        Me.TotPagos.BackColor = System.Drawing.Color.Transparent
         Me.TotPagos.Font = New System.Drawing.Font("Helvetica LT Std", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TotPagos.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.TotPagos.Location = New System.Drawing.Point(956, 644)
@@ -809,7 +812,7 @@ Partial Class Entrada
         'Label17
         '
         Me.Label17.AutoSize = True
-        Me.Label17.BackColor = System.Drawing.Color.White
+        Me.Label17.BackColor = System.Drawing.Color.Transparent
         Me.Label17.Font = New System.Drawing.Font("Helvetica LT Std Black", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label17.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label17.Location = New System.Drawing.Point(790, 651)
@@ -898,7 +901,7 @@ Partial Class Entrada
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.BackColor = System.Drawing.Color.White
+        Me.Label15.BackColor = System.Drawing.Color.Transparent
         Me.Label15.Font = New System.Drawing.Font("Helvetica LT Std", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label15.Location = New System.Drawing.Point(701, 269)
@@ -1085,7 +1088,7 @@ Partial Class Entrada
         'TotServicios
         '
         Me.TotServicios.AutoSize = True
-        Me.TotServicios.BackColor = System.Drawing.Color.White
+        Me.TotServicios.BackColor = System.Drawing.Color.Transparent
         Me.TotServicios.Font = New System.Drawing.Font("Helvetica LT Std", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TotServicios.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.TotServicios.Location = New System.Drawing.Point(233, 645)
@@ -1097,7 +1100,7 @@ Partial Class Entrada
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.BackColor = System.Drawing.Color.White
+        Me.Label10.BackColor = System.Drawing.Color.Transparent
         Me.Label10.Font = New System.Drawing.Font("Helvetica LT Std Black", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label10.Location = New System.Drawing.Point(790, 692)
@@ -1109,7 +1112,7 @@ Partial Class Entrada
         'resta
         '
         Me.resta.AutoSize = True
-        Me.resta.BackColor = System.Drawing.Color.White
+        Me.resta.BackColor = System.Drawing.Color.Transparent
         Me.resta.Font = New System.Drawing.Font("Helvetica LT Std", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.resta.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.resta.Location = New System.Drawing.Point(956, 685)
@@ -1306,7 +1309,7 @@ Partial Class Entrada
         'Label19
         '
         Me.Label19.AutoSize = True
-        Me.Label19.BackColor = System.Drawing.Color.White
+        Me.Label19.BackColor = System.Drawing.Color.Transparent
         Me.Label19.Font = New System.Drawing.Font("Helvetica LT Std Black", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label19.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label19.Location = New System.Drawing.Point(217, -4)
@@ -1325,17 +1328,55 @@ Partial Class Entrada
         Me.PictureBox1.TabIndex = 57449
         Me.PictureBox1.TabStop = False
         '
+        'TotDesc
+        '
+        Me.TotDesc.AutoSize = True
+        Me.TotDesc.BackColor = System.Drawing.Color.Transparent
+        Me.TotDesc.Font = New System.Drawing.Font("Helvetica LT Std", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TotDesc.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.TotDesc.Location = New System.Drawing.Point(498, 684)
+        Me.TotDesc.Name = "TotDesc"
+        Me.TotDesc.Size = New System.Drawing.Size(37, 42)
+        Me.TotDesc.TabIndex = 57450
+        Me.TotDesc.Text = "$"
+        '
+        'SumServ
+        '
+        Me.SumServ.AutoSize = True
+        Me.SumServ.BackColor = System.Drawing.Color.Transparent
+        Me.SumServ.Font = New System.Drawing.Font("Helvetica LT Std", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SumServ.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.SumServ.Location = New System.Drawing.Point(498, 651)
+        Me.SumServ.Name = "SumServ"
+        Me.SumServ.Size = New System.Drawing.Size(37, 42)
+        Me.SumServ.TabIndex = 57451
+        Me.SumServ.Text = "$"
+        '
+        'EstatusPago
+        '
+        Me.EstatusPago.AutoSize = True
+        Me.EstatusPago.Font = New System.Drawing.Font("Helvetica LT Std", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EstatusPago.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.EstatusPago.Location = New System.Drawing.Point(1160, 325)
+        Me.EstatusPago.Name = "EstatusPago"
+        Me.EstatusPago.Size = New System.Drawing.Size(35, 38)
+        Me.EstatusPago.TabIndex = 57452
+        Me.EstatusPago.Text = "0"
+        Me.EstatusPago.Visible = False
+        '
         'Entrada
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.White
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1272, 730)
+        Me.Controls.Add(Me.EstatusPago)
+        Me.Controls.Add(Me.SumServ)
+        Me.Controls.Add(Me.TotDesc)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label19)
         Me.Controls.Add(Me.Button9)
         Me.Controls.Add(Me.MontoTotal)
-        Me.Controls.Add(Me.TotalPago)
         Me.Controls.Add(Me.IdPago)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button7)
@@ -1393,6 +1434,7 @@ Partial Class Entrada
         Me.Controls.Add(Me.TotPagos)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Label13)
+        Me.Controls.Add(Me.TotalPago)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Entrada"
@@ -1537,4 +1579,7 @@ Partial Class Entrada
     Friend WithEvents Button9 As Button
     Friend WithEvents Label19 As Label
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents TotDesc As Label
+    Friend WithEvents SumServ As Label
+    Friend WithEvents EstatusPago As Label
 End Class

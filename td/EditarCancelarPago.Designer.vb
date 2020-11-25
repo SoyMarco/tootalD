@@ -26,7 +26,7 @@ Partial Class EditarCancelarPago
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EditarCancelarPago))
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.NamePago = New System.Windows.Forms.Label()
+        Me.CantPago = New System.Windows.Forms.Label()
         Me.IdPago = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.PacienteId = New System.Windows.Forms.Label()
@@ -51,6 +51,8 @@ Partial Class EditarCancelarPago
         Me.DataGridViewTextBoxColumn13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
         CType(Me.Paciente_pagoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Tootalde_dbtDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Paciente_pagoDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -61,9 +63,9 @@ Partial Class EditarCancelarPago
         Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Button3.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(193, 152)
+        Me.Button3.Location = New System.Drawing.Point(163, 152)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(175, 50)
+        Me.Button3.Size = New System.Drawing.Size(145, 50)
         Me.Button3.TabIndex = 57442
         Me.Button3.Text = "Activar"
         Me.Button3.UseVisualStyleBackColor = False
@@ -79,16 +81,16 @@ Partial Class EditarCancelarPago
         Me.Label2.TabIndex = 57441
         Me.Label2.Text = "Id"
         '
-        'NamePago
+        'CantPago
         '
-        Me.NamePago.AutoSize = True
-        Me.NamePago.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NamePago.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.NamePago.Location = New System.Drawing.Point(117, 9)
-        Me.NamePago.Name = "NamePago"
-        Me.NamePago.Size = New System.Drawing.Size(155, 32)
-        Me.NamePago.TabIndex = 57440
-        Me.NamePago.Text = "Name Serv"
+        Me.CantPago.AutoSize = True
+        Me.CantPago.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CantPago.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.CantPago.Location = New System.Drawing.Point(116, 9)
+        Me.CantPago.Name = "CantPago"
+        Me.CantPago.Size = New System.Drawing.Size(155, 32)
+        Me.CantPago.TabIndex = 57440
+        Me.CantPago.Text = "Name Serv"
         '
         'IdPago
         '
@@ -108,7 +110,7 @@ Partial Class EditarCancelarPago
         Me.Button1.ForeColor = System.Drawing.Color.White
         Me.Button1.Location = New System.Drawing.Point(12, 152)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(175, 50)
+        Me.Button1.Size = New System.Drawing.Size(145, 50)
         Me.Button1.TabIndex = 57438
         Me.Button1.Text = "Cancelar"
         Me.Button1.UseVisualStyleBackColor = False
@@ -309,13 +311,38 @@ Partial Class EditarCancelarPago
         Me.Label3.TabIndex = 57446
         Me.Label3.Text = "Pago   $"
         '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.White
+        Me.Button2.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.Navy
+        Me.Button2.Location = New System.Drawing.Point(314, 152)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(145, 50)
+        Me.Button2.TabIndex = 57447
+        Me.Button2.Text = "Imprimir"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.Color.White
+        Me.Button4.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.ForeColor = System.Drawing.Color.Navy
+        Me.Button4.Location = New System.Drawing.Point(465, 152)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(145, 50)
+        Me.Button4.TabIndex = 57448
+        Me.Button4.Text = "PDF"
+        Me.Button4.UseVisualStyleBackColor = False
+        '
         'EditarCancelarPago
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(384, 214)
-        Me.Controls.Add(Me.NamePago)
+        Me.ClientSize = New System.Drawing.Size(626, 214)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PacienteId)
@@ -324,6 +351,7 @@ Partial Class EditarCancelarPago
         Me.Controls.Add(Me.IdPago)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Paciente_pagoDataGridView)
+        Me.Controls.Add(Me.CantPago)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "EditarCancelarPago"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -339,7 +367,7 @@ Partial Class EditarCancelarPago
 
     Friend WithEvents Button3 As Button
     Friend WithEvents Label2 As Label
-    Friend WithEvents NamePago As Label
+    Friend WithEvents CantPago As Label
     Friend WithEvents IdPago As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Tootalde_dbtDataSet As tootalde_dbtDataSet
@@ -364,4 +392,6 @@ Partial Class EditarCancelarPago
     Friend WithEvents DataGridViewTextBoxColumn13 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn14 As DataGridViewTextBoxColumn
     Friend WithEvents Label3 As Label
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button4 As Button
 End Class

@@ -241,8 +241,38 @@
                 Total += Val(row.Cells(4).Value)
             Next
             TotServicios.Text = FormatCurrency(Total.ToString)
+            SumTotDesc()
+            SumTotTot()
         Catch ex As Exception
             TotServicios.Text = "ERROR"
+        End Try
+
+    End Sub
+    Private Sub SumTotDesc()
+        Try
+            'SUMAR COLUMNA DE PRECIOS SERVICIOS
+            Dim TotalDes As Single
+            Dim Col As Integer = Paciente_servicioDataGridView.CurrentCell.ColumnIndex
+            For Each row As DataGridViewRow In Me.Paciente_servicioDataGridView.Rows
+                TotalDes += Val(row.Cells(3).Value)
+            Next
+            TotDesc.Text = FormatCurrency(TotalDes.ToString)
+        Catch ex As Exception
+            TotDesc.Text = "$0.00"
+        End Try
+
+    End Sub
+    Private Sub SumTotTot()
+        Try
+            'SUMAR COLUMNA DE PRECIOS SERVICIOS
+            Dim TotalTot As Single
+            Dim Col As Integer = Paciente_servicioDataGridView.CurrentCell.ColumnIndex
+            For Each row As DataGridViewRow In Me.Paciente_servicioDataGridView.Rows
+                TotalTot += Val(row.Cells(2).Value)
+            Next
+            SumServ.Text = FormatCurrency(TotalTot.ToString)
+        Catch ex As Exception
+            SumServ.Text = "$0.00"
         End Try
 
     End Sub
@@ -302,11 +332,14 @@
         Try
             Dim idPag As String
             Dim CantPAgo As String
+            Dim estatus As String
             Dim rowCU As DataGridViewRow = Paciente_pagoDataGridView.CurrentRow
             idPag = CStr(rowCU.Cells(0).Value)
             CantPAgo = CStr(rowCU.Cells(3).Value)
+            estatus = CStr(rowCU.Cells(11).Value)
             IdPago.Text = idPag
             TotalPago.Text = CantPAgo
+            EstatusPago.Text = estatus
             EditCancelPago()
         Catch ex As Exception
             IdPago.Text = "0"
@@ -314,10 +347,19 @@
 
     End Sub
     Private Sub EditCancelPago()
+
+        MostrarServActivos()
+        MostrarPagosActivos()
+        EditarCancelarPago.Close()
+        ImprimirPagoServicio.Close()
         EditarCancelarPago.Show()
-        EditarCancelarPago.NamePago.Text = TotalPago.Text
+        EditarCancelarPago.CantPago.Text = TotalPago.Text
         EditarCancelarPago.IdPago.Text = IdPago.Text
         EditarCancelarPago.PacienteId.Text = PacienteID.Text
+        If EstatusPago.Text = "0" Then
+            Button2.Visible = False
+            Button4.Visible = False
+        End If
     End Sub
     Private Sub EditCancelServ()
         EditarCancelarServicio.Show()
@@ -362,7 +404,7 @@
         If PacienteID.Text > 1 Then
             'PAGOS, ESTATUS, ESTATUS (BETWEEN)
             Me.Paciente_pagoTableAdapter.FillPaciEst(Me.Tootalde_dbtDataSet.paciente_pago, PacienteID.Text, "0", "0")
-            Operaciones()
+
         End If
     End Sub
     Public Sub MostrarServTodo()
@@ -376,7 +418,7 @@
         If PacienteID.Text > 1 Then
             'PAGOS, ESTATUS, ESTATUS (BETWEEN)
             Me.Paciente_pagoTableAdapter.FillPaciEst(Me.Tootalde_dbtDataSet.paciente_pago, PacienteID.Text, "0", "2")
-            Operaciones()
+
         End If
     End Sub
 
@@ -442,9 +484,6 @@
         MostrarPagosCancel()
     End Sub
 
-    Private Sub Paciente_pagoDataGridView_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles Paciente_pagoDataGridView.CellContentClick
-
-    End Sub
 
     Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
         Me.Hide()

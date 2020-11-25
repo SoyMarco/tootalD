@@ -261,4 +261,40 @@
             End If
         End If
     End Sub
+
+    Private Sub Edad_TextChanged(sender As Object, e As EventArgs) Handles Edad.TextChanged
+
+    End Sub
+
+    Private Sub Edad_KeyPress(sender As Object, e As KeyPressEventArgs) Handles Edad.KeyPress
+        If Char.IsNumber(e.KeyChar) Then
+            e.Handled = False
+        ElseIf Char.IsControl(e.KeyChar) Then
+            e.Handled = False
+
+        Else
+            e.Handled = True
+        End If
+        If Asc(e.KeyChar) = 13 Then  'Si es enter.
+            e.Handled = True          ' eliminamos el sonido. 
+        End If
+    End Sub
+
+    Private Sub Telefono_TextChanged(sender As Object, e As EventArgs) Handles Telefono.TextChanged
+
+    End Sub
+
+    Private Sub Telefono_KeyPress(sender As Object, e As KeyPressEventArgs) Handles Telefono.KeyPress
+        If Char.IsNumber(e.KeyChar) Then
+            e.Handled = False
+        ElseIf Char.IsControl(e.KeyChar) Then
+            e.Handled = False
+
+        Else
+            e.Handled = True
+        End If
+        If Asc(e.KeyChar) = 13 Then  'Si es enter.
+            e.Handled = True          ' eliminamos el sonido. 
+        End If
+    End Sub
 End Class

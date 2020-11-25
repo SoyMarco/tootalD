@@ -150,6 +150,8 @@ Partial Class Entrada
         Me.MontoTotal = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Button9 = New System.Windows.Forms.Button()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.PaymentcategoryBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Tootalde_dbtDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Payment_categoryDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -162,6 +164,7 @@ Partial Class Entrada
         CType(Me.DoctorBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DoctorDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PatientBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'NuevaHora
@@ -179,10 +182,11 @@ Partial Class Entrada
         'DateTimePickerDia
         '
         Me.DateTimePickerDia.Enabled = False
-        Me.DateTimePickerDia.Location = New System.Drawing.Point(115, 685)
+        Me.DateTimePickerDia.Location = New System.Drawing.Point(115, 702)
         Me.DateTimePickerDia.Name = "DateTimePickerDia"
         Me.DateTimePickerDia.Size = New System.Drawing.Size(377, 20)
         Me.DateTimePickerDia.TabIndex = 57388
+        Me.DateTimePickerDia.Visible = False
         '
         'fecha
         '
@@ -216,7 +220,7 @@ Partial Class Entrada
         Me.lugar.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lugar.FormattingEnabled = True
         Me.lugar.Items.AddRange(New Object() {"Peñitas", "Lago"})
-        Me.lugar.Location = New System.Drawing.Point(193, 87)
+        Me.lugar.Location = New System.Drawing.Point(193, 122)
         Me.lugar.Name = "lugar"
         Me.lugar.Size = New System.Drawing.Size(469, 31)
         Me.lugar.TabIndex = 57389
@@ -226,7 +230,7 @@ Partial Class Entrada
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(8, 87)
+        Me.Label5.Location = New System.Drawing.Point(8, 122)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(89, 32)
         Me.Label5.TabIndex = 57393
@@ -240,7 +244,7 @@ Partial Class Entrada
         Me.Doctor.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Doctor.FormattingEnabled = True
         Me.Doctor.Items.AddRange(New Object() {"J. Oscar Quevedo Mendoza", "Yeimi Yuriet Muñoz Angeles", "Ariadna Campos Hurtado", "Aime Abigail  Vasquez Perez"})
-        Me.Doctor.Location = New System.Drawing.Point(193, 43)
+        Me.Doctor.Location = New System.Drawing.Point(193, 78)
         Me.Doctor.Name = "Doctor"
         Me.Doctor.Size = New System.Drawing.Size(469, 31)
         Me.Doctor.TabIndex = 57387
@@ -250,7 +254,7 @@ Partial Class Entrada
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(8, 43)
+        Me.Label1.Location = New System.Drawing.Point(8, 78)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(78, 32)
         Me.Label1.TabIndex = 57392
@@ -261,7 +265,7 @@ Partial Class Entrada
         Me.PacienteID.AutoSize = True
         Me.PacienteID.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PacienteID.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.PacienteID.Location = New System.Drawing.Point(676, 7)
+        Me.PacienteID.Location = New System.Drawing.Point(676, 0)
         Me.PacienteID.Name = "PacienteID"
         Me.PacienteID.Size = New System.Drawing.Size(30, 32)
         Me.PacienteID.TabIndex = 57391
@@ -273,7 +277,7 @@ Partial Class Entrada
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(8, 11)
+        Me.Label4.Location = New System.Drawing.Point(8, 46)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(125, 32)
         Me.Label4.TabIndex = 57390
@@ -284,7 +288,7 @@ Partial Class Entrada
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(8, 179)
+        Me.Label2.Location = New System.Drawing.Point(8, 214)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(173, 32)
         Me.Label2.TabIndex = 57399
@@ -299,7 +303,7 @@ Partial Class Entrada
         Me.Tratamiento.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Tratamiento.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Tratamiento.FormattingEnabled = True
-        Me.Tratamiento.Location = New System.Drawing.Point(193, 134)
+        Me.Tratamiento.Location = New System.Drawing.Point(193, 169)
         Me.Tratamiento.Name = "Tratamiento"
         Me.Tratamiento.Size = New System.Drawing.Size(469, 31)
         Me.Tratamiento.TabIndex = 57400
@@ -320,7 +324,7 @@ Partial Class Entrada
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(8, 133)
+        Me.Label3.Location = New System.Drawing.Point(8, 168)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(165, 32)
         Me.Label3.TabIndex = 57401
@@ -331,7 +335,7 @@ Partial Class Entrada
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(8, 222)
+        Me.Label6.Location = New System.Drawing.Point(8, 257)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(150, 32)
         Me.Label6.TabIndex = 57402
@@ -342,7 +346,7 @@ Partial Class Entrada
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(8, 272)
+        Me.Label7.Location = New System.Drawing.Point(8, 307)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(77, 32)
         Me.Label7.TabIndex = 57403
@@ -354,7 +358,7 @@ Partial Class Entrada
         Me.Label8.BackColor = System.Drawing.Color.White
         Me.Label8.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(701, 71)
+        Me.Label8.Location = New System.Drawing.Point(701, 105)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(119, 32)
         Me.Label8.TabIndex = 57404
@@ -366,7 +370,7 @@ Partial Class Entrada
         Me.Label9.BackColor = System.Drawing.Color.White
         Me.Label9.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label9.Location = New System.Drawing.Point(701, 135)
+        Me.Label9.Location = New System.Drawing.Point(701, 168)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(102, 32)
         Me.Label9.TabIndex = 57405
@@ -377,7 +381,7 @@ Partial Class Entrada
         Me.TotParcial.AutoSize = True
         Me.TotParcial.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TotParcial.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.TotParcial.Location = New System.Drawing.Point(187, 179)
+        Me.TotParcial.Location = New System.Drawing.Point(187, 214)
         Me.TotParcial.Name = "TotParcial"
         Me.TotParcial.Size = New System.Drawing.Size(30, 32)
         Me.TotParcial.TabIndex = 57406
@@ -388,7 +392,7 @@ Partial Class Entrada
         Me.Total.AutoSize = True
         Me.Total.Font = New System.Drawing.Font("Helvetica LT Std", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Total.ForeColor = System.Drawing.Color.Red
-        Me.Total.Location = New System.Drawing.Point(185, 262)
+        Me.Total.Location = New System.Drawing.Point(185, 297)
         Me.Total.Name = "Total"
         Me.Total.Size = New System.Drawing.Size(154, 44)
         Me.Total.TabIndex = 57407
@@ -398,7 +402,7 @@ Partial Class Entrada
         '
         Me.descuento.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.descuento.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.descuento.Location = New System.Drawing.Point(193, 219)
+        Me.descuento.Location = New System.Drawing.Point(193, 254)
         Me.descuento.Name = "descuento"
         Me.descuento.Size = New System.Drawing.Size(469, 40)
         Me.descuento.TabIndex = 57408
@@ -407,7 +411,7 @@ Partial Class Entrada
         '
         Me.efectivo.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.efectivo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.efectivo.Location = New System.Drawing.Point(826, 71)
+        Me.efectivo.Location = New System.Drawing.Point(849, 97)
         Me.efectivo.Name = "efectivo"
         Me.efectivo.Size = New System.Drawing.Size(351, 40)
         Me.efectivo.TabIndex = 57409
@@ -416,7 +420,7 @@ Partial Class Entrada
         '
         Me.tarjeta.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tarjeta.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.tarjeta.Location = New System.Drawing.Point(826, 132)
+        Me.tarjeta.Location = New System.Drawing.Point(849, 160)
         Me.tarjeta.Name = "tarjeta"
         Me.tarjeta.Size = New System.Drawing.Size(351, 40)
         Me.tarjeta.TabIndex = 57410
@@ -427,7 +431,7 @@ Partial Class Entrada
         Me.Payment_categoryDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Payment_categoryDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7})
         Me.Payment_categoryDataGridView.DataSource = Me.Payment_categoryBindingSource
-        Me.Payment_categoryDataGridView.Location = New System.Drawing.Point(-1, 405)
+        Me.Payment_categoryDataGridView.Location = New System.Drawing.Point(-1, 428)
         Me.Payment_categoryDataGridView.Name = "Payment_categoryDataGridView"
         Me.Payment_categoryDataGridView.Size = New System.Drawing.Size(300, 220)
         Me.Payment_categoryDataGridView.TabIndex = 57411
@@ -486,7 +490,7 @@ Partial Class Entrada
         Me.Paciente_servicioDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Paciente_servicioDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn12, Me.DataGridViewTextBoxColumn13, Me.DataGridViewTextBoxColumn14, Me.DataGridViewTextBoxColumn15, Me.DataGridViewTextBoxColumn16, Me.DataGridViewTextBoxColumn17, Me.DataGridViewTextBoxColumn18, Me.DataGridViewTextBoxColumn19})
         Me.Paciente_servicioDataGridView.DataSource = Me.Paciente_servicioBindingSource
-        Me.Paciente_servicioDataGridView.Location = New System.Drawing.Point(115, 405)
+        Me.Paciente_servicioDataGridView.Location = New System.Drawing.Point(115, 428)
         Me.Paciente_servicioDataGridView.Name = "Paciente_servicioDataGridView"
         Me.Paciente_servicioDataGridView.ReadOnly = True
         Me.Paciente_servicioDataGridView.Size = New System.Drawing.Size(548, 220)
@@ -609,7 +613,7 @@ Partial Class Entrada
         Me.Paciente_pagoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Paciente_pagoDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn20, Me.monto_efectivo, Me.monto_tarjeta, Me.monto_total, Me.DataGridViewTextBoxColumn29, Me.DataGridViewTextBoxColumn26, Me.DataGridViewTextBoxColumn22, Me.DataGridViewTextBoxColumn23, Me.DataGridViewTextBoxColumn24, Me.DataGridViewTextBoxColumn25, Me.DataGridViewTextBoxColumn28, Me.DataGridViewTextBoxColumn30, Me.DataGridViewTextBoxColumn31, Me.DataGridViewTextBoxColumn32})
         Me.Paciente_pagoDataGridView.DataSource = Me.Paciente_pagoBindingSource
-        Me.Paciente_pagoDataGridView.Location = New System.Drawing.Point(682, 405)
+        Me.Paciente_pagoDataGridView.Location = New System.Drawing.Point(796, 428)
         Me.Paciente_pagoDataGridView.Name = "Paciente_pagoDataGridView"
         Me.Paciente_pagoDataGridView.ReadOnly = True
         Me.Paciente_pagoDataGridView.Size = New System.Drawing.Size(470, 220)
@@ -750,7 +754,7 @@ Partial Class Entrada
         Me.Label12.BackColor = System.Drawing.Color.White
         Me.Label12.Font = New System.Drawing.Font("Helvetica LT Std Black", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label12.Location = New System.Drawing.Point(853, 25)
+        Me.Label12.Location = New System.Drawing.Point(853, -4)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(212, 34)
         Me.Label12.TabIndex = 57412
@@ -762,7 +766,7 @@ Partial Class Entrada
         Me.Label13.BackColor = System.Drawing.Color.White
         Me.Label13.Font = New System.Drawing.Font("Helvetica LT Std Black", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label13.Location = New System.Drawing.Point(853, 368)
+        Me.Label13.Location = New System.Drawing.Point(843, 399)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(116, 34)
         Me.Label13.TabIndex = 57413
@@ -773,7 +777,7 @@ Partial Class Entrada
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Helvetica LT Std Black", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label14.Location = New System.Drawing.Point(331, 369)
+        Me.Label14.Location = New System.Drawing.Point(187, 396)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(179, 34)
         Me.Label14.TabIndex = 57414
@@ -785,7 +789,7 @@ Partial Class Entrada
         Me.TotPagos.BackColor = System.Drawing.Color.White
         Me.TotPagos.Font = New System.Drawing.Font("Helvetica LT Std", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TotPagos.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.TotPagos.Location = New System.Drawing.Point(803, 628)
+        Me.TotPagos.Location = New System.Drawing.Point(956, 644)
         Me.TotPagos.Name = "TotPagos"
         Me.TotPagos.Size = New System.Drawing.Size(37, 42)
         Me.TotPagos.TabIndex = 57415
@@ -796,11 +800,11 @@ Partial Class Entrada
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Helvetica LT Std Black", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label16.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label16.Location = New System.Drawing.Point(109, 628)
+        Me.Label16.Location = New System.Drawing.Point(109, 652)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(112, 34)
+        Me.Label16.Size = New System.Drawing.Size(118, 34)
         Me.Label16.TabIndex = 57416
-        Me.Label16.Text = "TOTAL"
+        Me.Label16.Text = "COSTO"
         '
         'Label17
         '
@@ -808,18 +812,18 @@ Partial Class Entrada
         Me.Label17.BackColor = System.Drawing.Color.White
         Me.Label17.Font = New System.Drawing.Font("Helvetica LT Std Black", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label17.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label17.Location = New System.Drawing.Point(676, 628)
+        Me.Label17.Location = New System.Drawing.Point(790, 651)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(112, 34)
+        Me.Label17.Size = New System.Drawing.Size(167, 34)
         Me.Label17.TabIndex = 57417
-        Me.Label17.Text = "TOTAL"
+        Me.Label17.Text = "A CUENTA"
         '
         'NomPaciente
         '
         Me.NomPaciente.AutoSize = True
         Me.NomPaciente.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NomPaciente.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.NomPaciente.Location = New System.Drawing.Point(187, 4)
+        Me.NomPaciente.Location = New System.Drawing.Point(187, 39)
         Me.NomPaciente.Name = "NomPaciente"
         Me.NomPaciente.Size = New System.Drawing.Size(125, 32)
         Me.NomPaciente.TabIndex = 57419
@@ -830,7 +834,7 @@ Partial Class Entrada
         Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Button1.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(826, 287)
+        Me.Button1.Location = New System.Drawing.Point(849, 330)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(280, 50)
         Me.Button1.TabIndex = 57420
@@ -842,7 +846,7 @@ Partial Class Entrada
         Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Button2.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(271, 316)
+        Me.Button2.Location = New System.Drawing.Point(193, 337)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(280, 50)
         Me.Button2.TabIndex = 57421
@@ -863,7 +867,7 @@ Partial Class Entrada
         '
         'PictureBox3
         '
-        Me.PictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.PictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.PictureBox3.Location = New System.Drawing.Point(667, -7)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(10, 748)
@@ -876,7 +880,7 @@ Partial Class Entrada
         Me.IdCita.AutoSize = True
         Me.IdCita.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.IdCita.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.IdCita.Location = New System.Drawing.Point(8, 304)
+        Me.IdCita.Location = New System.Drawing.Point(8, 339)
         Me.IdCita.Name = "IdCita"
         Me.IdCita.Size = New System.Drawing.Size(30, 32)
         Me.IdCita.TabIndex = 57424
@@ -886,9 +890,9 @@ Partial Class Entrada
         'comentarios
         '
         Me.comentarios.Font = New System.Drawing.Font("Helvetica LT Std", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.comentarios.Location = New System.Drawing.Point(849, 222)
+        Me.comentarios.Location = New System.Drawing.Point(849, 261)
         Me.comentarios.Name = "comentarios"
-        Me.comentarios.Size = New System.Drawing.Size(328, 33)
+        Me.comentarios.Size = New System.Drawing.Size(351, 33)
         Me.comentarios.TabIndex = 57426
         '
         'Label15
@@ -897,7 +901,7 @@ Partial Class Entrada
         Me.Label15.BackColor = System.Drawing.Color.White
         Me.Label15.Font = New System.Drawing.Font("Helvetica LT Std", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label15.Location = New System.Drawing.Point(701, 230)
+        Me.Label15.Location = New System.Drawing.Point(701, 269)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(142, 25)
         Me.Label15.TabIndex = 57425
@@ -983,7 +987,7 @@ Partial Class Entrada
         Me.DoctorDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DoctorDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn33, Me.DataGridViewTextBoxColumn34, Me.DataGridViewTextBoxColumn35, Me.DataGridViewTextBoxColumn36, Me.DataGridViewTextBoxColumn37, Me.DataGridViewTextBoxColumn38, Me.DataGridViewTextBoxColumn39, Me.DataGridViewTextBoxColumn40, Me.DataGridViewTextBoxColumn41, Me.DataGridViewTextBoxColumn42, Me.DataGridViewTextBoxColumn43})
         Me.DoctorDataGridView.DataSource = Me.DoctorBindingSource
-        Me.DoctorDataGridView.Location = New System.Drawing.Point(-1, 405)
+        Me.DoctorDataGridView.Location = New System.Drawing.Point(-1, 428)
         Me.DoctorDataGridView.Name = "DoctorDataGridView"
         Me.DoctorDataGridView.Size = New System.Drawing.Size(300, 220)
         Me.DoctorDataGridView.TabIndex = 57426
@@ -1072,7 +1076,7 @@ Partial Class Entrada
         Me.InfoGuarServ.AutoSize = True
         Me.InfoGuarServ.Font = New System.Drawing.Font("Helvetica LT Std", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.InfoGuarServ.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.InfoGuarServ.Location = New System.Drawing.Point(-2, 369)
+        Me.InfoGuarServ.Location = New System.Drawing.Point(-2, 392)
         Me.InfoGuarServ.Name = "InfoGuarServ"
         Me.InfoGuarServ.Size = New System.Drawing.Size(26, 38)
         Me.InfoGuarServ.TabIndex = 57428
@@ -1084,7 +1088,7 @@ Partial Class Entrada
         Me.TotServicios.BackColor = System.Drawing.Color.White
         Me.TotServicios.Font = New System.Drawing.Font("Helvetica LT Std", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TotServicios.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.TotServicios.Location = New System.Drawing.Point(227, 624)
+        Me.TotServicios.Location = New System.Drawing.Point(233, 645)
         Me.TotServicios.Name = "TotServicios"
         Me.TotServicios.Size = New System.Drawing.Size(37, 42)
         Me.TotServicios.TabIndex = 57429
@@ -1096,7 +1100,7 @@ Partial Class Entrada
         Me.Label10.BackColor = System.Drawing.Color.White
         Me.Label10.Font = New System.Drawing.Font("Helvetica LT Std Black", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label10.Location = New System.Drawing.Point(675, 670)
+        Me.Label10.Location = New System.Drawing.Point(790, 692)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(112, 34)
         Me.Label10.TabIndex = 57430
@@ -1108,7 +1112,7 @@ Partial Class Entrada
         Me.resta.BackColor = System.Drawing.Color.White
         Me.resta.Font = New System.Drawing.Font("Helvetica LT Std", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.resta.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.resta.Location = New System.Drawing.Point(803, 663)
+        Me.resta.Location = New System.Drawing.Point(956, 685)
         Me.resta.Name = "resta"
         Me.resta.Size = New System.Drawing.Size(37, 42)
         Me.resta.TabIndex = 57431
@@ -1119,7 +1123,7 @@ Partial Class Entrada
         Me.IdServ.AutoSize = True
         Me.IdServ.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.IdServ.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.IdServ.Location = New System.Drawing.Point(-1, 636)
+        Me.IdServ.Location = New System.Drawing.Point(-1, 653)
         Me.IdServ.Name = "IdServ"
         Me.IdServ.Size = New System.Drawing.Size(30, 32)
         Me.IdServ.TabIndex = 57432
@@ -1140,7 +1144,7 @@ Partial Class Entrada
         Me.Button4.BackColor = System.Drawing.Color.White
         Me.Button4.Font = New System.Drawing.Font("Helvetica LT Std", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button4.Location = New System.Drawing.Point(-1, 449)
+        Me.Button4.Location = New System.Drawing.Point(3, 472)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(110, 31)
         Me.Button4.TabIndex = 57434
@@ -1152,7 +1156,7 @@ Partial Class Entrada
         Me.Button5.BackColor = System.Drawing.Color.White
         Me.Button5.Font = New System.Drawing.Font("Helvetica LT Std", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Button5.Location = New System.Drawing.Point(-1, 480)
+        Me.Button5.Location = New System.Drawing.Point(3, 503)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(110, 28)
         Me.Button5.TabIndex = 57435
@@ -1164,7 +1168,7 @@ Partial Class Entrada
         Me.Button6.BackColor = System.Drawing.Color.White
         Me.Button6.Font = New System.Drawing.Font("Helvetica LT Std", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button6.Location = New System.Drawing.Point(-1, 506)
+        Me.Button6.Location = New System.Drawing.Point(3, 529)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(110, 29)
         Me.Button6.TabIndex = 57436
@@ -1176,7 +1180,7 @@ Partial Class Entrada
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Helvetica LT Std", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label11.Location = New System.Drawing.Point(16, 423)
+        Me.Label11.Location = New System.Drawing.Point(20, 446)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(81, 25)
         Me.Label11.TabIndex = 57437
@@ -1187,7 +1191,7 @@ Partial Class Entrada
         Me.NameServ.AutoSize = True
         Me.NameServ.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NameServ.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.NameServ.Location = New System.Drawing.Point(-1, 671)
+        Me.NameServ.Location = New System.Drawing.Point(-1, 688)
         Me.NameServ.Name = "NameServ"
         Me.NameServ.Size = New System.Drawing.Size(30, 32)
         Me.NameServ.TabIndex = 57438
@@ -1199,7 +1203,7 @@ Partial Class Entrada
         Me.Button3.BackColor = System.Drawing.Color.White
         Me.Button3.Font = New System.Drawing.Font("Helvetica LT Std", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button3.Location = New System.Drawing.Point(1158, 506)
+        Me.Button3.Location = New System.Drawing.Point(680, 529)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(110, 29)
         Me.Button3.TabIndex = 57441
@@ -1211,7 +1215,7 @@ Partial Class Entrada
         Me.Button7.BackColor = System.Drawing.Color.White
         Me.Button7.Font = New System.Drawing.Font("Helvetica LT Std", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Button7.Location = New System.Drawing.Point(1158, 480)
+        Me.Button7.Location = New System.Drawing.Point(680, 503)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(110, 28)
         Me.Button7.TabIndex = 57440
@@ -1223,7 +1227,7 @@ Partial Class Entrada
         Me.Button8.BackColor = System.Drawing.Color.White
         Me.Button8.Font = New System.Drawing.Font("Helvetica LT Std", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button8.Location = New System.Drawing.Point(1158, 449)
+        Me.Button8.Location = New System.Drawing.Point(680, 472)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(110, 31)
         Me.Button8.TabIndex = 57439
@@ -1235,7 +1239,7 @@ Partial Class Entrada
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Helvetica LT Std", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label18.Location = New System.Drawing.Point(1175, 423)
+        Me.Label18.Location = New System.Drawing.Point(697, 446)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(81, 25)
         Me.Label18.TabIndex = 57442
@@ -1246,7 +1250,7 @@ Partial Class Entrada
         Me.IdPago.AutoSize = True
         Me.IdPago.Font = New System.Drawing.Font("Helvetica LT Std", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.IdPago.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.IdPago.Location = New System.Drawing.Point(1165, 305)
+        Me.IdPago.Location = New System.Drawing.Point(1160, 363)
         Me.IdPago.Name = "IdPago"
         Me.IdPago.Size = New System.Drawing.Size(60, 38)
         Me.IdPago.TabIndex = 57443
@@ -1258,7 +1262,7 @@ Partial Class Entrada
         Me.TotalPago.AutoSize = True
         Me.TotalPago.Font = New System.Drawing.Font("Helvetica LT Std", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TotalPago.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.TotalPago.Location = New System.Drawing.Point(1165, 341)
+        Me.TotalPago.Location = New System.Drawing.Point(1160, 399)
         Me.TotalPago.Name = "TotalPago"
         Me.TotalPago.Size = New System.Drawing.Size(60, 38)
         Me.TotalPago.TabIndex = 57444
@@ -1270,7 +1274,7 @@ Partial Class Entrada
         Me.MontoTotal.AutoSize = True
         Me.MontoTotal.Font = New System.Drawing.Font("Helvetica LT Std", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MontoTotal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.MontoTotal.Location = New System.Drawing.Point(829, 182)
+        Me.MontoTotal.Location = New System.Drawing.Point(843, 214)
         Me.MontoTotal.Name = "MontoTotal"
         Me.MontoTotal.Size = New System.Drawing.Size(119, 35)
         Me.MontoTotal.TabIndex = 57446
@@ -1281,7 +1285,7 @@ Partial Class Entrada
         Me.Label20.AutoSize = True
         Me.Label20.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label20.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label20.Location = New System.Drawing.Point(701, 184)
+        Me.Label20.Location = New System.Drawing.Point(701, 214)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(77, 32)
         Me.Label20.TabIndex = 57445
@@ -1290,21 +1294,45 @@ Partial Class Entrada
         'Button9
         '
         Me.Button9.BackColor = System.Drawing.Color.White
-        Me.Button9.Font = New System.Drawing.Font("Helvetica LT Std", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button9.Font = New System.Drawing.Font("Helvetica LT Std", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Button9.Location = New System.Drawing.Point(1234, 4)
+        Me.Button9.Location = New System.Drawing.Point(1239, -1)
         Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(34, 39)
+        Me.Button9.Size = New System.Drawing.Size(34, 31)
         Me.Button9.TabIndex = 57447
         Me.Button9.Text = "X"
         Me.Button9.UseVisualStyleBackColor = False
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.BackColor = System.Drawing.Color.White
+        Me.Label19.Font = New System.Drawing.Font("Helvetica LT Std Black", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label19.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label19.Location = New System.Drawing.Point(217, -4)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(275, 34)
+        Me.Label19.TabIndex = 57448
+        Me.Label19.Text = "NUEVO SERVICIO"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.PictureBox1.Location = New System.Drawing.Point(-1, 28)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(1278, 10)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 57449
+        Me.PictureBox1.TabStop = False
         '
         'Entrada
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1272, 743)
+        Me.ClientSize = New System.Drawing.Size(1272, 730)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.Label19)
         Me.Controls.Add(Me.Button9)
         Me.Controls.Add(Me.MontoTotal)
         Me.Controls.Add(Me.TotalPago)
@@ -1331,10 +1359,6 @@ Partial Class Entrada
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.NomPaciente)
         Me.Controls.Add(Me.Label17)
-        Me.Controls.Add(Me.Label16)
-        Me.Controls.Add(Me.TotPagos)
-        Me.Controls.Add(Me.Label14)
-        Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Paciente_pagoDataGridView)
         Me.Controls.Add(Me.tarjeta)
@@ -1365,6 +1389,10 @@ Partial Class Entrada
         Me.Controls.Add(Me.InfoGuarServ)
         Me.Controls.Add(Me.Label20)
         Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.Label16)
+        Me.Controls.Add(Me.TotPagos)
+        Me.Controls.Add(Me.Label14)
+        Me.Controls.Add(Me.Label13)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Entrada"
@@ -1382,6 +1410,7 @@ Partial Class Entrada
         CType(Me.DoctorBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DoctorDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PatientBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1506,4 +1535,6 @@ Partial Class Entrada
     Friend WithEvents DataGridViewTextBoxColumn31 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn32 As DataGridViewTextBoxColumn
     Friend WithEvents Button9 As Button
+    Friend WithEvents Label19 As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

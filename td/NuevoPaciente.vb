@@ -31,6 +31,8 @@
     End Sub
 
     Private Sub NuevoPaciente()
+        BtnGuardar.Visible = False
+        Cursor = Cursors.WaitCursor
         Dim name As String
         Dim pass As String
         Dim ip As String
@@ -114,8 +116,12 @@
 
             PatientTableAdapter.InsertNuevoPaciente("0", name, correo, doc, lug, tel, sex, fnac, eda, sang, NUsGr, "0", Date.Today, dateInser, "0")
             '                                   (img_url, name, email, doctor,address,phone,sex, birthdate, age, bloodgroup, ion_user_id, patient_id, add_date, registration_time, how_added`)
-
             idPacienteN()
+            Info.Show()
+            Info.id.Text = PacienteId.Text
+            Info.nombre.Text = Nombre.Text
+            Cursor = Cursors.Default
+            Me.Close()
         Else
             Informe.Text = "ERROR DE NOMBRE"
             Informe.ForeColor = Color.Red

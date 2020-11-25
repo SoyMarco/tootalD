@@ -3,7 +3,8 @@
         'TODO: esta línea de código carga datos en la tabla 'Tootalde_dbtDataSet.patient' Puede moverla o quitarla según sea necesario.
         Me.PatientTableAdapter.Fill(Me.Tootalde_dbtDataSet.patient)
         Me.PatientDataGridView.Sort(PatientDataGridView.Columns(0), System.ComponentModel.ListSortDirection.Descending)
-
+        Cursor = Cursors.Default
+        home.Cursor = Cursors.Default
     End Sub
 
     Private Sub PatientBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs)

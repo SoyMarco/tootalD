@@ -13,7 +13,8 @@
     Private Sub ListaTratamientos()
         Me.Payment_categoryTableAdapter.Fill(Me.Tootalde_dbtDataSet.payment_category)
         Me.Payment_categoryDataGridView.Sort(Payment_categoryDataGridView.Columns(0), System.ComponentModel.ListSortDirection.Ascending)
-
+        Cursor = Cursors.Default
+        home.Cursor = Cursors.Default
     End Sub
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles ButtonAgregar.Click
 

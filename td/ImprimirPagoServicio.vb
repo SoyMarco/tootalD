@@ -12,10 +12,10 @@
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
         PrintForm()
     End Sub
-    Private Sub PrintForm()
+    Public Sub PrintForm()
         Try
             Cursor.Current = Cursors.WaitCursor
             With Me.PrintForm1
@@ -24,28 +24,36 @@
                 .Print(Me, PowerPacks.Printing.PrintForm.PrintOption.ClientAreaOnly)
             End With
             Cursor.Current = Cursors.Default
-
+            EditarCancelarPago.Close()
+            Me.Close()
         Catch ex As Exception
             Cursor.Current = Cursors.Default
         End Try
     End Sub
 
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+    Private Sub Button5_Click(sender As Object, e As EventArgs)
         pdf()
     End Sub
-    Private Sub pdf()
-        ' Establezca PrintAction para que aparezca un cuadro de diálogo Print Preview
-        PrintForm1.PrinterSettings.PrinterName = "Microsoft Print to PDF"
-        PrintForm1.PrintFileName = CStr(vbLongDate)
-        ' Imprima una copia del formulario
-        Me.PrintForm1.Print()
-    End Sub
-    Private Sub Impresora()
-        ' Establezca PrintAction para que aparezca un cuadro de diálogo Print Previe
-        Me.PrintForm1.Print()
+    Public Sub pdf()
+        Try
+            Cursor.Current = Cursors.WaitCursor
+            With Me.PrintForm1
+                .PrinterSettings.DefaultPageSettings.Margins = New Printing.Margins(20, 11, 20, 11)
+                .PrinterSettings.DefaultPageSettings.PrinterResolution.Kind = Printing.PrinterResolutionKind.High
+                .Print(Me, PowerPacks.Printing.PrintForm.PrintOption.ClientAreaOnly)
+            End With
+            Cursor.Current = Cursors.Default
+            ' Establezca PrintAction para que aparezca un cuadro de diálogo Print Preview
+            PrintForm1.PrinterSettings.PrinterName = "Microsoft Print to PDF"
+            PrintForm1.PrintFileName = CStr(vbLongDate)
+            ' Imprima una copia del formulario
+            Me.PrintForm1.Print()
+            EditarCancelarPago.Close()
+            Me.Close()
+        Catch ex As Exception
+            Cursor.Current = Cursors.Default
+        End Try
+
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs)
-        Impresora()
-    End Sub
 End Class

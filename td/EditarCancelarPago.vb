@@ -32,15 +32,16 @@
         ImprimirPagoServicio.Label18.Focus()
         ImprimirPagoServicio.paciente.Text = Entrada.NomPaciente.Text
         ImprimirPagoServicio.id.Text = Entrada.PacienteID.Text
-        ImprimirPagoServicio.consultorio.Text = Entrada.NuevoLugar.Text
+        ImprimirPagoServicio.consultorio.Text = Entrada.lugar.SelectedItem
         ImprimirPagoServicio.Fecha.Text = Entrada.DateTimePickerDia.Value
+        ImprimirPagoServicio.medico.Text = Entrada.Doctor.SelectedItem
         ImprimirPagoServicio.nota.Text = Entrada.IdPago.Text
-        ImprimirPagoServicio.TotalParcial.Text = Entrada.SumServ.Text
-        ImprimirPagoServicio.descuento.Text = Entrada.TotDesc.Text
-        ImprimirPagoServicio.total.Text = Entrada.TotServicios.Text
-        ImprimirPagoServicio.pago.Text = FormatCurrency(CantPago.Text)
-        ImprimirPagoServicio.Pagos.Text = Entrada.TotPagos.Text
-        ImprimirPagoServicio.resta.Text = Entrada.resta.Text
+        ImprimirPagoServicio.TotalParcial1.Text = Entrada.SumServ.Text
+        ImprimirPagoServicio.descuento1.Text = Entrada.TotDesc.Text
+        ImprimirPagoServicio.total1.Text = Entrada.TotServicios.Text
+        ImprimirPagoServicio.pago1.Text = FormatCurrency(CantPago.Text)
+        ImprimirPagoServicio.Pagos1.Text = Entrada.TotPagos.Text
+        ImprimirPagoServicio.resta1.Text = Entrada.resta.Text
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click

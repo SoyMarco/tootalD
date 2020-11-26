@@ -187,14 +187,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="td.exe" size="2165216">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="td.exe" size="2227680">
       <assemblyIdentity name="td" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>xoVk0p6w85/+c/v3esVfjCP327Qncw5XoZapN4sRjak=</dsig:DigestValue>
+        <dsig:DigestValue>JSP/2lLsgG+HgVQNnpujrYJOgvX1CqVsGYlayjNzzKw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -5,7 +5,20 @@
         Me.TableAdapterManager.UpdateAll(Me.Tootalde_dbtDataSet)
 
     End Sub
-
+    Private Sub MostrarServActivos()
+        If id.Text > 1 Then
+            'PACIENTE, ESTATUS, ESTATUS (BETWEEN)
+            Me.Paciente_servicioTableAdapter.FillPaciEst(Me.Tootalde_dbtDataSet.paciente_servicio, id.Text, "1", "1")
+            Me.Paciente_servicioDataGridView.RowHeadersVisible = False
+            Dim rwheight As Integer = Paciente_servicioDataGridView.Rows(0).Height
+            Dim NProd As Integer
+            'NUMERO DE ARTICULOS
+            NProd = Paciente_servicioDataGridView.RowCount
+            Dim totalht As Integer = rwheight * (NProd + 1)
+            Me.Paciente_servicioDataGridView.Height = totalht
+            Me.AutoSize = True
+        End If
+    End Sub
     Private Sub ImprimirPagoServicio_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: esta línea de código carga datos en la tabla 'Tootalde_dbtDataSet.paciente_servicio' Puede moverla o quitarla según sea necesario.
         Me.Paciente_servicioTableAdapter.Fill(Me.Tootalde_dbtDataSet.paciente_servicio)
@@ -56,4 +69,12 @@
 
     End Sub
 
+    Private Sub id_TextChanged(sender As Object, e As EventArgs) Handles id.TextChanged
+        Try
+            MostrarServActivos()
+        Catch ex As Exception
+            id.Text = "0"
+        End Try
+
+    End Sub
 End Class

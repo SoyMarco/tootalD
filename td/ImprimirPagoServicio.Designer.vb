@@ -25,15 +25,15 @@ Partial Class ImprimirPagoServicio
         Me.components = New System.ComponentModel.Container()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ImprimirPagoServicio))
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Tootalde_dbtDataSet = New td.tootalde_dbtDataSet()
         Me.Paciente_servicioBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Paciente_servicioTableAdapter = New td.tootalde_dbtDataSetTableAdapters.paciente_servicioTableAdapter()
         Me.TableAdapterManager = New td.tootalde_dbtDataSetTableAdapters.TableAdapterManager()
         Me.Paciente_servicioDataGridView = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PrintForm1 = New Microsoft.VisualBasic.PowerPacks.Printing.PrintForm(Me.components)
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -59,22 +59,30 @@ Partial Class ImprimirPagoServicio
         Me.nota = New System.Windows.Forms.Label()
         Me.id = New System.Windows.Forms.Label()
         Me.paciente = New System.Windows.Forms.Label()
-        Me.descuento = New System.Windows.Forms.Label()
-        Me.total = New System.Windows.Forms.Label()
-        Me.pago = New System.Windows.Forms.Label()
-        Me.resta = New System.Windows.Forms.Label()
-        Me.TotalParcial = New System.Windows.Forms.Label()
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.LineShape3 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.LineShape2 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.Label18 = New System.Windows.Forms.Label()
-        Me.Pagos = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
+        Me.TotalParcial1 = New System.Windows.Forms.TextBox()
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.descuento1 = New System.Windows.Forms.TextBox()
+        Me.total1 = New System.Windows.Forms.TextBox()
+        Me.pago1 = New System.Windows.Forms.TextBox()
+        Me.Pagos1 = New System.Windows.Forms.TextBox()
+        Me.resta1 = New System.Windows.Forms.TextBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.Tootalde_dbtDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Paciente_servicioBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Paciente_servicioDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Tootalde_dbtDataSet
@@ -147,8 +155,8 @@ Partial Class ImprimirPagoServicio
         'Paciente_servicioDataGridView
         '
         Me.Paciente_servicioDataGridView.AutoGenerateColumns = False
+        Me.Paciente_servicioDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells
         Me.Paciente_servicioDataGridView.BackgroundColor = System.Drawing.Color.White
-        Me.Paciente_servicioDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.Paciente_servicioDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
@@ -165,39 +173,8 @@ Partial Class ImprimirPagoServicio
         Me.Paciente_servicioDataGridView.Name = "Paciente_servicioDataGridView"
         Me.Paciente_servicioDataGridView.RowHeadersVisible = False
         Me.Paciente_servicioDataGridView.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.Paciente_servicioDataGridView.Size = New System.Drawing.Size(416, 220)
+        Me.Paciente_servicioDataGridView.Size = New System.Drawing.Size(416, 45)
         Me.Paciente_servicioDataGridView.TabIndex = 1
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "tratamiento"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "TRATAMIENTO"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "precio"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "PRECIO"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        Me.DataGridViewTextBoxColumn3.Width = 82
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "descuento"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "DESCUENTO"
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        Me.DataGridViewTextBoxColumn4.Width = 112
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "total"
-        Me.DataGridViewTextBoxColumn5.HeaderText = "TOTAL"
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        Me.DataGridViewTextBoxColumn5.Width = 72
         '
         'PrintForm1
         '
@@ -238,10 +215,9 @@ Partial Class ImprimirPagoServicio
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label2.Location = New System.Drawing.Point(3, 43)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(210, 72)
+        Me.Label2.Size = New System.Drawing.Size(210, 54)
         Me.Label2.TabIndex = 57344
-        Me.Label2.Text = "Av. Adolfo López Mateos 142," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Las Peñitas, Atizapán de" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Zaragoza" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Tel: 5511460432" &
-    ""
+        Me.Label2.Text = "Av. Adolfo López Mateos 142," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Las Peñitas, Atizapán de" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Zaragoza"
         '
         'Label3
         '
@@ -250,10 +226,10 @@ Partial Class ImprimirPagoServicio
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label3.Location = New System.Drawing.Point(306, 43)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(210, 72)
+        Me.Label3.Size = New System.Drawing.Size(241, 72)
         Me.Label3.TabIndex = 57345
-        Me.Label3.Text = "Av. Adolfo López Mateos 142," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Las Peñitas, Atizapán de" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Zaragoza" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Tel: 5511460432" &
-    ""
+        Me.Label3.Text = "Carr. Lago de Guadalupe Km. 4.5 " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Mz. 25 Lt.7 Col. San Jose el Jaral, " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Atizapan " &
+    "de Zaragoza" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Tel: 5562648996"
         '
         'Label4
         '
@@ -346,55 +322,55 @@ Partial Class ImprimirPagoServicio
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Helvetica LT Std", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label13.Location = New System.Drawing.Point(428, 267)
+        Me.Label13.Location = New System.Drawing.Point(428, 254)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(99, 18)
+        Me.Label13.Size = New System.Drawing.Size(127, 23)
         Me.Label13.TabIndex = 57355
         Me.Label13.Text = "Total Parcial:"
         '
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Helvetica LT Std", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label14.Location = New System.Drawing.Point(431, 359)
+        Me.Label14.Location = New System.Drawing.Point(428, 372)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(53, 18)
+        Me.Label14.Size = New System.Drawing.Size(69, 23)
         Me.Label14.TabIndex = 57356
         Me.Label14.Text = "Resta:"
         '
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Helvetica LT Std", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label15.Location = New System.Drawing.Point(428, 321)
+        Me.Label15.Location = New System.Drawing.Point(429, 323)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(97, 18)
+        Me.Label15.Size = New System.Drawing.Size(126, 23)
         Me.Label15.TabIndex = 57357
         Me.Label15.Text = "Pago Actual:"
         '
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Helvetica LT Std", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label16.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label16.Location = New System.Drawing.Point(428, 303)
+        Me.Label16.Location = New System.Drawing.Point(428, 300)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(60, 18)
+        Me.Label16.Size = New System.Drawing.Size(77, 23)
         Me.Label16.TabIndex = 57358
         Me.Label16.Text = "TOTAL:"
         '
         'Label17
         '
         Me.Label17.AutoSize = True
-        Me.Label17.Font = New System.Drawing.Font("Helvetica LT Std", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label17.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label17.Location = New System.Drawing.Point(428, 285)
+        Me.Label17.Location = New System.Drawing.Point(428, 277)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(88, 18)
+        Me.Label17.Size = New System.Drawing.Size(116, 23)
         Me.Label17.TabIndex = 57359
         Me.Label17.Text = "Descuento:"
         '
@@ -464,61 +440,6 @@ Partial Class ImprimirPagoServicio
         Me.paciente.TabIndex = 57360
         Me.paciente.Text = "Paciente:"
         '
-        'descuento
-        '
-        Me.descuento.AutoSize = True
-        Me.descuento.Font = New System.Drawing.Font("Helvetica LT Std", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.descuento.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.descuento.Location = New System.Drawing.Point(568, 285)
-        Me.descuento.Name = "descuento"
-        Me.descuento.Size = New System.Drawing.Size(88, 18)
-        Me.descuento.TabIndex = 57371
-        Me.descuento.Text = "Descuento:"
-        '
-        'total
-        '
-        Me.total.AutoSize = True
-        Me.total.Font = New System.Drawing.Font("Helvetica LT Std", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.total.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.total.Location = New System.Drawing.Point(568, 303)
-        Me.total.Name = "total"
-        Me.total.Size = New System.Drawing.Size(60, 18)
-        Me.total.TabIndex = 57370
-        Me.total.Text = "TOTAL:"
-        '
-        'pago
-        '
-        Me.pago.AutoSize = True
-        Me.pago.Font = New System.Drawing.Font("Helvetica LT Std", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pago.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.pago.Location = New System.Drawing.Point(568, 321)
-        Me.pago.Name = "pago"
-        Me.pago.Size = New System.Drawing.Size(49, 18)
-        Me.pago.TabIndex = 57369
-        Me.pago.Text = "Pago:"
-        '
-        'resta
-        '
-        Me.resta.AutoSize = True
-        Me.resta.Font = New System.Drawing.Font("Helvetica LT Std", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.resta.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.resta.Location = New System.Drawing.Point(571, 359)
-        Me.resta.Name = "resta"
-        Me.resta.Size = New System.Drawing.Size(53, 18)
-        Me.resta.TabIndex = 57368
-        Me.resta.Text = "Resta:"
-        '
-        'TotalParcial
-        '
-        Me.TotalParcial.AutoSize = True
-        Me.TotalParcial.Font = New System.Drawing.Font("Helvetica LT Std", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TotalParcial.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.TotalParcial.Location = New System.Drawing.Point(568, 267)
-        Me.TotalParcial.Name = "TotalParcial"
-        Me.TotalParcial.Size = New System.Drawing.Size(99, 18)
-        Me.TotalParcial.TabIndex = 57367
-        Me.TotalParcial.Text = "Total Parcial:"
-        '
         'ShapeContainer1
         '
         Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
@@ -542,8 +463,8 @@ Partial Class ImprimirPagoServicio
         Me.LineShape2.Name = "LineShape2"
         Me.LineShape2.X1 = 0
         Me.LineShape2.X2 = 755
-        Me.LineShape2.Y1 = 124
-        Me.LineShape2.Y2 = 124
+        Me.LineShape2.Y1 = 126
+        Me.LineShape2.Y2 = 126
         '
         'LineShape1
         '
@@ -564,27 +485,165 @@ Partial Class ImprimirPagoServicio
         Me.Label18.TabIndex = 57373
         Me.Label18.Text = "NOTA DE PAGO"
         '
-        'Pagos
-        '
-        Me.Pagos.AutoSize = True
-        Me.Pagos.Font = New System.Drawing.Font("Helvetica LT Std", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Pagos.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Pagos.Location = New System.Drawing.Point(568, 341)
-        Me.Pagos.Name = "Pagos"
-        Me.Pagos.Size = New System.Drawing.Size(95, 18)
-        Me.Pagos.TabIndex = 57375
-        Me.Pagos.Text = "Total Pagos:"
-        '
         'Label19
         '
         Me.Label19.AutoSize = True
-        Me.Label19.Font = New System.Drawing.Font("Helvetica LT Std", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label19.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label19.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label19.Location = New System.Drawing.Point(428, 341)
+        Me.Label19.Location = New System.Drawing.Point(428, 349)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(95, 18)
+        Me.Label19.Size = New System.Drawing.Size(123, 23)
         Me.Label19.TabIndex = 57374
         Me.Label19.Text = "Total Pagos:"
+        '
+        'TotalParcial1
+        '
+        Me.TotalParcial1.BackColor = System.Drawing.Color.White
+        Me.TotalParcial1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TotalParcial1.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TotalParcial1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.TotalParcial1.Location = New System.Drawing.Point(550, 254)
+        Me.TotalParcial1.Name = "TotalParcial1"
+        Me.TotalParcial1.Size = New System.Drawing.Size(120, 23)
+        Me.TotalParcial1.TabIndex = 57376
+        Me.TotalParcial1.Text = "$0.00"
+        Me.TotalParcial1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
+        '
+        'descuento1
+        '
+        Me.descuento1.BackColor = System.Drawing.Color.White
+        Me.descuento1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.descuento1.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.descuento1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.descuento1.Location = New System.Drawing.Point(550, 277)
+        Me.descuento1.Name = "descuento1"
+        Me.descuento1.Size = New System.Drawing.Size(120, 23)
+        Me.descuento1.TabIndex = 57378
+        Me.descuento1.Text = "$0.00"
+        Me.descuento1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'total1
+        '
+        Me.total1.BackColor = System.Drawing.Color.White
+        Me.total1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.total1.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.total1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.total1.Location = New System.Drawing.Point(550, 300)
+        Me.total1.Name = "total1"
+        Me.total1.Size = New System.Drawing.Size(120, 23)
+        Me.total1.TabIndex = 57379
+        Me.total1.Text = "$0.00"
+        Me.total1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'pago1
+        '
+        Me.pago1.BackColor = System.Drawing.Color.White
+        Me.pago1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.pago1.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pago1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.pago1.Location = New System.Drawing.Point(551, 323)
+        Me.pago1.Name = "pago1"
+        Me.pago1.Size = New System.Drawing.Size(120, 23)
+        Me.pago1.TabIndex = 57380
+        Me.pago1.Text = "$0.00"
+        Me.pago1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Pagos1
+        '
+        Me.Pagos1.BackColor = System.Drawing.Color.White
+        Me.Pagos1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Pagos1.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Pagos1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Pagos1.Location = New System.Drawing.Point(550, 349)
+        Me.Pagos1.Name = "Pagos1"
+        Me.Pagos1.Size = New System.Drawing.Size(120, 23)
+        Me.Pagos1.TabIndex = 57381
+        Me.Pagos1.Text = "$0.00"
+        Me.Pagos1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'resta1
+        '
+        Me.resta1.BackColor = System.Drawing.Color.White
+        Me.resta1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.resta1.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.resta1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.resta1.Location = New System.Drawing.Point(551, 372)
+        Me.resta1.Name = "resta1"
+        Me.resta1.Size = New System.Drawing.Size(120, 23)
+        Me.resta1.TabIndex = 57382
+        Me.resta1.Text = "$0.00"
+        Me.resta1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.White
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.InitialImage = CType(resources.GetObject("PictureBox2.InitialImage"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(167, 95)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(30, 30)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 57383
+        Me.PictureBox2.TabStop = False
+        Me.PictureBox2.WaitOnLoad = True
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label11.Location = New System.Drawing.Point(3, 99)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(166, 23)
+        Me.Label11.TabIndex = 57384
+        Me.Label11.Text = "Tel: 55-1146-0432"
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "tratamiento"
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Helvetica LT Std", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black
+        Me.DataGridViewTextBoxColumn2.DefaultCellStyle = DataGridViewCellStyle2
+        Me.DataGridViewTextBoxColumn2.HeaderText = "TRATAMIENTO"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "precio"
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.DataGridViewTextBoxColumn3.DefaultCellStyle = DataGridViewCellStyle3
+        Me.DataGridViewTextBoxColumn3.HeaderText = "PRECIO"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn3.Width = 82
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCellsExceptHeader
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "descuento"
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight
+        Me.DataGridViewTextBoxColumn4.DefaultCellStyle = DataGridViewCellStyle4
+        Me.DataGridViewTextBoxColumn4.HeaderText = "DESCUENTO"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        Me.DataGridViewTextBoxColumn4.Width = 22
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "total"
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Helvetica LT Std", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DataGridViewTextBoxColumn5.DefaultCellStyle = DataGridViewCellStyle5
+        Me.DataGridViewTextBoxColumn5.HeaderText = "TOTAL"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        Me.DataGridViewTextBoxColumn5.Width = 72
         '
         'ImprimirPagoServicio
         '
@@ -592,14 +651,7 @@ Partial Class ImprimirPagoServicio
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(750, 788)
-        Me.Controls.Add(Me.Pagos)
-        Me.Controls.Add(Me.Label19)
         Me.Controls.Add(Me.Label18)
-        Me.Controls.Add(Me.descuento)
-        Me.Controls.Add(Me.total)
-        Me.Controls.Add(Me.pago)
-        Me.Controls.Add(Me.resta)
-        Me.Controls.Add(Me.TotalParcial)
         Me.Controls.Add(Me.consultorio)
         Me.Controls.Add(Me.Fecha)
         Me.Controls.Add(Me.medico)
@@ -619,19 +671,29 @@ Partial Class ImprimirPagoServicio
         Me.Controls.Add(Me.label1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Paciente_servicioDataGridView)
+        Me.Controls.Add(Me.resta1)
+        Me.Controls.Add(Me.Pagos1)
+        Me.Controls.Add(Me.pago1)
+        Me.Controls.Add(Me.total1)
+        Me.Controls.Add(Me.descuento1)
+        Me.Controls.Add(Me.TotalParcial1)
+        Me.Controls.Add(Me.Label19)
         Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.Label16)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Label13)
+        Me.Controls.Add(Me.Label11)
+        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.ShapeContainer1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "ImprimirPagoServicio"
-        Me.Text = "ImprimirPagoServicio"
+        Me.Text = "Tel: 55-1146-0432"
         CType(Me.Tootalde_dbtDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Paciente_servicioBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Paciente_servicioDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -656,20 +718,11 @@ Partial Class ImprimirPagoServicio
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents label1 As Label
-    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
     Friend WithEvents Label17 As Label
     Friend WithEvents Label16 As Label
     Friend WithEvents Label15 As Label
     Friend WithEvents Label14 As Label
     Friend WithEvents Label13 As Label
-    Friend WithEvents descuento As Label
-    Friend WithEvents total As Label
-    Friend WithEvents pago As Label
-    Friend WithEvents resta As Label
-    Friend WithEvents TotalParcial As Label
     Friend WithEvents consultorio As Label
     Friend WithEvents Fecha As Label
     Friend WithEvents medico As Label
@@ -681,6 +734,18 @@ Partial Class ImprimirPagoServicio
     Friend WithEvents LineShape3 As PowerPacks.LineShape
     Friend WithEvents LineShape2 As PowerPacks.LineShape
     Friend WithEvents LineShape1 As PowerPacks.LineShape
-    Friend WithEvents Pagos As Label
     Friend WithEvents Label19 As Label
+    Friend WithEvents resta1 As TextBox
+    Friend WithEvents Pagos1 As TextBox
+    Friend WithEvents pago1 As TextBox
+    Friend WithEvents total1 As TextBox
+    Friend WithEvents descuento1 As TextBox
+    Friend WithEvents TotalParcial1 As TextBox
+    Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents Label11 As Label
+    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
 End Class

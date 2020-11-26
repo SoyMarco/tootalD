@@ -248,6 +248,7 @@ Partial Class NuevaCita
         '
         Me.Doctor.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest
         Me.Doctor.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.Doctor.BackColor = System.Drawing.Color.White
         Me.Doctor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Doctor.Font = New System.Drawing.Font("Helvetica LT Std", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Doctor.FormattingEnabled = True
